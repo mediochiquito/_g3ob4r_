@@ -1,0 +1,24 @@
+- performance map
+
+- quitar eventos pasados del lisitado
+
+- share (que se hace con el link?)
+
+- group markers 
+
+- sonidos en click, (vibracion?)
+
+- markers por distancia
+
+- push
+
+- backend
+
+- imagenes home linkeadas a lugares
+
+- favoritos
+
+- back flecha android
+
+- slider control distance
+

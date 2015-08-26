@@ -1,0 +1,41 @@
+
+        <div  layout="row">
+
+		    <md-tabs md-border-bottom md-no-pagination="false" class='poisTabs'>
+		      <md-tab ng-repeat="tipo_lugar in array_tipo_de_lugares"  label="{{tipo_lugar.name}}" >
+
+		        <md-content class="md-padding" >
+
+
+		            <md-list>
+
+				      <md-list-item class="md-3-line" ng-repeat="item in array_pois | tipoEvento:tipo_lugar.id" ng-hide= 'item.eliminado == 1'>
+				       
+				        <div><img ng-class='{desactivado: item.activo==0}' ng-src="../pic/?file=pois/{{item.thumb}}&fit=100x100" class='poi-thumb' hide-sm /></div>
+				        <div ng-class='{desactivado: item.activo==0}' class="md-list-item-text">
+				          	<h3>{{ item.name }}</h3>
+				        </div>
+				        <md-button ng-click='editar(item, $event)'>EDITAR</md-button>
+				        <md-button ng-click='eliminar(item, $event)'  class="md-warn">ELIMINAR</md-button>
+
+				        <md-divider md-inset ng-if="!$last"></md-divider>
+				      </md-list-item>
+
+				    </md-list>
+
+		        </md-content>
+
+
+
+		      </md-tab>
+		    </md-tabs>
+
+
+
+			<md-button ng-click="add($event)"  class="md-fab md-button md-default-theme btnAdd"  target="_blank">
+			<md-icon class='material-icons' aria-hidden="true">add</md-icon></md-button>    
+
+		</div>
+
+
+

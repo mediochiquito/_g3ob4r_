@@ -1,0 +1,29 @@
+<div id='lista-content-input'>
+	<input type='text' placeholder='Buscar...' ng-model='txtfiltro' ng-change='keyDownFilter()' class='lista-input-filter' />
+ 	<boton-sistema imagen="img/btns/clear.svg" ng-show=" txtfiltro != '' " accion='resetFiltro()' id='lista-btn_clear'></boton-sistema>
+</div>
+
+
+<div class='listado' style="height:{{screen_alto-132}}px">
+
+	<div md-ink-ripple item-lista	boton-lista ng-repeat="item in array_items | filter: filtro | limitTo:en_pagina as cantidad" 
+					ng-class=" { 'alpha': (($index*90) < (enscroll - 1000)) || (($index*90) > (enscroll + altoholder) + 1000) , 'bg-color-bar': (item.tipo==1), 'bg-color-restaurante': (item.tipo==2) , 'bg-color-cine': (item.tipo==3), 'bg-color-evento': (item.tipo==4),  'bg-color-teatro': (item.tipo==5)}"
+					index='{{$index}}' 
+					item='item' 
+					enscroll= 'enscroll' 
+					altoholder = 'altoholder'
+					siempre-visible='false' 
+					ng-click="select_item(item)" class='item-lista' 
+
+					
+					></div>
+
+	<div boton-base  ng-click='cargarMas()' id='listado-btn-cargar-mas' ng-if=' total > cantidad.length'><div>CARGAR MÁS</div></div>
+
+
+</div>
+
+
+<div id='lista-sin-resultados' ng-if=' total == 0'>No se encontraron resultados</div>
+
+

@@ -1,0 +1,44 @@
+        
+        <div  layout="row">
+
+		   
+		        <md-content class="md-padding" >
+		           
+		          
+
+		           <!--  <md-list>
+
+				      <md-list-item class="md-3-line" ng-repeat=" item in array_img " ng-hide= 'item.home_eliminado == 1'>
+				        <img ng-class='{desactivado: item.home_activo==0}' ng-src="../img/home/{{item.home_img}}" class='home-thumb' />
+				    
+				        <md-button ng-click='editar(item, $event)'>EDITAR</md-button>
+				        <md-button ng-click='eliminar(item, $event)'  class="md-warn">ELIMINAR</md-button>
+
+				        <md-divider md-inset ng-if="!$last"></md-divider>
+				      </md-list-item>
+				     
+				    </md-list>
+ -->
+
+					 <md-card  ng-repeat=" item in array_img | orderBy:'reverse'" ng-hide= 'item.home_eliminado == 1' class='unacarta'>
+					      <img  ng-class='{desactivado: item.home_activo==0}'  ng-src="../img/home/{{item.home_img}}" class="md-card-image" alt="Washed Out">
+				
+					      <div class="md-actions" layout="row" layout-align="end center">
+					        <md-button ng-click='editar(item, $event)'>EDITAR</md-button>
+				       		 <md-button ng-click='eliminar(item, $event)'  class="md-warn">ELIMINAR</md-button>
+					      </div>
+					    </md-card>
+
+
+		        </md-content>
+		   
+
+
+
+
+
+
+			<md-button ng-click="add($event)"  class="md-fab md-button md-default-theme btnAdd"  target="_blank">
+			<md-icon class='material-icons' aria-hidden="true">add</md-icon></md-button>    
+
+		</div>

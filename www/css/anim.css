@@ -1,0 +1,178 @@
+	terms.ng-hide-add, terms.ng-hide-remove {
+	  /* this is required as of 1.3x to properly
+	     apply all styling in a show/hide animation */
+	  transition: 0s linear all;
+	  
+		-webkit-transform: scale(1.3,1.3);
+		transform: scale(1.3,1.3);
+	}
+
+	terms.ng-hide-add-active,
+	terms.ng-hide-remove-active {
+	  /* the transition is defined in the active class */
+	  transition: .2s linear all;
+	}
+
+	terms.ng-hide-add {
+		
+		opacity: 1;
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+
+	}
+	terms.ng-hide-add.ng-hide-add-active { 
+		opacity:0; 
+		-webkit-transform: scale(1.3,1.3);
+		transform: scale(1.3,1.3);
+	}
+	terms.ng-hide-remove {  
+	
+	opacity:0; 
+	-webkit-transform: scale(1.3,1.3);
+	transform: scale(1.3,1.3);
+
+	 }
+	terms.ng-hide-remove.ng-hide-remove-active { 
+
+ 	opacity: 1;
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+
+  }
+
+
+
+
+
+
+
+	.registro.ng-hide-add, .registro.ng-hide-remove {
+	  /* this is required as of 1.3x to properly
+	     apply all styling in a show/hide animation */
+	  transition: 0s linear all;
+	  
+		-webkit-transform: scale(1.3,1.3);
+		transform: scale(1.3,1.3);
+	}
+
+	.registro.ng-hide-add-active,
+	.registro.ng-hide-remove-active {
+	  /* the transition is defined in the active class */
+	  transition: .2s linear all;
+	}
+
+	.registro.ng-hide-add {
+		
+		opacity: 1;
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+
+	}
+	.registro.ng-hide-add.ng-hide-add-active { 
+		opacity:0; 
+		-webkit-transform: scale(1.3,1.3);
+		transform: scale(1.3,1.3);
+	}
+	.registro.ng-hide-remove {  
+	
+	opacity:0; 
+	-webkit-transform: scale(1.3,1.3);
+	transform: scale(1.3,1.3);
+
+	 }
+	.registro.ng-hide-remove.ng-hide-remove-active { 
+
+ 	opacity: 1;
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+
+  }
+
+
+
+/*CHEK BOX*/
+
+.checkBox-selected{
+	transition: 0.1s;
+	transform: translate3d(0,0,0px);
+}
+.checkBox-selected.ng-hide-add{
+	/* transform: scale(1,1);*/
+	opacity:1.0;
+	/*transform: translate3d(0,0,0);*/
+}
+
+.checkBox-selected.ng-hide-add-active{
+	/*transform: scale(0,0);*/
+	opacity:0.0;
+	/*transform: translate3d(0,0,-10px);*/
+}
+
+.checkBox-selected.ng-hide-remove{
+	/*transform: scale(0,0);*/
+	opacity:0.0;
+	/*transform: translate3d(0,0,-10px);*/
+}
+.checkBox-selected.ng-hide-remove-active{
+	/*transform: scale(1,1);*/
+	opacity:1.0;
+	/*transform: translate3d(0,0,0);*/
+}
+
+.checkBox-selected.ng-hide-add-active,
+.checkBox-selected.ng-hide-remove-active {
+
+}
+
+
+/*   
+SECCIONES 
+*/
+.enterSeccionShow-add-active,
+.enterSeccionHide-add-active,
+.backSeccionShow-add-active,
+.backSeccionHide-add-active
+{
+  transition: 0.35s;
+}
+
+.enterSeccionShow-add{
+	display: block!important;
+	-webkit-transform: translateX(100%);
+	/*z-index: 999999;*/
+	opacity: 1.0;
+}
+.enterSeccionShow-add-active{
+	-webkit-transform: translateX(0px);
+	opacity:  1.0;
+}
+.enterSeccionHide-add{
+	display: block!important;
+/*	z-index: 999998;*/
+	-webkit-transform: translateX(0px);
+	opacity:  1.0;
+}
+.enterSeccionHide-add-active{
+	-webkit-transform: translateX(-70px);
+	opacity: 0.0;
+}
+.backSeccionShow-add{
+	display: block!important;
+	/*z-index: 99998;*/
+	-webkit-transform: translateX(-70px);
+	opacity: 0.0;
+}
+.backSeccionShow-add-active{
+	-webkit-transform: translateX(0px);
+	opacity:  1.0;
+}
+.backSeccionHide-add{
+	display: block!important;
+/*	z-index: 99999;*/
+	-webkit-transform: translateX(0px);
+	opacity:  1.0;
+}
+.backSeccionHide-add-active{
+	-webkit-transform: translateX(100%);
+	opacity:  1.0;
+}
