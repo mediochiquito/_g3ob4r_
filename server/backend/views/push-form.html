@@ -1,0 +1,40 @@
+<md-dialog aria-label="form img">
+	
+	<md-toolbar>
+	    <div class="md-toolbar-tools">
+	    
+	    <h2>CREAR NUEVO ENVIO PUSH</h2>
+	      
+	      <span flex></span>
+	      <md-button class="md-icon-button" ng-click="answer('not applicable')">
+	          <md-icon class='material-icons' aria-hidden="true">close</md-icon>
+	      </md-button>
+	    </div>
+	   </md-toolbar>
+
+	   <md-dialog-content>
+
+		   
+		         <md-input-container flex >
+			              <label for="label">Titulo (solo aplica para Android)</label>
+			              <input type="text" id="label" ng-model="envio.envios_titulo">
+			     </md-input-container>
+		           
+			     <md-input-container flex>
+		              <label for="content">Texto</label>
+		              <textarea  id="content" ng-model="envio.envios_desc"></textarea>
+	             </md-input-container>
+		     
+
+		         <md-select ng-model="envio.envios_poi_id" placeholder="Mostrar POI al clickear en la notificación" flex>
+		             <md-option ng-value="0">--No hacer nada--</md-option>
+		             <md-option ng-repeat="item in array_pois"  ng-value="{{item.id}}" >#{{item.id}} {{item.name}}</md-option>
+		         </md-select>
+
+
+				<md-button class="add-tab md-primary md-raised" ng-click='submitForm()' style="margin-right: 0;">Preparar envio</md-button>
+
+	</md-dialog-content>
+
+
+</md-dialog>

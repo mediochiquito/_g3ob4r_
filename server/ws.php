@@ -14,33 +14,94 @@ $params = json_decode(file_get_contents('php://input'));
 switch($_GET['method']){
 
 
-	case 'saveUser':
+	case 'init':
+		
+		guardar_device($params->uuid, $params->platform, $params->pushtoken, $params->u);
+		die('1');
+  		
+  	break;
 
 
-		if(mysql_query('INSERT INTO  registros SET 	
+  	case 'getAllEnvios':
 
-									registros_uid 	  = "' . mysql_real_escape_string($params->uid)  . '"   ,
-									registros_device_uuid 	  = "' . mysql_real_escape_string($params->uuid)  . '"   ,
-									registros_nombre 	  = "' . mysql_real_escape_string($params->nombre)  . '" ,
-									registros_apellido  = "' . mysql_real_escape_string($params->apellido)  . '"   ,
-									registros_email  = "' . mysql_real_escape_string($params->email)  . '"   ,
-									registros_ci  = "' . mysql_real_escape_string($params->ci)  . '"   ,
-									registros_fecha_nac  = "' . mysql_real_escape_string($params->fehca_nac)  . '"   ,
-									registros_sexo  = "' . mysql_real_escape_string($params->sexo)  . '"  
 
-								'))	
-		{
-			echo mysql_insert_id() ;
+  		$rs = mysql_query('SELECT * FROM envios  ORDER BY envios_id DESC');		
+		while($row = mysql_fetch_object($rs)){
+            $obj[] = $row;
+        }
+
+        echo json_encode($obj);
+  		break;
+
+
+  	case 'saveEnvio':
+
+  		if(mysql_query('INSERT INTO  envios SET 	
+									envios_titulo 	  = "' . mysql_real_escape_string($params->envios_titulo)  . '" ,
+									envios_desc 	  = "' . mysql_real_escape_string($params->envios_desc)  . '" ,
+									envios_poi_id     = "' . mysql_real_escape_string($params->envios_poi_id)  . '" 
+								')){
+
+			$id_envio =  mysql_insert_id();
+
+
+			$rs_devices_a_enviar = mysql_query("SELECT MAX(devices_id) as devices_id FROM `devices`  WHERE `devices_usuarios_id`>0 GROUP BY devices_uuid");
+			while($row_a_enviar = mysql_fetch_object($rs_devices_a_enviar)){
+	            mysql_query("INSERT INTO salida SET 
+
+	            						salida_envios_id='" .	$id_envio   . "' ,
+	            						salida_devices_id='" .	$row_a_enviar->devices_id . "';");
+	        }
+
+			echo $id_envio;
 			exit;
 		};
 
-		die('0');
-  		
+  	break;
+
+
+
+
+
+
+
+	case 'saveUser':
+
+
+		$rs = mysql_query('SELECT * FROM usuarios WHERE usuarios_uid ="' .  mysql_real_escape_string($params->uid) . '" AND usuarios_uid!=0 LIMIT 1');		
+		$row = mysql_fetch_object($rs);
+		$user_id = $row->usuarios_id;
+
+		if(mysql_num_rows($rs)==0){
+
+				if(mysql_query('INSERT INTO  usuarios SET 	
+
+									usuarios_uid 	  = "' . mysql_real_escape_string($params->uid)  . '"   ,
+									
+									usuarios_nombre 	  = "' . mysql_real_escape_string($params->nombre)  . '" ,
+									usuarios_apellido  = "' . mysql_real_escape_string($params->apellido)  . '"   ,
+									usuarios_email  = "' . mysql_real_escape_string($params->email)  . '"   ,
+									usuarios_ci  = "' . mysql_real_escape_string($params->ci)  . '"   ,
+									usuarios_fecha_nac  = "' . mysql_real_escape_string($params->fehca_nac)  . '"   ,
+									usuarios_sexo  = "' . mysql_real_escape_string($params->sexo)  . '"  
+
+								'))	 {
+
+										$user_id =  mysql_insert_id();
+										
+									};
+
+		}
+		
+		guardar_device($params->uuid, $params->platform, $params->push_token, $user_id);
+		echo $user_id;
+		exit;
+	
   	break;
 
 	case 'uploadImgHome':
 
-		$hash_file = md5(date('Ymdhis').$_SERVER['REMOTE_ADDR'].rand(0,9999999999));
+		$hash_file = md5(date('Ymdhis').$_SERVER['REMOTE_ADDR'].rand(0, 9999999999));
 		$name = $_FILES["file"]["name"];		
 		$extension = end(explode('.', $name));	
 		$destino =dirname(__FILE__). "/img/home/$hash_file.$extension";
@@ -67,7 +128,7 @@ switch($_GET['method']){
 	
   	case 'delHomeImg':
 
-		mysql_query ('UPDATE home SET home_eliminado=1 WHERE home_id = "'. $params->home_id .'"');
+		mysql_query ('UPDATE home SET home_eliminado=1 WHERE home_id = "'. mysql_real_escape_string($params->home_id) .'"');
 		echo '1';
 		return true;
 
@@ -76,7 +137,7 @@ switch($_GET['method']){
 
   	case 'delPoi':
 
-		mysql_query ('UPDATE lugares SET lugares_eliminado=1 WHERE lugares_id = "'. $params->id .'"');
+		mysql_query ('UPDATE lugares SET lugares_eliminado=1 WHERE lugares_id = "'. mysql_real_escape_string($params->id) .'"');
 
 		
 		$sync = json_decode(file_get_contents('sync.txt'));
@@ -131,15 +192,11 @@ switch($_GET['method']){
 				echo mysql_insert_id();
 		}
 		
-		
-
   	break;
 
 
   	case 'savePoi':
 
-  	
-  
 	    $array_iniPub = explode('T', $params->siniPub);
 	    $array_finPub = explode('T', $params->finPub);
 
@@ -353,7 +410,7 @@ switch($_GET['method']){
 		
 	case 'getDetalle':
 		
-		$rs = mysql_query('SELECT * FROM lugares WHERE lugares_id=' .  $_GET['id']);
+		$rs = mysql_query('SELECT * FROM lugares WHERE lugares_id=' .  mysql_real_escape_string($_GET['id']));
 		$row = mysql_fetch_object($rs);
 		$obj = new stdClass();
 		$obj->long_desc = $row->lugares_long_desc;
@@ -378,3 +435,38 @@ switch($_GET['method']){
 	
 }
 
+
+
+
+// FUNC
+
+function guardar_device($uuid, $platform, $push_token=NULL, $user_id=0){
+
+		
+		$rs = mysql_query('SELECT * FROM devices WHERE devices_uuid="' .  mysql_real_escape_string($uuid) . '" LIMIT 1');
+		$row_device = mysql_fetch_object($rs);
+		
+		$set = ' devices_uuid = "' .  mysql_real_escape_string($uuid) . '", ';
+		$set .= ' devices_platform = "' .  mysql_real_escape_string($platform) . '" ';
+						
+		if($push_token != NULL){
+			$set .= ', devices_puhstoken = "' .  mysql_real_escape_string($push_token) . '"  ';
+		}
+		
+		if($user_id != 0){
+			$set .= ', devices_usuarios_id = "' .  mysql_real_escape_string($user_id) . '"  ';
+		}
+
+		if(mysql_num_rows($rs)>0){
+
+
+				mysql_query  ('UPDATE devices SET '.$set.' WHERE devices_id = "'. $row_device->devices_id .'"');
+				return $row_device->devices_id;
+		}else{	
+
+				mysql_query ('INSERT INTO  devices SET 	'.$set.' ;');
+				return  mysql_insert_id();
+		}
+
+
+}

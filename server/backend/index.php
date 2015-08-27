@@ -27,6 +27,7 @@
 
                     <md-button ng-href="#/pois" class='btnNav'  ng-click="closeMenu()"  >POIS (Point of interest)</md-button>
                     <md-button ng-href="#/home" class='btnNav'  ng-click="closeMenu()"  >Imagenes del Home</md-button>
+                    <md-button ng-href="#/push" class='btnNav'  ng-click="closeMenu()"  >Notificaciones Push</md-button>
 
      </md-sidenav>
 
@@ -77,5 +78,6 @@
 
     <script src="views/pois.js"></script>
     <script src="views/home.js"></script>
+    <script src="views/push.js"></script>
 
   </body>

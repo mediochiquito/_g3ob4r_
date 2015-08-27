@@ -52,12 +52,12 @@
       </div>
  
 
-    <reg    ng-show = 'showRegistro '  show-registro = ' showRegistro '  ng-cloak class='registro'></reg>
+    <reg    ng-show = 'showRegistro '      ng-if=' userId == 0 '  show-registro = ' showRegistro '  ng-cloak class='registro' ></reg>
     <terms  ng-show = ' aceptoTerms == 0 ' ng-if=' aceptoTerms == 0 ' acepto-terms=' aceptoTerms ' ng-cloak></terms>
-    
+     
 
 
-<!---->
+    <!---->
     <el-loading id='loader'></el-loading>
 
 
@@ -66,6 +66,7 @@
     <script src="libs/angular-touch.min.js"></script>
     <script src="libs/angular-aria.min.js"></script>
     <script src="libs/angular-material.min.js"></script>
+    <script src="libs/ng-cordova.js"></script>
 
     <script src="app/app.js"></script>
     
@@ -104,7 +105,7 @@
 
     </script>
 
-    <script src='https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyCML-iD1AIEcu13sIyxignfONd1IhacalU'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyBxU2t0W9wQFwPnGmoXNI-eg95zCy_PiJI'></script>
     
   </body>
 </html>

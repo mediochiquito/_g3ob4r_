@@ -1,8 +1,8 @@
-var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate',  'ngMaterial',  'Utils', 'cordovaGeolocationModule', 'plugins.toast'])
+var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial', 'ngCordova' , 'Utils', 'cordovaGeolocationModule', 'plugins.toast'])
 
-.constant('SERVER', 'http://192.168.0.2/_g3ob4r_/server/')
+//.constant('SERVER', 'http://192.168.0.2/_g3ob4r_/server/')
 //.constant('SERVER', 'http://mateomenestrina.no-ip.org/_g3ob4r_/server/')
-//.constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
+.constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
 
 .constant('SCREEN_SIZE', {ancho: window.innerWidth, alto: window.innerHeight})
 
@@ -11,32 +11,178 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate',  'ngMateria
 })
 
 
+.run(function($http, $cordovaPush, $cordovaDevice, $window, $rootScope, SERVER,navigateService) {
+
+	function enviar_token($token){
+
+		 var _uuid, _platform;
+		 try{
+		 	_uuid = $cordovaDevice.getUUID();
+		 	_platform =  $cordovaDevice.getPlatform();
+		 }catch(e){
+
+		 	_uuid =  'dev';
+		 	_platform =  'browser';
+		 }	
+
+			var 	objSend = {
+				uuid :  _uuid, 
+				platform : _platform,
+				pushtoken : $token, 
+				u: $window.localStorage.getItem('userId')
+			}
+        	var  req = {
+               method: 'POST',
+               url: SERVER + 'ws.php?method=init',
+               headers: {
+                 'Content-Type':  'application/x-www-form-urlencoded;charset=utf-8'
+               },
+               data: objSend
+            }
+
+            $http(req).then(function(data){ }, function(){ });  
+
+       
+
+	}
+
+
+	if($window.localStorage.getItem('local_sync_lugares') == null) $window.localStorage.setItem('local_sync_lugares', 0);	
+	if($window.localStorage.getItem('local_sync_eventos') == null)  $window.localStorage.setItem('local_sync_eventos', 0);	
+	if($window.localStorage.getItem('distancia') == null) $window.localStorage.setItem('distancia', 5);
+	if($window.localStorage.getItem('bares') == null) $window.localStorage.setItem('bares', 1);
+	if($window.localStorage.getItem('restaurantes') == null) $window.localStorage.setItem('restaurantes', 1);
+	if($window.localStorage.getItem('cines') == null) $window.localStorage.setItem('cines', 1);
+	if($window.localStorage.getItem('teatros') == null) $window.localStorage.setItem('teatros', 1);
+	if($window.localStorage.getItem('eventos') == null) $window.localStorage.setItem('eventos', 1);
+	if($window.localStorage.getItem('favoritos') == null) $window.localStorage.setItem('favoritos', 1);
+	if($window.localStorage.getItem('push') == null) $window.localStorage.setItem('push', 1);
+	if($window.localStorage.getItem('aceptoTerms') == null) $window.localStorage.setItem('aceptoTerms', 0);
+	if($window.localStorage.getItem('userId') == null) $window.localStorage.setItem('userId', 0);
+
+	try{
+		
+		if( $cordovaDevice.getPlatform() == 'Android'){
+
+		    var androidConfig = {
+		   		 "senderID": "100997202768"
+		    };
+
+		   	$cordovaPush.register(androidConfig).then(function(result) {
+		      // Success
+		    }, function(err) {
+		      // Error
+		    })
+		   
+		    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
+		     
+		      switch(notification.event) {
+		        
+		        case 'registered':
+
+		          if (notification.regid.length > 0 ) {
+		           	 enviar_token(notification.regid);
+		          }
+
+		          break;
+
+		        case 'message':
+		          
+		           // this is the actual push notification. its format depends on the data model from the push server
+		           //alert('message = ' + notification.message + ' msgCount = ' + notification.msgcnt);
+		        	
+		          if(notification.payload.idPoi!=0) {
+		          	$rootScope.navegarAPoi = notification.payload.idPoi;
+		          	try{
+		          		var item={ id: notification.payload.idPoi };
+						navigateService.go('detalle', item);
+		          	}catch(e){}
+		          	
+		          }
+		          break;
+
+		        case 'error':
+		         // alert('GCM error = ' + notification.msg);
+		          break;
+
+		        default:
+		          //alert('An unknown GCM event has occurred');
+		          break;
+		      }
+		    });
+
+		}
+
+	}catch(e){
+		
+		enviar_token('browsertoken')
+		
+	}
+
+	/*  var iosConfig = {
+    "badge": true,
+    "sound": true,
+    "alert": true,
+   };
+
+    $cordovaPush.register(iosConfig).then(function(deviceToken) {
+      // Success -- send deviceToken to server, and store for future use
+      console.log("deviceToken: " + deviceToken)
+      $http.post("http://server.co/", {user: "Bob", tokenID: deviceToken})
+    }, function(err) {
+      alert("Registration error: " + err)
+    });
+
+    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
+
+      if (notification.alert) {
+        navigator.notification.alert(notification.alert);
+      }
+
+      if (notification.sound) {
+        var snd = new Media(event.sound);
+        snd.play();
+      }
+
+      if (notification.badge) {
+        $cordovaPush.setBadgeNumber(notification.badge).then(function(result) {
+          // Success!
+        }, function(err) {
+          // An error occurred. Show a message to the user
+        });
+      }
+
+    });
+    // WARNING! dangerous to unregister (results in loss of tokenID)
+    $cordovaPush.unregister(options).then(function(result) {
+      // Success!
+    }, function(err) {
+      // Error
+    });
+	*/
+
+  }, false);
+
+
+
 
 geobarApp.controller("mainController",  function($document, $rootScope, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
 	
 	$scope.aceptoTerms = -1;
 	$scope.showRegistro = false;
 	$scope.rootScope = $rootScope
-	$scope.alto_screen = window.innerHeight;
-
-	
-	
-	$scope.ultima_ubilcacion  = cordovaGeolocationService.getUltimaPosicion()
-//	console.log(navigator.userAgent)
+	$scope.alto_screen = $window.innerHeight;
+	$scope.ultima_ubilcacion  = cordovaGeolocationService.getUltimaPosicion();
 
 	$scope.init = function (){
 
 		$rootScope.position = null;
-
 		cordovaGeolocationService.watchPosition();
-
-		if(window.localStorage.getItem('local_sync_lugares') == null) window.localStorage.setItem('local_sync_lugares', 0);	
-		if(window.localStorage.getItem('local_sync_eventos') == null)  window.localStorage.setItem('local_sync_eventos', 0);	
 
 		$http.get(SERVER+'sync.php?ac=' + new Date().getTime()).success(function(json_sync, status, headers, config) {
 			
-			var local_sync_lugares = window.localStorage.getItem('local_sync_lugares');	
-			var local_sync_eventos = window.localStorage.getItem('local_sync_eventos');	
+			var local_sync_lugares = $window.localStorage.getItem('local_sync_lugares');	
+			var local_sync_eventos = $window.localStorage.getItem('local_sync_eventos');	
 
 			var debe_sincronzar = '';
 			if(json_sync.lugares != local_sync_lugares) debe_sincronzar += 'lugares'
@@ -49,13 +195,13 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 				.success(function(data, status, headers, config) {
 
 					if(typeof data.lugares != 'undefined'){
-						window.localStorage.setItem('json_lugares', JSON.stringify(data.lugares));
-						window.localStorage.setItem('local_sync_lugares', json_sync.lugares)
+						$window.localStorage.setItem('json_lugares', JSON.stringify(data.lugares));
+						$window.localStorage.setItem('local_sync_lugares', json_sync.lugares)
 					}
 
 					if(typeof data.eventos != 'undefined'){
-						window.localStorage.setItem('json_eventos', JSON.stringify(data.eventos));
-						window.localStorage.setItem('local_sync_eventos', json_sync.eventos)
+						$window.localStorage.setItem('json_eventos', JSON.stringify(data.eventos));
+						$window.localStorage.setItem('local_sync_eventos', json_sync.eventos)
 					}
 
 					// actualizo ok
@@ -67,11 +213,10 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 				});
 
 			} else  iniciar_app();
-				
+			
 		}).error(function(){
 			iniciar_app()
 		})
-
 	}
 
 	function iniciar_app(){	
@@ -86,22 +231,33 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 		arService.set()
 		Loading.ocultar()
 
-		
+
+		var callbak_cuando_init = mostrar_home;
+		if(!angular.isUndefined($rootScope.navegarAPoi)){
+			callbak_cuando_init = goPoi;
+		}	
 	       
-		   if($scope.showRegistro){
+		if($scope.showRegistro){
 
-		   		regService.setCallbacks(mostrar_home, mostrar_home)
-
-		   }else{
+		   		regService.setCallbacks(callbak_cuando_init, callbak_cuando_init)
+		   		
+		}else{
 		   	
-		   		mostrar_home();
+		   		callbak_cuando_init();
 
-		   }
-	       
+		}
+
 	 
        
 		$document.on('touchmove', hack)
 	
+	}
+
+	function goPoi(){
+		
+		var item={ id: $rootScope.navegarAPoi };
+                       
+		navigateService.go('detalle', item);
 	}
 
 	function mostrar_home(){
@@ -115,16 +271,7 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 		$document.off('touchmove', hack)
 	}
 
-	if(window.localStorage.getItem('distancia') == null) window.localStorage.setItem('distancia', 5);
-	if(window.localStorage.getItem('bares') == null) window.localStorage.setItem('bares', 1);
-	if(window.localStorage.getItem('restaurantes') == null) window.localStorage.setItem('restaurantes', 1);
-	if(window.localStorage.getItem('cines') == null) window.localStorage.setItem('cines', 1);
-	if(window.localStorage.getItem('teatros') == null) window.localStorage.setItem('teatros', 1);
-	if(window.localStorage.getItem('eventos') == null) window.localStorage.setItem('eventos', 1);
-	if(window.localStorage.getItem('favoritos') == null) window.localStorage.setItem('favoritos', 1);
-	if(window.localStorage.getItem('push') == null) window.localStorage.setItem('push', 1);
-	if(window.localStorage.getItem('aceptoTerms') == null) window.localStorage.setItem('aceptoTerms', 0);
-	if(window.localStorage.getItem('userId') == null) window.localStorage.setItem('userId', 0);
+	
 
 
 	$scope.aceptoTerms = $window.localStorage.getItem('aceptoTerms')

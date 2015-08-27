@@ -1,4 +1,4 @@
-geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regService) {
+geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regService, $cordovaDevice,  $cordovaFacebook) {
   
 
   return {
@@ -10,10 +10,9 @@ geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regS
     
           showRegistro: '='
 
-     },
+    },
       
     link: function (scope, elem, attrs){
-
 
       regService.set(scope)
 
@@ -24,8 +23,77 @@ geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regS
       scope.reg.sexo = 'female'
       scope.sexoF = true
       
+      scope.fb = function (){
 
 
+       $cordovaFacebook.login(["public_profile", "email", "user_friends"])
+
+        .then(function(success) {
+            Loading.mostrar();
+            $cordovaFacebook.api("me?fields=id,first_name,last_name,email,gender", ["public_profile"])
+            .then(function(data) {
+            
+
+           var objSend = {
+
+                  uid : data.id, 
+                  nombre: data.first_name, 
+                  apellido: data.last_name, 
+                  email: data.email,
+                  sexo: data.gender
+
+              }
+              /*  var objSend = {
+                  uid :11212, 
+                  nombre: 'data.first_name', 
+                  apellido: 'data.last_name', 
+                  email: 'data.email',
+                  sexo: 'male',
+              }*/
+               objSend.uuid = 'dev';
+               objSend.platform = 'browser';
+               try{
+                objSend.uuid =  $cordovaDevice.getUUID()
+                objSend.platform = $cordovaDevice.getPlatform()
+               }catch(e){}
+
+            var  req = {
+                 method: 'POST',
+                 url: SERVER + 'ws.php?method=saveUser',
+                 headers: {
+                   'Content-Type':  'application/x-www-form-urlencoded;charset=utf-8'
+                 },
+                 data: objSend
+            }   
+
+            $http(req).then( 
+
+                function(data){
+                    
+                    window.localStorage.setItem('userId',  parseInt(data.data));
+                    scope.userId = parseInt(data.data);
+                    ToastService.show('Gracias por registrarte', 'long', 'center');   
+                    Loading.ocultar()
+                    scope.showRegistro = false;
+                    regService.callback_ok()
+
+                }, function(){
+                    Loading.ocultar()
+                  
+                }
+            );
+                 
+            }, function (error) {
+               Loading.ocultar();
+            });
+
+        }, function (error) {
+         
+        });
+
+
+
+      }
       scope.mostrar = function(){
 
         scope.showRegistro = true
@@ -68,15 +136,13 @@ geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regS
           scope.errorEmail = false;
           scope.errorCi = false;
           scope.errorNac = false;
-       
+         
           if(scope.reg.nombre == '' || angular.isUndefined(scope.reg.nombre))  scope.errorNombre = true;
           if(scope.reg.apellido == '' || angular.isUndefined(scope.reg.apellido))  scope.errorApellido = true;
           if(scope.reg.email == '' || angular.isUndefined(scope.reg.email) || !validateEmail(scope.reg.email))  scope.errorEmail = true;
           if(scope.reg.ci == '' || angular.isUndefined(scope.reg.ci) || !validate_ci(scope.reg.ci))  scope.errorCi = true;
 
           if( angular.isUndefined(scope.reg.nac))  scope.errorNac = true;
-
-
 
           if(getAge(scope.reg.nac)<18){
 
@@ -92,9 +158,11 @@ geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regS
           scope.reg.fehca_nac = scope.reg.nac.getFullYear()  + '-' + (scope.reg.nac.getMonth()+1) + '-' + scope.reg.nac.getDate()
 
           scope.reg.uuid = 'dev';
+          scope.reg.platform = 'browser';
 
           try{
-            scope.reg.uuid =  device.uuid
+            scope.reg.uuid =  $cordovaDevice.getUUID()
+            scope.reg.platform = $cordovaDevice.getPlatform()
           }catch(e){}
 
           var  req = {
@@ -105,8 +173,11 @@ geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regS
                },
                data: scope.reg
           }   
-           Loading.mostrar()
+          
+          Loading.mostrar();
+
           $http(req).then( 
+
               function(data){
                   
                   window.localStorage.setItem('userId',  parseInt(data.data));

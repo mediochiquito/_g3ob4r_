@@ -15,6 +15,10 @@ var app = angular.module('adminApp', ['ngAnimate', 'ngMaterial', 'ngRoute', 'ngF
         templateUrl: 'views/pois.html',
         controller: 'PoisCtrl'
       }).
+      when('/push', {
+        templateUrl: 'views/push.html',
+        controller: 'PushCtrl'
+      }).
       when('/pois/:poiID', {
         templateUrl: 'views/pois.html',
         controller: 'PoisCtrl'

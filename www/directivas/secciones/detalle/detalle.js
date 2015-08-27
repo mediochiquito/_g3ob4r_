@@ -1,4 +1,4 @@
-geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER, $window) {
+geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER, $window, $timeout) {
   
   return {
   	
@@ -10,7 +10,7 @@ geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER,
 		
     	var _callback
     	$scope.navigateService = navigateService;
-
+    
     	$scope.goMapa = function (){
     		
     		navigateService.go('mapa', {type:'item', item: $scope.item});
@@ -34,8 +34,22 @@ geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER,
 			_callback = $callback;
 		
 			$scope.item = $obj;
-			$scope.url_img = SERVER + 'img/pois/';
+			//$scope.url_img = SERVER + 'img/pois/';
 			Loading.mostrar();
+
+
+
+			if(!angular.isUndefined($scope.item.tipo)){
+
+				$scope.url_img = 'img/default/';
+				$scope.fotos_detalle = [$scope.item.tipo + '.png'];
+				
+			}else{
+				$scope.fotos_detalle = [];
+
+			}
+			
+
 
 			$http.get(SERVER+'ws.php?method=getDetalle&id=' + $scope.item.id).
 
@@ -44,8 +58,12 @@ geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER,
 					$scope.long_desc = '';	
 					
 					$scope.long_desc = data.long_desc;
-					$scope.fotos_detalle = data.fotos;
-
+					
+					$timeout(function (){
+						$scope.url_img = SERVER + 'img/pois/';
+						$scope.fotos_detalle =  data.fotos;
+					}, 500)
+					//
 					$scope.item = data
 					Loading.ocultar();
 					_callback()
