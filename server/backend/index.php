@@ -10,16 +10,18 @@
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
     <link rel="stylesheet" href="css/app.css">
-  
+    <link rel="stylesheet" href="css/material.css">
+    <link rel="stylesheet" href="css/dataTable.css">
+
   </head>
 
   <body layout="row" >
 
   <md-content layout="row" ng-controller='AppCtrl' class='viewport'>
 
-     <md-sidenav class="site-sidenav md-sidenav-left nav"
-              md-component-id="left"
-              md-is-locked-open="$mdMedia('gt-sm')">
+     <md-sidenav ng-cloak  class="site-sidenav md-sidenav-left nav"
+                 md-component-id="left"
+                 md-is-locked-open="$mdMedia('gt-sm')">
 
                     <div>
                          <img src='img/logo.png' />
@@ -28,6 +30,7 @@
                     <md-button ng-href="#/pois" class='btnNav'  ng-click="closeMenu()"  >POIS (Point of interest)</md-button>
                     <md-button ng-href="#/home" class='btnNav'  ng-click="closeMenu()"  >Imagenes del Home</md-button>
                     <md-button ng-href="#/push" class='btnNav'  ng-click="closeMenu()"  >Notificaciones Push</md-button>
+                    <md-button ng-href="#/usuarios" class='btnNav'  ng-click="closeMenu()" >Lista de usuarios</md-button>
 
      </md-sidenav>
 
@@ -69,6 +72,7 @@
     <script src="//code.angularjs.org/1.4.3/angular-animate.min.js"></script>
     <script src="//code.angularjs.org/1.4.3/angular-aria.min.js"></script>
     <script src="//code.angularjs.org/1.4.3/angular-route.min.js"></script>
+    <script src="libs/dataTable.helpers.min.js"></script>
 
     <!-- Angular Material Javascript now available via Google CDN; version 0.10 used here -->
     <script src="//ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
@@ -79,5 +83,6 @@
     <script src="views/pois.js"></script>
     <script src="views/home.js"></script>
     <script src="views/push.js"></script>
+    <script src="views/usuarios.js"></script>
 
   </body>

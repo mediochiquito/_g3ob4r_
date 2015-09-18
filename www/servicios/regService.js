@@ -9,6 +9,7 @@ geobarApp.factory('regService', function(){
 		set: function($scope) {
 
 			scope = $scope
+			
 
         },
         setCallbacks:  function($callback_ok, $callback_cancel){

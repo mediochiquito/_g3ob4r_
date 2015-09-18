@@ -21,13 +21,65 @@ switch($_GET['method']){
   		
   	break;
 
+	case 'setFav':
+
+
+		$rs = mysql_query('SELECT favoritos_id FROM favoritos WHERE 
+										 favoritos_lugares_id = ' . mysql_real_escape_string($params->poiId) . '
+										 AND 
+										 favoritos_ususarios_id  = ' . mysql_real_escape_string($params->userId) . '
+										 LIMIT 1;');
+		$row = mysql_fetch_object($rs);
+
+		if(mysql_num_rows($rs)==1){
+		
+			// quito el favorito
+			mysql_query('DELETE FROM favoritos WHERE 
+										 favoritos_id = ' .$row->favoritos_id . ' LIMIT 1;');
+
+			die('0');
+
+		}else{
+
+			mysql_query('INSERT IGNORE INTO favoritos SET  
+										 favoritos_lugares_id = ' . mysql_real_escape_string($params->poiId) . '
+										 ,
+										 favoritos_ususarios_id  = ' . mysql_real_escape_string($params->userId) . '
+										 ');
+			die('1');
+		}
+
+		break;
+	
+	case 'getAllUsuarios':
+
+
+		$rs = mysql_query('SELECT * FROM usuarios  ORDER BY usuarios_id DESC');		
+		while($row = mysql_fetch_object($rs)){
+         
+            $obj[] = $row;
+        }
+
+        echo json_encode($obj);
+        exit;
+		break;
 
   	case 'getAllEnvios':
 
 
   		$rs = mysql_query('SELECT * FROM envios  ORDER BY envios_id DESC');		
 		while($row = mysql_fetch_object($rs)){
+           
+           	$rs_total = mysql_query('SELECT count(salida_id) as total FROM salida  WHERE salida_envios_id = ' . $row->envios_id);		 	
+           	$row_total = mysql_fetch_object($rs_total);
+            $row->total_envios = $row_total->total;
+
+            $rs_enviado = mysql_query('SELECT count(salida_id) as total FROM salida  WHERE salida_enviado=1 AND salida_envios_id = ' . $row->envios_id);		 	
+           	$row_enviado = mysql_fetch_object($rs_enviado);
+            $row->total_enviados = $row_enviado->total;
+
             $obj[] = $row;
+            
         }
 
         echo json_encode($obj);
@@ -37,15 +89,15 @@ switch($_GET['method']){
   	case 'saveEnvio':
 
   		if(mysql_query('INSERT INTO  envios SET 	
-									envios_titulo 	  = "' . mysql_real_escape_string($params->envios_titulo)  . '" ,
-									envios_desc 	  = "' . mysql_real_escape_string($params->envios_desc)  . '" ,
-									envios_poi_id     = "' . mysql_real_escape_string($params->envios_poi_id)  . '" 
+									 envios_titulo 	  = "' . mysql_real_escape_string($params->envios_titulo)  . '" ,
+									 envios_desc 	  = "' . mysql_real_escape_string($params->envios_desc)  . '" ,
+									 envios_poi_id     = "' . mysql_real_escape_string($params->envios_poi_id)  . '" 
 								')){
 
 			$id_envio =  mysql_insert_id();
 
 
-			$rs_devices_a_enviar = mysql_query("SELECT MAX(devices_id) as devices_id FROM `devices`  WHERE `devices_usuarios_id`>0 GROUP BY devices_uuid");
+			$rs_devices_a_enviar = mysql_query("SELECT MAX(devices_id) as devices_id FROM `devices`   WHERE `devices_usuarios_id`>0  AND devices_puhstoken !='' GROUP BY devices_uuid");
 			while($row_a_enviar = mysql_fetch_object($rs_devices_a_enviar)){
 	            mysql_query("INSERT INTO salida SET 
 
@@ -410,9 +462,25 @@ switch($_GET['method']){
 		
 	case 'getDetalle':
 		
+		$rs_favs = mysql_query('SELECT count(favoritos_id) as total FROM favoritos WHERE 
+									  favoritos_lugares_id = ' . mysql_real_escape_string($_GET['id']) . ';');
+		$row_favs = mysql_fetch_object($rs_favs);
+
+		$rs_mi_fav = mysql_query('SELECT favoritos_id FROM favoritos WHERE 
+										 favoritos_lugares_id = ' . mysql_real_escape_string($_GET['id']) . '
+										 AND 
+										 favoritos_ususarios_id  = ' . mysql_real_escape_string($_GET['uid']) . '
+										 LIMIT 1;');
+		
+
+
 		$rs = mysql_query('SELECT * FROM lugares WHERE lugares_id=' .  mysql_real_escape_string($_GET['id']));
 		$row = mysql_fetch_object($rs);
 		$obj = new stdClass();
+
+		$obj->favs = $row_favs->total;
+		$obj->mi_fav = mysql_num_rows($rs_mi_fav);
+
 		$obj->long_desc = $row->lugares_long_desc;
 		$obj->fotos = json_decode($row->lugares_imgs);
 

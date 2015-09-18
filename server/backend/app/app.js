@@ -1,5 +1,5 @@
 
-var app = angular.module('adminApp', ['ngAnimate', 'ngMaterial', 'ngRoute', 'ngFileUpload'])
+var app = angular.module('adminApp', ['ngAnimate', 'ngMaterial', 'ngRoute', 'ngFileUpload', 'data-table'])
 
 .config(['$routeProvider', '$mdThemingProvider',
  
@@ -18,6 +18,10 @@ var app = angular.module('adminApp', ['ngAnimate', 'ngMaterial', 'ngRoute', 'ngF
       when('/push', {
         templateUrl: 'views/push.html',
         controller: 'PushCtrl'
+      }).
+      when('/usuarios', {
+        templateUrl: 'views/usuarios.html',
+        controller: 'UsuariosCtrl'
       }).
       when('/pois/:poiID', {
         templateUrl: 'views/pois.html',

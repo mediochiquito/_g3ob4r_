@@ -662,6 +662,35 @@ body{
     height: 33px;
 }
 
+#detalle-count-favs{
+    
+height: 20px;
+    
+line-height: 20px;
+    
+font-size: 10px;
+    
+margin-bottom: 10px;
+    
+/* float: left; */
+}
+#detalle-count-favs > img{
+    
+width: 20px;
+    
+float: left;
+}
+
+#detalle-count-favs > div{
+    
+/* width: 20px; */
+    
+float: left;
+    
+margin-left: 6px;
+    
+margin-top: 2px;
+}
 
 #detalle-btn_info{
     position: relative;

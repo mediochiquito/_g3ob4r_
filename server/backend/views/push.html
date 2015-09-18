@@ -5,15 +5,15 @@
 		 		<md-list>
 			 		<md-list-item class="md-actions" ng-repeat="item in array_envios"  layout="row" flex>
 			 		      		<div flex><b>{{item.envios_titulo}}</b><br />{{item.envios_desc}}</div>
-						        <md-button ng-click='lanzar(item.envios_id, $event)'>LANZAR ENVIO</md-button>
+			 		      		<div class='push_enviadas' ng-hide=' item.total_enviados == null'>Enviados {{item.total_enviados}} de {{item.total_envios}}</div>
+						        <md-button ng-click='lanzar(item.envios_id, $event)' ng-disabled='item.total_enviados != null && item.total_enviados == item.total_envios'>LANZAR ENVIO</md-button>
 					       		<md-divider ></md-divider>
 					</md-list-item>
-
 				</md-list>
-
+				
 		 </md-content>
 
-		 <md-button ng-click="add($event)"  class="md-fab md-button md-default-theme btnAdd"  target="_blank">
+		 <md-button ng-click="add($event)"  class="md-fab md-button md-default-theme btnAdd "  target="_blank">
 				<md-icon class='material-icons' aria-hidden="true">add</md-icon>
 		 </md-button>    
 

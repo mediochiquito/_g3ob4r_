@@ -14,6 +14,10 @@ md-progress-circular{
 	margin-left: -20px;
 	margin-top: -20px;
 }
+.push_enviadas{
+	color: #4A1696;
+	font-size: 12px;
+}
 .formAncho{
     width: 40%;
     margin-right: 10%;
@@ -103,7 +107,13 @@ md-toolbar {
 	width: 100%;
 }
 
+ .dt{
+        width:100%;	
+        height: 100%;
+ box-sizing: border-box;
+ font-size:12px;
 
+      }
 
 .una-imagen{
     width: 50%;

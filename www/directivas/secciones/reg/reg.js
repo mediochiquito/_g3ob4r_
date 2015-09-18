@@ -29,12 +29,12 @@ geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regS
        $cordovaFacebook.login(["public_profile", "email", "user_friends"])
 
         .then(function(success) {
+
             Loading.mostrar();
             $cordovaFacebook.api("me?fields=id,first_name,last_name,email,gender", ["public_profile"])
             .then(function(data) {
-            
 
-           var objSend = {
+              var objSend = {
 
                   uid : data.id, 
                   nombre: data.first_name, 
@@ -43,13 +43,7 @@ geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regS
                   sexo: data.gender
 
               }
-              /*  var objSend = {
-                  uid :11212, 
-                  nombre: 'data.first_name', 
-                  apellido: 'data.last_name', 
-                  email: 'data.email',
-                  sexo: 'male',
-              }*/
+       
                objSend.uuid = 'dev';
                objSend.platform = 'browser';
                try{

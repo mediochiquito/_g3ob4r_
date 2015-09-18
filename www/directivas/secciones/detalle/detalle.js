@@ -1,4 +1,4 @@
-geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER, $window, $timeout) {
+geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER, $window, $timeout, regService) {
   
   return {
   	
@@ -22,6 +22,70 @@ geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER,
     		$window.open('tel://' + $scope.item.tel);
     		
     	}
+
+    	$scope.goFav =  function (){
+
+
+				var  userId= $window.localStorage.getItem('userId')
+			
+				if(userId==0){
+					regService.mostrar(marcar_como_favorito, function (){})
+				}else{
+
+					marcar_como_favorito()
+
+				}
+
+
+    		
+
+    	}
+
+    	function marcar_como_favorito(){
+
+
+    		var  userId= $window.localStorage.getItem('userId')
+
+            var objSend = {
+                userId : userId, 
+                poiId: $scope.item.id
+            }
+       
+            var  req = {
+                 method: 'POST',
+                 url: SERVER + 'ws.php?method=setFav',
+                 headers: {
+                   'Content-Type':  'application/x-www-form-urlencoded;charset=utf-8'
+                 },
+                 data: objSend
+            }   
+            
+            Loading.mostrar()
+
+            $http(req).then( 
+
+                function(data){
+          			
+                	$scope.item.mi_fav = data.data
+
+                	if(data.data == 0) $scope.item.favs = parseInt($scope.item.favs)  - 1
+                	if(data.data == 1) $scope.item.favs = parseInt($scope.item.favs)  + 1
+                	
+                	Loading.ocultar()
+
+                }, function(){
+                    
+                    Loading.ocultar()
+                  
+                }
+            )
+
+
+
+
+
+    	}
+
 
     	$scope.goDir =  function (){
 
@@ -49,9 +113,9 @@ geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER,
 
 			}
 			
+			var  userId= $window.localStorage.getItem('userId')
 
-
-			$http.get(SERVER+'ws.php?method=getDetalle&id=' + $scope.item.id).
+			$http.get(SERVER+'ws.php?method=getDetalle&id=' + $scope.item.id + '&uid=' + userId).
 
 			  success(function(data, status, headers, config) {
 					

@@ -1,8 +1,8 @@
 var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial', 'ngCordova' , 'Utils', 'cordovaGeolocationModule', 'plugins.toast'])
 
-//.constant('SERVER', 'http://192.168.0.2/_g3ob4r_/server/')
+.constant('SERVER', 'http://192.168.0.2/_g3ob4r_/server/')
 //.constant('SERVER', 'http://mateomenestrina.no-ip.org/_g3ob4r_/server/')
-.constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
+//.constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
 
 .constant('SCREEN_SIZE', {ancho: window.innerWidth, alto: window.innerHeight})
 
@@ -15,15 +15,15 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 	function enviar_token($token){
 
-		 var _uuid, _platform;
-		 try{
-		 	_uuid = $cordovaDevice.getUUID();
-		 	_platform =  $cordovaDevice.getPlatform();
-		 }catch(e){
+			 var _uuid, _platform;
+			 try{
+			 	_uuid = $cordovaDevice.getUUID();
+			 	_platform =  $cordovaDevice.getPlatform();
+			 }catch(e){
 
-		 	_uuid =  'dev';
-		 	_platform =  'browser';
-		 }	
+			 	_uuid =  'dev';
+			 	_platform =  'browser';
+			 }	
 
 			var 	objSend = {
 				uuid :  _uuid, 
@@ -87,10 +87,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 		          break;
 
 		        case 'message':
-		          
-		           // this is the actual push notification. its format depends on the data model from the push server
-		           //alert('message = ' + notification.message + ' msgCount = ' + notification.msgcnt);
-		        	
+		
 		          if(notification.payload.idPoi!=0) {
 		          	$rootScope.navegarAPoi = notification.payload.idPoi;
 		          	try{
@@ -102,16 +99,24 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 		          break;
 
 		        case 'error':
-		         // alert('GCM error = ' + notification.msg);
+		        
 		          break;
 
 		        default:
-		          //alert('An unknown GCM event has occurred');
+		         
 		          break;
 		      }
 		    });
 
 		}
+
+
+
+
+
+
+
+
 
 	}catch(e){
 		
@@ -231,7 +236,6 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 		arService.set()
 		Loading.ocultar()
 
-
 		var callbak_cuando_init = mostrar_home;
 		if(!angular.isUndefined($rootScope.navegarAPoi)){
 			callbak_cuando_init = goPoi;
@@ -247,8 +251,6 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 
 		}
 
-	 
-       
 		$document.on('touchmove', hack)
 	
 	}
@@ -256,33 +258,23 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 	function goPoi(){
 		
 		var item={ id: $rootScope.navegarAPoi };
-                       
 		navigateService.go('detalle', item);
 	}
 
 	function mostrar_home(){
-		
-	 	navigateService.go('home')
-	  
+	 	navigateService.go('home');
 	}
 
 	function hack(){
-
 		$document.off('touchmove', hack)
 	}
-
-	
-
 
 	$scope.aceptoTerms = $window.localStorage.getItem('aceptoTerms')
 	$scope.userId = $window.localStorage.getItem('userId')
 
 	if($scope.userId==0){
-
 		$scope.showRegistro = true;
-
 	}
-
 
 });	
 
@@ -291,7 +283,6 @@ geobarApp.controller("menuCtrl", function($scope, navigateService, regService){
 	
 	$scope.navigateService = navigateService;
 	
-
 })	
 
 
