@@ -96,17 +96,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.phonegap.plugins.facebookconnect": {
-        "source": {
-            "type": "local",
-            "path": "C:\\developer\\plugins-cordova\\telerik-facebook-plugin-master"
-        },
-        "is_top_level": true,
-        "variables": {
-            "APP_ID": "398706416993551",
-            "APP_NAME": "GeoBar"
-        }
-    },
     "com.phonegap.plugins.PushPlugin": {
         "source": {
             "type": "git",
@@ -148,5 +137,16 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "com.phonegap.plugins.facebookconnect": {
+        "source": {
+            "type": "local",
+            "path": "/Users/mateo/developer/pluginsCordova/telerik/Facebook-master"
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_ID": "398706416993551",
+            "APP_NAME": "GeoBar"
+        }
     }
 }
