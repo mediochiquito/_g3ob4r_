@@ -1,4 +1,4 @@
-geobarApp.directive('lista', function($window, $log, navigateService, SCREEN_SIZE,$filter, $timeout, lugaresService, eventosService) {
+geobarApp.directive('lista', function($window, $log, favService, navigateService, SCREEN_SIZE,$filter, $timeout, lugaresService, eventosService) {
  
  return {
     restrict: 'E',
@@ -9,7 +9,13 @@ geobarApp.directive('lista', function($window, $log, navigateService, SCREEN_SIZ
         $scope.filtro = ''
 		    $scope.screen_alto = window.innerHeight
         $scope.en_pagina = 10
+        $scope.favService = favService;
 
+        $scope.$watch('favService.all', function(oldVal, newVal, scope) {
+          $scope.favs = favService.getAll();
+        })
+       
+        //console.log($scope.allFavs);
         // $scope.type = $obj
         var timer;
         var en_lista;
@@ -111,15 +117,19 @@ geobarApp.directive('lista', function($window, $log, navigateService, SCREEN_SIZ
             index:'@', 
             enscroll: '=',
             altoholder: '=',
-            siempreVisible: '@'
+            siempreVisible: '@',
+            favs:'='
      },
 
     templateUrl: 'directivas/secciones/lista/itemLista.html',
     link:function ($scope, $elem, $attrs){
       
-        $scope.img_url = SERVER + 'img/pois/';
+      $scope.img_url = SERVER + 'pic/?file=pois/'
 
-      
+      $scope.getFav = function($fav){
+         if(angular.isUndefined($fav)) return 0;
+          return $fav;
+      }
 
     }
 

@@ -37,7 +37,13 @@ switch($_GET['method']){
 			mysql_query('DELETE FROM favoritos WHERE 
 										 favoritos_id = ' .$row->favoritos_id . ' LIMIT 1;');
 
+			guardar_fav_static();
+			//
+
 			die('0');
+
+
+
 
 		}else{
 
@@ -46,6 +52,7 @@ switch($_GET['method']){
 										 ,
 										 favoritos_ususarios_id  = ' . mysql_real_escape_string($params->userId) . '
 										 ');
+			guardar_fav_static();
 			die('1');
 		}
 
@@ -190,7 +197,6 @@ switch($_GET['method']){
   	case 'delPoi':
 
 		mysql_query ('UPDATE lugares SET lugares_eliminado=1 WHERE lugares_id = "'. mysql_real_escape_string($params->id) .'"');
-
 		
 		$sync = json_decode(file_get_contents('sync.txt'));
 		$sync_eventos = $sync->eventos*1;
@@ -268,7 +274,9 @@ switch($_GET['method']){
 								lugares_alt 	  = "' . mysql_real_escape_string($params->alt)  . '" ,
 								lugares_imgs 	  = "' . mysql_real_escape_string(json_encode($params->imgs))  . '"   ,
 								lugares_thumb 	  = "' . mysql_real_escape_string($params->thumb)  . '"   ,
-								lugares_activo 	  = "' . mysql_real_escape_string($params->activo)  . '"   
+								lugares_activo 	  = "' . mysql_real_escape_string($params->activo)  . '"   ,
+								lugares_fb 	  	  = "' . mysql_real_escape_string($params->fb)  . '"   ,
+								lugares_site 	  = "' . mysql_real_escape_string($params->site)  . '"   
 
 								WHERE lugares_id = "'. $params->id .'" 
 									
@@ -290,7 +298,9 @@ switch($_GET['method']){
 								lugares_alt 	  = "' . mysql_real_escape_string($params->alt)  . '" ,
 								lugares_imgs 	  = "' . mysql_real_escape_string(json_encode($params->imgs))  . '"  ,
 								lugares_thumb 	  = "' . mysql_real_escape_string($params->thumb)  . '"   ,
-								lugares_activo 	  = "' . mysql_real_escape_string($params->activo)  . '"   
+								lugares_activo 	  = "' . mysql_real_escape_string($params->activo)  . '"  ,
+								lugares_fb 	  	  = "' . mysql_real_escape_string($params->fb)  . '"   ,
+								lugares_site 	  = "' . mysql_real_escape_string($params->site)  . '"     
 
 								');
 
@@ -364,6 +374,8 @@ switch($_GET['method']){
 			$o->thumb = $row->lugares_thumb;
 			$o->eliminado = $row->lugares_eliminado;
 			$o->activo = $row->lugares_activo;
+			$o->fb = $row->lugares_fb;
+			$o->site = $row->lugares_site;
 			$o->imgs = json_decode($row->lugares_imgs);
 		
 			$array[] = $o;
@@ -449,7 +461,6 @@ switch($_GET['method']){
 
 				
 			}
-			
 
 		}
 
@@ -495,6 +506,9 @@ switch($_GET['method']){
 		$obj->lon = $row->lugares_lng;
 		$obj->alt = $row->lugares_alt;
 
+		$obj->fb = 	 $row->lugares_fb;
+		$obj->site = $row->lugares_site;
+
 		echo json_encode($obj);
 		break;
 
@@ -503,6 +517,18 @@ switch($_GET['method']){
 	
 }
 
+
+
+function guardar_fav_static(){
+
+	$rs =  mysql_query('SELECT favoritos_lugares_id, count(*) as total FROM `favoritos` GROUP BY favoritos_lugares_id');
+	$array_favs = array();
+	while($row = mysql_fetch_object($rs)){
+		$array_favs['p_' . $row->favoritos_lugares_id] = $row->total;
+	}
+	file_put_contents('favs', json_encode($array_favs));
+
+}
 
 
 

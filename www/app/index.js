@@ -1,4 +1,4 @@
-window.onerror = function(message, file, line) {
+/*window.onerror = function(message, file, line) {
   var error = [];
   error.push('---[error]');
   if (typeof message == "object") {
@@ -12,7 +12,7 @@ window.onerror = function(message, file, line) {
   }
   alert(error.join("\n"));
 };
-
+*/
 var app = {
 
     initialize: function() {

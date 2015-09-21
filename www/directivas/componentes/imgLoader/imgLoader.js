@@ -8,7 +8,7 @@ geobarApp.directive('imgLoader', function(Loading) {
     /*  server: '=',
       default: '=', */
       imgurl: '=',
-      hashfile: '=',
+      hashfile: '@',
       itemid: '=',
       itemtipo: '='
 

@@ -392,8 +392,10 @@ body{
 
 .itemLista-name{
      font-family: 'robotobold';
-     font-size: 15px;   text-transform: uppercase; 
-     margin-top: 10px;
+     font-size: 14px;
+     text-transform: uppercase;
+     margin-top: 13px;
+     line-height: 20px;
 }
 
 .itemLista-tel{
@@ -412,19 +414,15 @@ body{
 }
   .itemLista-distancia{
  font-family: 'robotolight';
-     
  font-size: 9px;
-     
  color: #2F2E2E;
-
-
-  
  padding-left: 0 !important;
  position: absolute !important;
  top: 4px;
  width: 59px !important;
  right: 6px;
  text-align: right;
+ padding-right: 0 !important;
 }
 
 
@@ -441,10 +439,13 @@ body{
     position: relative;
     width: 100%;
     box-sizing: border-box;
-
     padding-left: 145px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
 }
-.item-lista > div  img{
+.item-lista > div > img-loader > img{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -502,12 +503,11 @@ body{
     top: 0px;
     left: 0px;
     color: #fff;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
     z-index: 999999;
 }
 #loader >div{
-    background-color: rgba(0,0,0,.9);
-
+    /* background-color: rgba(0,0,0,.9); */
     position: absolute;
     width: 100px;
     height: 100px;
@@ -704,6 +704,45 @@ margin-top: 2px;
     margin: 14px 0px 0px 4px;
     height: 31px;
 }
+
+#detalle-btn_fb{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+#detalle-btn_fb > img{
+    position: relative;
+    margin: 5px 0px 0px 4px;
+    height: 31px;
+}
+
+#detalle-btn_link{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+#detalle-btn_link > img{
+    position: relative;
+    margin: 4px 0px 0px 11px;
+    height: 30px;
+}
+
+#detalle-links-ext{
+
+width: 100%;
+
+position: relative;
+
+height: 50px;
+
+margin-bottom: 8px;
+}
+
+
 
 #detalle-mini-desc .itemLista-name{
 margin-top:0px;
@@ -1107,4 +1146,40 @@ reg{
 .btn-omitir{
     float: left;
     color: grey !important;
+}
+
+
+.itemLista-count-favs{
+    
+height: 20px;
+    
+line-height: 20px;
+    
+font-size: 10px;
+    
+top: 64px;
+    
+position: absolute !important;
+    
+left: 5px;
+    
+padding-left: 0 !important;
+}
+.itemLista-count-favs > img{
+    
+width: 15px;    
+float: left;
+}
+
+.itemLista-count-favs > div{
+
+    /* width: 20px; */
+    float: left;   
+    margin-left: 3px;    
+    margin-top: 0px;  
+    font-family: arial;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
+
 }

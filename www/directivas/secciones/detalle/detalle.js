@@ -1,4 +1,4 @@
-geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER, $window, $timeout, regService) {
+geobarApp.directive('detalle', function(navigateService, ToastService, Loading, $http, SERVER, $window, $timeout, regService, favService) {
   
   return {
   	
@@ -29,7 +29,9 @@ geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER,
 				var  userId= $window.localStorage.getItem('userId')
 			
 				if(userId==0){
+
 					regService.mostrar(marcar_como_favorito, function (){})
+
 				}else{
 
 					marcar_como_favorito()
@@ -71,21 +73,31 @@ geobarApp.directive('detalle', function(navigateService, Loading, $http, SERVER,
                 	if(data.data == 0) $scope.item.favs = parseInt($scope.item.favs)  - 1
                 	if(data.data == 1) $scope.item.favs = parseInt($scope.item.favs)  + 1
                 	
+                    favService.setFav($scope.item.id, data.data)
+
                 	Loading.ocultar()
 
                 }, function(){
                     
+                    ToastService.show('Ocurrio un error. Revisa la conexión a internet', 'long', 'center');   
                     Loading.ocultar()
                   
                 }
             )
 
-
-
-
-
     	}
 
+        $scope.goFb = function (){
+
+            window.open($scope.item.fb, '_system');
+            
+        }
+
+        $scope.goSite = function (){
+
+           window.open($scope.item.site, '_system');     
+
+        }
 
     	$scope.goDir =  function (){
 

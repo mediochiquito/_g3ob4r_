@@ -25,7 +25,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 			 	_platform =  'browser';
 			 }	
 
-			var 	objSend = {
+			var objSend = {
 				uuid :  _uuid, 
 				platform : _platform,
 				pushtoken : $token, 
@@ -59,7 +59,8 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 	if($window.localStorage.getItem('push') == null) $window.localStorage.setItem('push', 1);
 	if($window.localStorage.getItem('aceptoTerms') == null) $window.localStorage.setItem('aceptoTerms', 0);
 	if($window.localStorage.getItem('userId') == null) $window.localStorage.setItem('userId', 0);
-
+	if($window.localStorage.getItem('favs') == null) $window.localStorage.setItem('favs', '');
+	
 	try{
 		
 		if( $cordovaDevice.getPlatform() == 'Android'){
@@ -109,14 +110,6 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 		    });
 
 		}
-
-
-
-
-
-
-
-
 
 	}catch(e){
 		
@@ -171,7 +164,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 
 
-geobarApp.controller("mainController",  function($document, $rootScope, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
+geobarApp.controller("mainController",  function($document, $rootScope, favService, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
 	
 	$scope.aceptoTerms = -1;
 	$scope.showRegistro = false;
@@ -186,12 +179,15 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 
 		$http.get(SERVER+'sync.php?ac=' + new Date().getTime()).success(function(json_sync, status, headers, config) {
 			
+			$window.localStorage.setItem('favs', JSON.stringify(json_sync.favs));
+
 			var local_sync_lugares = $window.localStorage.getItem('local_sync_lugares');	
 			var local_sync_eventos = $window.localStorage.getItem('local_sync_eventos');	
 
 			var debe_sincronzar = '';
-			if(json_sync.lugares != local_sync_lugares) debe_sincronzar += 'lugares'
-			if(json_sync.eventos != local_sync_eventos) debe_sincronzar += 'eventos'
+
+			if(json_sync.pois.lugares != local_sync_lugares) debe_sincronzar += 'lugares'
+			if(json_sync.pois.eventos != local_sync_eventos) debe_sincronzar += 'eventos'
 
 			if(debe_sincronzar != ''){
 
@@ -201,12 +197,12 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 
 					if(typeof data.lugares != 'undefined'){
 						$window.localStorage.setItem('json_lugares', JSON.stringify(data.lugares));
-						$window.localStorage.setItem('local_sync_lugares', json_sync.lugares)
+						$window.localStorage.setItem('local_sync_lugares', json_sync.pois.lugares)
 					}
 
 					if(typeof data.eventos != 'undefined'){
 						$window.localStorage.setItem('json_eventos', JSON.stringify(data.eventos));
-						$window.localStorage.setItem('local_sync_eventos', json_sync.eventos)
+						$window.localStorage.setItem('local_sync_eventos', json_sync.pois.eventos)
 					}
 
 					// actualizo ok
@@ -224,7 +220,10 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 		})
 	}
 
-	function iniciar_app(){	
+	function iniciar_app(){		
+
+
+		favService.setAll();
 		
 		$rootScope.$watch("position", function (nuevo, viejo){
 
@@ -233,6 +232,7 @@ geobarApp.controller("mainController",  function($document, $rootScope, ToastSer
 
 		})
 
+		
 		arService.set()
 		Loading.ocultar()
 

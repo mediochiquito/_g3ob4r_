@@ -2,8 +2,7 @@
 	<input type='text' placeholder='Buscar...' ng-model='txtfiltro' ng-change='keyDownFilter()' class='lista-input-filter' />
  	<boton-sistema imagen="img/btns/clear.svg" ng-show=" txtfiltro != '' " accion='resetFiltro()' id='lista-btn_clear'></boton-sistema>
 </div>
-
-
+{{allFavs}}
 <div class='listado' style="height:{{screen_alto-132}}px">
 
 	<div md-ink-ripple item-lista	boton-lista ng-repeat="item in array_items | filter: filtro | limitTo:en_pagina as cantidad" 
@@ -13,6 +12,7 @@
 					enscroll= 'enscroll' 
 					altoholder = 'altoholder'
 					siempre-visible='false' 
+					favs =' favs '
 					ng-click="select_item(item)" class='item-lista' 
 
 					
