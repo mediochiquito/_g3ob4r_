@@ -1,8 +1,8 @@
 var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial', 'ngCordova' , 'Utils', 'cordovaGeolocationModule', 'plugins.toast'])
 
-.constant('SERVER', 'http://192.168.0.2/_g3ob4r_/server/')
+//.constant('SERVER', 'http://192.168.0.2/_g3ob4r_/server/')
 //.constant('SERVER', 'http://mateomenestrina.no-ip.org/_g3ob4r_/server/')
-//.constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
+.constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
 
 .constant('SCREEN_SIZE', {ancho: window.innerWidth, alto: window.innerHeight})
 
