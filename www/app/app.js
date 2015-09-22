@@ -42,8 +42,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
             $http(req).then(function(data){ }, function(){ });  
 
-       
-
+     
 	}
 
 
@@ -70,17 +69,18 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 		    };
 
 		   	$cordovaPush.register(androidConfig).then(function(result) {
-		      // Success
+		   
 		    }, function(err) {
-		      // Error
+		      
 		    })
 		   
 		    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
 		     
+		    
 		      switch(notification.event) {
 		        
 		        case 'registered':
-
+		         
 		          if (notification.regid.length > 0 ) {
 		           	 enviar_token(notification.regid);
 		          }
@@ -88,7 +88,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 		          break;
 
 		        case 'message':
-		
+					
 		          if(notification.payload.idPoi!=0) {
 		          	$rootScope.navegarAPoi = notification.payload.idPoi;
 		          	try{
@@ -100,14 +100,19 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 		          break;
 
 		        case 'error':
-		        
+		        	
 		          break;
 
 		        default:
-		         
+		         	
 		          break;
 		      }
 		    });
+
+
+
+
+
 
 		}
 
