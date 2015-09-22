@@ -9,14 +9,12 @@ $rs_enviar = mysql_query("SELECT * FROM salida
 
   INNER JOIN usuarios ON usuarios_id = devices_usuarios_id  	
 
-  WHERE salida_envios_id = '" . $_GET['id'] . "' AND devices_platform='Android' AND salida_enviado = 0;");
+  WHERE salida_envios_id = '" . $_GET['id'] . "' AND salida_enviado = 0;");
 
   echo '<pre>';
   echo "
 
   TOTAL A ENVIAR: " . mysql_num_rows($rs_enviar) . " notificaciones.
-
-
 
   ";
 
@@ -28,20 +26,30 @@ $p = new Push();
 $bulce = 1;
 while($row_enviar = mysql_fetch_object($rs_enviar)){
 
-	if($row_enviar->devices_platform == "Android"){
-
-		
+	
 		if( mysql_query("UPDATE salida SET salida_enviado=1 WHERE salida_id = '" . $row_enviar->salida_id . "' LIMIT 1;") ){
 
-			$p->enviar_push_android( $row_enviar->devices_puhstoken, 
+
+			if($row_enviar->devices_platform == "Android"){
+				
+				$p->enviar_push_android( $row_enviar->devices_puhstoken, 
 									 $row_enviar->envios_titulo, 
 									 $row_enviar->envios_desc,
 									 $row_enviar->envios_poi_id);
 
-echo $bulce . ". enviado a: " .  $row_enviar->usuarios_nombre . " ".  $row_enviar->usuarios_menestrina . " (" . $row_enviar->devices_platform . ") 
-";
+			}else{
+
+				$p->enviar_push_ios( $row_enviar->devices_puhstoken, 
+									 $row_enviar->envios_titulo, 
+									 $row_enviar->envios_desc,
+									 $row_enviar->envios_poi_id);
+
+			}
+
+			echo $bulce . ". enviado a: " .  $row_enviar->usuarios_nombre . " ".   $row_enviar->usuarios_menestrina . " (" . $row_enviar->devices_platform . ") 
+				";
 			$bulce++;
-		}
+
 
 
 

@@ -132,8 +132,18 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 						      if (notification.alert) {
 
 
-						        alert(notification.alert);
+						        //alert(notification.alert);
 						        
+						         if(notification.idPoi!=0) {
+						          	$rootScope.navegarAPoi = notification.idPoi;
+						          	try{
+						          		var item={ id: notification.idPoi };
+										navigateService.go('detalle', item);
+						          	}catch(e){}
+						          	
+						          }
+
+
 						      }
 
 						      if (notification.sound) {

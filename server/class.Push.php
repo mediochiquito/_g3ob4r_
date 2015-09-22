@@ -8,7 +8,7 @@ class Push{
 	// IOS
 	var $apns;
 	var $apns_url = 'gateway.push.apple.com';
-	var $apns_cert = 'apns-prod.pem';
+	var $apns_cert = 'CertificadosPush.pem';
 	var $apns_port = 2195;
 	var $stream_context;
 	

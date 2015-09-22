@@ -141,14 +141,14 @@ body{
     position: absolute;
     width: 80%;
     left: 10%;
-    top: 50%;
-    margin-top: -150px;
+    top: 10%;
+    /* margin-top: -150px; */
 }
 #taxi-easytaxi{
     width: 80%;
     left: 10%;
     position: absolute;
-    top: 50%;
+    bottom: 20%;
     margin-top: 60px;
 }
 #header_menu >div{
@@ -866,6 +866,7 @@ margin-top:0px;
     text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 .config-row{
