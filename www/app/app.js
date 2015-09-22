@@ -170,20 +170,20 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 
 geobarApp.controller("mainController",  function($document, $rootScope, favService, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
-	
+	alert("mainController")
 	$scope.aceptoTerms = -1;
 	$scope.showRegistro = false;
 	$scope.rootScope = $rootScope
 	$scope.alto_screen = $window.innerHeight;
 	$scope.ultima_ubilcacion  = cordovaGeolocationService.getUltimaPosicion();
-
+alert("mainController 1")
 	$scope.init = function (){
-
+alert("mainController init")
 		$rootScope.position = null;
 		cordovaGeolocationService.watchPosition();
 
 		$http.get(SERVER+'sync.php?ac=' + new Date().getTime()).success(function(json_sync, status, headers, config) {
-			
+			alert("mainController sync")
 			$window.localStorage.setItem('favs', JSON.stringify(json_sync.favs));
 
 			var local_sync_lugares = $window.localStorage.getItem('local_sync_lugares');	

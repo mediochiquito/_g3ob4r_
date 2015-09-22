@@ -266,6 +266,12 @@
                             "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>fb398706416993551</string></array></dict></array>",
                             "count": 1
                         }
+                    ],
+                    "NSAppTransportSecurity": [
+                        {
+                            "xml": "<dict><key>NSAllowsArbitraryLoads</key><true /></dict>",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -317,6 +323,9 @@
         "com.phonegap.plugins.facebookconnect": {
             "APP_ID": "398706416993551",
             "APP_NAME": "GeoBar",
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "sk.kcorp.cordova.ios-security": {
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },

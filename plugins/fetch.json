@@ -148,5 +148,14 @@
             "APP_ID": "398706416993551",
             "APP_NAME": "GeoBar"
         }
+    },
+    "sk.kcorp.cordova.ios-security": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/robertklein/cordova-ios-security.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }
