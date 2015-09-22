@@ -1,5 +1,5 @@
 
-    geobarApp.directive('mapa', function(navigateService, ToastService, lugaresService, eventosService, DistancePostion, cordovaGeolocationService, $window) {
+    geobarApp.directive('mapa', function($cordovaNetwork, navigateService, lazyLoadApi, ToastService, lugaresService, eventosService, DistancePostion, cordovaGeolocationService, $window) {
       
       return {
 
@@ -21,7 +21,9 @@
             scope.itemSelected  = null;
             scope.navigateService = navigateService;
 
+          
 
+            
             scope.goInfo = function (){
 
               navigateService.go('detalle',  scope.itemSelected);
@@ -62,6 +64,8 @@
                     directionsService = new google.maps.DirectionsService();
                     directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers:true});
                     map = new google.maps.Map(document.getElementById('el-mapa'),  mapOptions);
+
+
                     mapa_ya_inicializado = true
 
             }
@@ -128,9 +132,43 @@
 
             scope._set = function ($obj){       
 
-              
-              if(!mapa_ya_inicializado) initialize();
+               if(!mapa_ya_inicializado) initialize();
 
+                /*try{
+
+                  if($cordovaNetwork.isOnline()){
+
+                    if(!mapa_ya_inicializado) {
+
+                        lazyLoadApi.then(function () {
+                          // Promised resolved
+                          initialize();
+
+                        }, function () {
+                            // Promise rejected
+                        });
+
+                    }
+                      
+                  }
+
+                }catch(e){
+                
+                   if(!mapa_ya_inicializado) {
+
+                        lazyLoadApi.then(function () {
+                          // Promised resolved
+                          initialize();
+
+                        }, function () {
+                            // Promise rejected
+                        });
+
+                    }
+
+                }*/
+               
+            
 
                 bounds = new google.maps.LatLngBounds(); 
                 mapa_type = $obj.type
@@ -271,7 +309,7 @@
                   });
             }
 
-          initialize()
+          //initialize()
           navigateService.setSecciones('mapa', scope._set)
             
         }, 

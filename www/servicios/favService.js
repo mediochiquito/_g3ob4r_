@@ -3,7 +3,10 @@ geobarApp.service('favService', function($window){
     this.all = {};
    
     this.setAll = function(){ 
-        this.all =  JSON.parse( $window.localStorage.getItem('favs'));
+        try{
+            this.all =  JSON.parse( $window.localStorage.getItem('favs'));
+        }catch(e){}
+        
     }
 
     this.getAll = function (){

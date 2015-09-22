@@ -37,10 +37,11 @@
 		 -->
 		{{long_desc}}
 		<div ng-if=' long_desc == "" ' id='detalle-no-cargo-info'>Información no disponible</div>
+		<div id='detalle-links-ext'>
+			<boton-sistema accion="goFb()" id='detalle-btn_fb' imagen="img/btns/fb.svg" 		ng-if=' item.fb !="" '></boton-sistema>
+			<boton-sistema accion="goSite()" id='detalle-btn_link'  imagen="img/btns/link.svg"   ng-if=' item.site !="" '></boton-sistema>
+		</div>
 	</div>
-	<div id='detalle-links-ext'>
-		<boton-sistema accion="goFb()" id='detalle-btn_fb' imagen="img/btns/fb.svg" 		ng-if=' item.fb !="" '></boton-sistema>
-		<boton-sistema accion="goSite()" id='detalle-btn_link'  imagen="img/btns/link.svg"   ng-if=' item.site !="" '></boton-sistema>
-	</div>
+
 </div>
 

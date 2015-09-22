@@ -46,30 +46,27 @@
             <div id='header_linea' ></div>
           
             <boton-sistema imagen="img/btns/taxi.svg" accion="navigateService.go('taxi')" id='btn_taxi'></boton-sistema>
-            
-            <!--<boton-sistema imagen="img/btns/taxi.svg" accion="testReg()" id='btn_taxi'></boton-sistema>-->
 
       </div>
  
-   <!--   ng-if=' userId == 0 ' -->
-    <reg    ng-show = ' showRegistro '     show-registro = ' showRegistro '  ng-cloak class='registro' ></reg>
-    <terms  ng-show = ' aceptoTerms == 0 ' ng-if=' aceptoTerms == 0 ' acepto-terms=' aceptoTerms ' ng-cloak></terms>
-     
-
-
+    <!--   ng-if=' userId == 0 ' -->
+    <reg    ng-show = ' showRegistro '      show-registro = ' showRegistro '  ng-cloak class='registro'></reg>
+    <terms  ng-show = ' aceptoTerms == 0 '  ng-if=' aceptoTerms == 0 '        acepto-terms=' aceptoTerms ' ng-cloak></terms>
+    
     <!---->
     <el-loading id='loader'></el-loading>
-
 
     <script src="libs/angular.min.js"></script>
     <script src="libs/angular-animate.min.js"></script>
     <script src="libs/angular-touch.min.js"></script>
     <script src="libs/angular-aria.min.js"></script>
     <script src="libs/angular-material.min.js"></script>
-    <script src="libs/ng-cordova.js"></script>
+    <script src="libs/ng-cordova2.js"></script>
 
     <script src="app/app.js"></script>
     
+    
+    <script src="servicios/lazyLoadApi.js"></script>
     <script src="servicios/cordovaGeolocationModule.js"></script>
     <script src="servicios/navigateService.js"></script>
     <script src="servicios/mapaService.js"></script>
@@ -105,7 +102,7 @@
        app.initialize();
     </script>
 
-    <script src='https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyBxU2t0W9wQFwPnGmoXNI-eg95zCy_PiJI'></script>
+    <!--script src='https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyBxU2t0W9wQFwPnGmoXNI-eg95zCy_PiJI'></script-->
     
   </body>
 </html>

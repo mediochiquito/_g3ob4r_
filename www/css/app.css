@@ -739,8 +739,8 @@ position: relative;
 
 height: 50px;
 
-margin-bottom: 8px;
-}
+margin-bottom: 20px;
+margin-top: 6px;}
 
 
 
@@ -765,7 +765,7 @@ margin-top:0px;
 
 
 #mapa-botonera {
-    width: 170px;
+    width: 123px;
     position: relative;
     margin: 0 auto;
     height: 50px;
@@ -1144,6 +1144,7 @@ reg{
     text-align: right;
     width: 100%;
 }
+
 .btn-omitir{
     float: left;
     color: grey !important;

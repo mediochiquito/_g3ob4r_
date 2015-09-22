@@ -46,13 +46,13 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
     	function marcar_como_favorito(){
 
 
-    		var  userId= $window.localStorage.getItem('userId')
+    		var  userId = $window.localStorage.getItem('userId')
 
             var objSend = {
                 userId : userId, 
                 poiId: $scope.item.id
             }
-       
+            
             var  req = {
                  method: 'POST',
                  url: SERVER + 'ws.php?method=setFav',
@@ -89,13 +89,13 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
 
         $scope.goFb = function (){
 
-            window.open($scope.item.fb, '_system');
+            window.open(SERVER + 'redirect/?u=' + encodeURIComponent($scope.item.fb), '_system');
             
         }
 
         $scope.goSite = function (){
 
-           window.open($scope.item.site, '_system');     
+            window.open(SERVER + 'redirect/?u=' + encodeURIComponent($scope.item.site), '_system');
 
         }
 

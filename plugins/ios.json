@@ -21,6 +21,34 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"ios-package\" value=\"FacebookConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<plugin name=\"FacebookConnectPlugin\" value=\"FacebookConnectPlugin\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://m.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://graph.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://api.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.fbcdn.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.akamaihd.net\" />",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"WikitudePlugin\"><param name=\"ios-package\" value=\"WTWikitudePlugin\" /></feature>",
                             "count": 1
                         },
@@ -53,42 +81,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Toast\"><param name=\"ios-package\" value=\"Toast\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"ios-package\" value=\"FacebookConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<plugin name=\"FacebookConnectPlugin\" value=\"FacebookConnectPlugin\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://m.facebook.com\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://graph.facebook.com\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://api.facebook.com\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://*.fbcdn.net\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://*.akamaihd.net\" />",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
@@ -99,12 +91,48 @@
                         {
                             "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Toast\"><param name=\"ios-package\" value=\"Toast\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
             },
             "framework": {
                 "parents": {
+                    "libsqlite3.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "Social.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ],
+                    "Accounts.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ],
+                    "Security.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        },
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
                     "Accelerate.framework": [
                         {
                             "xml": false,
@@ -189,16 +217,6 @@
                             "count": 2
                         }
                     ],
-                    "Security.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        },
-                        {
-                            "xml": true,
-                            "count": 1
-                        }
-                    ],
                     "SystemConfiguration.framework": [
                         {
                             "xml": false,
@@ -232,35 +250,11 @@
                             "xml": true,
                             "count": 2
                         }
-                    ],
-                    "libsqlite3.dylib": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "Social.framework": [
-                        {
-                            "xml": true,
-                            "count": 1
-                        }
-                    ],
-                    "Accounts.framework": [
-                        {
-                            "xml": true,
-                            "count": 1
-                        }
                     ]
                 }
             },
             "*-Info.plist": {
                 "parents": {
-                    "NSLocationWhenInUseUsageDescription": [
-                        {
-                            "xml": "<string />",
-                            "count": 1
-                        }
-                    ],
                     "FacebookAppID": [
                         {
                             "xml": "<string>398706416993551</string>",
@@ -279,6 +273,12 @@
                             "count": 1
                         }
                     ],
+                    "NSLocationWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string />",
+                            "count": 1
+                        }
+                    ],
                     "NSAppTransportSecurity": [
                         {
                             "xml": "<dict><key>NSAllowsArbitraryLoads</key><true /></dict>",
@@ -294,6 +294,11 @@
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "com.phonegap.plugins.PushPlugin": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "com.phonegap.plugins.facebookconnect": {
+            "APP_ID": "398706416993551",
+            "APP_NAME": "GeoBar",
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "com.wikitude.phonegap.WikitudePlugin": {
@@ -323,6 +328,9 @@
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
@@ -332,15 +340,7 @@
         "nl.x-services.plugins.toast": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "com.phonegap.plugins.facebookconnect": {
-            "APP_ID": "398706416993551",
-            "APP_NAME": "GeoBar",
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
         "sk.kcorp.cordova.ios-security": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
-        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },

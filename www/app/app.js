@@ -183,13 +183,39 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 
 
-geobarApp.controller("mainController",  function($document, $rootScope, favService, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
+geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazyLoadApi,  $rootScope, favService, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
 
 	$scope.aceptoTerms = -1;
 	$scope.showRegistro = false;
 	$scope.rootScope = $rootScope
 	$scope.alto_screen = $window.innerHeight;
 	$scope.ultima_ubilcacion  = cordovaGeolocationService.getUltimaPosicion();
+
+
+	$rootScope.$on('$cordovaNetwork:online', function(event, networkState){
+		alert('$cordovaNetwork:online')
+		//if($cordovaNetwork.isOnline()){
+
+			   lazyLoadApi.then(function () {
+
+                    //initialize();
+                    alert('lazyLoadApi success')
+               }, function () {
+					
+               	    alert('lazyLoadApi error')
+
+               });
+
+		//}
+
+	})
+
+	
+
+                 
+
+                     
+
 
 	$scope.init = function (){
 
@@ -235,15 +261,17 @@ geobarApp.controller("mainController",  function($document, $rootScope, favServi
 			} else  iniciar_app();
 			
 		}).error(function(){
+
+
 			iniciar_app()
 		})
 	}
 
 	function iniciar_app(){		
 
-
+		//alert('0 iniciar_app')
 		favService.setAll();
-		
+		////alert('1 iniciar_app')
 		$rootScope.$watch("position", function (nuevo, viejo){
 
 			lugaresService.setAll();
@@ -251,7 +279,7 @@ geobarApp.controller("mainController",  function($document, $rootScope, favServi
 
 		})
 
-		
+		//alert('2 iniciar_app')
 		arService.set()
 		Loading.ocultar()
 
