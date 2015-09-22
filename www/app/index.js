@@ -30,8 +30,8 @@ var app = {
               
             // 
             window.open = cordova.InAppBrowser.open;
-
-            if(device.platform == 'iOS') StatusBar.hide();
+            alert(device.platform)
+            //∫if(device.platform == 'iOS') StatusBar.hide();
 
             angular.bootstrap(document, ["geobarApp"]);
 

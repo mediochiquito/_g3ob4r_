@@ -87,6 +87,18 @@
                         {
                             "xml": "<access origin=\"https://*.akamaihd.net\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -326,6 +338,9 @@
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "sk.kcorp.cordova.ios-security": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },

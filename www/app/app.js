@@ -108,11 +108,54 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 		          break;
 		      }
 		    });
+		}
 
 
+		if( $cordovaDevice.getPlatform() == 'iOS'){
+
+		    			 var iosConfig = {
+						    "badge": true,
+						    "sound": true,
+						    "alert": true,
+						   };
+
+						    $cordovaPush.register(iosConfig).then(function(deviceToken) {
+						    
+						       enviar_token(deviceToken);
+						    }, function(err) {
+						     
+						     // alert("Registration error: " + err)
+						    });
+
+						    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
+
+						      if (notification.alert) {
 
 
+						        alert(notification.alert);
+						        
+						      }
 
+						      if (notification.sound) {
+						        // var snd = new Media(event.sound);
+						        // snd.play();
+						      }
+
+						      if (notification.badge) {
+						        $cordovaPush.setBadgeNumber(notification.badge).then(function(result) {
+						          // Success!
+						        }, function(err) {
+						          // An error occurred. Show a message to the user
+						        });
+						      }
+
+						    });
+						    // WARNING! dangerous to unregister (results in loss of tokenID)
+						    $cordovaPush.unregister(options).then(function(result) {
+						      // Success!
+						    }, function(err) {
+						      // Error
+						    });
 
 		}
 
@@ -122,46 +165,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 		
 	}
 
-	/*  var iosConfig = {
-    "badge": true,
-    "sound": true,
-    "alert": true,
-   };
-
-    $cordovaPush.register(iosConfig).then(function(deviceToken) {
-      // Success -- send deviceToken to server, and store for future use
-      console.log("deviceToken: " + deviceToken)
-      $http.post("http://server.co/", {user: "Bob", tokenID: deviceToken})
-    }, function(err) {
-      alert("Registration error: " + err)
-    });
-
-    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
-
-      if (notification.alert) {
-        navigator.notification.alert(notification.alert);
-      }
-
-      if (notification.sound) {
-        var snd = new Media(event.sound);
-        snd.play();
-      }
-
-      if (notification.badge) {
-        $cordovaPush.setBadgeNumber(notification.badge).then(function(result) {
-          // Success!
-        }, function(err) {
-          // An error occurred. Show a message to the user
-        });
-      }
-
-    });
-    // WARNING! dangerous to unregister (results in loss of tokenID)
-    $cordovaPush.unregister(options).then(function(result) {
-      // Success!
-    }, function(err) {
-      // Error
-    });
+	/* 
 	*/
 
   }, false);
@@ -170,20 +174,20 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 
 geobarApp.controller("mainController",  function($document, $rootScope, favService, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
-	alert("mainController")
+
 	$scope.aceptoTerms = -1;
 	$scope.showRegistro = false;
 	$scope.rootScope = $rootScope
 	$scope.alto_screen = $window.innerHeight;
 	$scope.ultima_ubilcacion  = cordovaGeolocationService.getUltimaPosicion();
-alert("mainController 1")
+
 	$scope.init = function (){
-alert("mainController init")
+
 		$rootScope.position = null;
 		cordovaGeolocationService.watchPosition();
 
 		$http.get(SERVER+'sync.php?ac=' + new Date().getTime()).success(function(json_sync, status, headers, config) {
-			alert("mainController sync")
+		
 			$window.localStorage.setItem('favs', JSON.stringify(json_sync.favs));
 
 			var local_sync_lugares = $window.localStorage.getItem('local_sync_lugares');	
