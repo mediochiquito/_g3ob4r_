@@ -1,57 +1,55 @@
+<div id='content-reg'>
+	<img src='img/logo.png' id='reg-logo' >
 
-<img src='img/logo.png' id='reg-logo' >
+	<div id='reg-box-shadow'></div>
 
-<div id='reg-box-shadow'></div>
+	<div id='reg-box-content'>
 
-<div id='reg-box-content'>
+		<h1>Registro</h1>
+		<boton-sistema md-ink-ripple  id='btn_facebook' accion="fb()" imagen="img/reg/btn_facebook.png"></boton-sistema>
+		<h2>Crear cuenta GEOBAR</h2>
+		<div id='reg-form'> 
 
-	<h1>Registro</h1>
-
-	<boton-sistema md-ink-ripple  id='btn_facebook' accion="fb()" imagen="img/reg/btn_facebook.png"></boton-sistema>
-
-	<h2>Crear cuenta GEOBAR</h2>
-
-	<div id='reg-form'> 
-
-		<div class='reg-row'>
-			<div class='reg-label'>Nombre</div>
-			<div class='reg-input'><input  ng-class='{ "campoerror": errorNombre}' type='text' ng-model='reg.nombre' /></div>
-		</div>
-
-		<div class='reg-row'>
-			<div class='reg-label'>Apellido</div>
-			<div class='reg-input'><input ng-trim ng-class='{ "campoerror": errorApellido }' type='text' ng-model='reg.apellido' /></div>
-		</div>
-
-		<div class='reg-row'>
-			<div class='reg-label'>Email</div>
-			<div class='reg-input'><input ng-trim ng-class='{ "campoerror": errorEmail}' type='email' ng-model='reg.email' /></div>
-		</div>
-
-		<div class='reg-row'>
-			<div class='reg-label'>CI</div>
-			<div class='reg-input'><input maxlength='8' ng-trim ng-class='{ "campoerror": errorCi}' type='tel' ng-model='reg.ci' /></div>
-		</div>
-
-		<div class='reg-row'>
-			<div class='reg-label'>F. Nac.</div>
-			<div class='reg-input'><input  ng-class='{ "campoerror": errorNac}' type='date' ng-model='reg.nac'  /></div>
-		</div>
-
-		<div class='reg-row'>
-			<div class='reg-label'>Sexo</div>
-			<div class='reg-input'>
-				
-				<div>Mujer</div>  <check-box  md-ink-ripple  checked='sexoF'   accion='elegirSexo("female")' ></check-box>
-				<div>Hombre</div> <check-box  md-ink-ripple  checked='sexoM'   accion='elegirSexo("male")' ></check-box>
-
+			<div class='reg-row'>
+				<div class='reg-label'>Nombre</div>
+				<div class='reg-input'><input  ng-class='{ "campoerror": errorNombre}' type='text' ng-model='reg.nombre' /></div>
 			</div>
+
+			<div class='reg-row'>
+				<div class='reg-label'>Apellido</div>
+				<div class='reg-input'><input ng-trim ng-class='{ "campoerror": errorApellido }' type='text' ng-model='reg.apellido' /></div>
+			</div>
+
+			<div class='reg-row'>
+				<div class='reg-label'>Email</div>
+				<div class='reg-input'><input ng-trim ng-class='{ "campoerror": errorEmail}' type='email' ng-model='reg.email' /></div>
+			</div>
+
+			<div class='reg-row'>
+				<div class='reg-label'>CI</div>
+				<div class='reg-input'><input maxlength='8' ng-trim ng-class='{ "campoerror": errorCi}' type='tel' ng-model='reg.ci' /></div>
+			</div>
+
+			<div class='reg-row'>
+				<div class='reg-label'>F. Nac.</div>
+				<div class='reg-input'><input  ng-class='{ "campoerror": errorNac}' type='date' ng-model='reg.nac'  /></div>
+			</div>
+
+			<div class='reg-row'>
+				<div class='reg-label'>Sexo</div>
+				<div class='reg-input'>
+					
+					<div>Mujer</div>  <check-box  md-ink-ripple  checked='sexoF'   accion='elegirSexo("female")' ></check-box>
+					<div>Hombre</div> <check-box  md-ink-ripple  checked='sexoM'   accion='elegirSexo("male")' ></check-box>
+
+				</div>
+			</div>
+
 		</div>
 
-	</div>
-
-	<div class='reg-content-buttons'>
-	<md-button  class="md-primary btn-omitir" ng-click='omitir()' > OMITIR </md-button>
-	<md-button  class="md-primary" ng-click='enviar()' > ENVIAR </md-button>
+		<div class='reg-content-buttons'>
+		<md-button  class="md-primary btn-omitir" ng-click='omitir()' > OMITIR </md-button>
+		<md-button  class="md-primary" ng-click='enviar()' > ENVIAR </md-button>
+		</div>
 	</div>
 </div>

@@ -4,20 +4,28 @@
 
       function load_script() {
 
+       document.getElementById('gMapsScripts').innerHTML = ''
 
             var s = document.createElement('script'); // use global document since Angular's $document is weak
-            s.src = 'https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyBxU2t0W9wQFwPnGmoXNI-eg95zCy_PiJI&callback=initMap';
-            document.body.appendChild(s);
-      }
+            s.id = 'gMaps' ;
+            s.type = "text/javascript";
+            s.src = 'https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyBxU2t0W9wQFwPnGmoXNI-eg95zCy_PiJI&callback=initMap';
+            document.getElementById('gMapsScripts').appendChild(s);
+
+       }
 
       function lazyLoadApi(key) {
 
 
           var deferred = $q.defer();
           $window.initMap = function () {
-              
-              deferred.resolve();
-              alert('initMap')
+              $timeout(function(){
+
+                 deferred.resolve();
+
+              })
+             
+             /// alert('initMap')
 
           };
           // thanks to Emil Stenström: http://friendlybit.com/js/lazy-loading-asyncronous-javascript/
@@ -159,14 +167,27 @@
 
            scope._set = function ($obj){       
 
-               if(!mapa_ya_inicializado) {
+
+              
+          /*   if ($window.google && $window.google.maps) {
+             }else{
+
+                if(!mapa_ya_inicializado) {
                    $timeout.cancel(timer);
                    timer = $timeout(function(){
-                          init_with_lazy_load(scope._set($obj));
-                    }, 1000);
+                       
+                    
+                           init_with_lazy_load(scope._set($obj));
+                      
+                         
+                    }, 5000);
                   
                     return;
                 }
+
+
+             }
+             */
 
               
                 bounds = new google.maps.LatLngBounds(); 
@@ -333,7 +354,7 @@
                         console.log('promise rejected');
                     });
                 }
-                
+
             }
             
 

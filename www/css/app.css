@@ -995,35 +995,47 @@ reg{
     height: 100%;
     top: 0px;
     z-index: 99998;
-    background-image: url('../img/bg.png');      background-repeat: no-repeat;      background-position: center;      background-color: #666;
-
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #666;
     text-align: center;
+
+    display: -webkit-flex;
+   -webkit-flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 #reg-box-shadow{
     position: absolute;
-    width: 85%;
+    width: 100%;
     border-radius: 20px;
     background-color: #2B2B2B;
-    left: 10%;
-    top: 93px;
-    min-height: 396px;      max-height: 430px;      height: 70%;
+    left: 10px;
+    top: 80px;
+    min-height: 396px;
+    max-height: 430px;
+    /* height: 70%; */
+    display: none;
+    height: 400px;
 }
 
 #reg-box-content{
-    position: absolute;
-    width: 85%;
+    position: relative;
+    /* width: 85%; */
     border-radius: 15px;
     background-color: #FFFFFF;
     box-sizing: border-box;
-    left: 8%;
+    /* left: 8%; */
     text-align: center;
-    top: 87px;
-    display: block;
-    min-height: 396px;
-    max-height: 430px;
-    height: 70%;
+    /* top: 87px; */
+    /* display: block; */
+    /* min-height: 396px; */
+    /* max-height: 430px; */
+    height: 400px;
+    box-shadow: 7px 7px 10px #2B2B2B;
 }
 #btn_facebook{
 
@@ -1091,14 +1103,12 @@ reg{
     font-size: 14px;
     text-align: left;
     /* display: inline; */
-    padding-left: 71px;
+    padding-left: 70px;
     width: 100%;
 }
 #reg-box-content md-button{}
 .reg-row input{
     width: 100%;
-
-    
     height: 100%;
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -1139,12 +1149,15 @@ reg{
 .reg-content-buttons{
     position: absolute;
     bottom: 0px;
-
-    height: 45px;
+    height: 53px;
     text-align: right;
     width: 100%;
 }
-
+#content-reg{
+    width: 90%;height: 518px;
+    /* background-color: aquamarine; */
+    max-width: 400px;
+    position: relative;}
 .btn-omitir{
     float: left;
     color: grey !important;
