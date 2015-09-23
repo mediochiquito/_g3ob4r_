@@ -1,4 +1,4 @@
-geobarApp.directive('home', function(navigateService, SERVER, $http, arService) {
+geobarApp.directive('home', function($window, navigateService, ToastService,  SERVER, $http, arService) {
   return {
     restrict: 'E',
     templateUrl: 'directivas/secciones/home/home.html', 
@@ -23,6 +23,18 @@ geobarApp.directive('home', function(navigateService, SERVER, $http, arService) 
         if(ya_cargo) {
           _callback(); return;
         }
+
+         // 
+
+         scope.goMapa = function (){
+           
+           if ($window.google && $window.google.maps) {  
+              scope.navigateService.go('mapa', {type: 'all'})
+           }else{
+              ToastService.show('Debes conectarte a internet para ver el mapa.', 'long', 'center');
+           }
+
+         }
 
         $http.get(SERVER+'ws.php?method=getHomeImagesApp').
 

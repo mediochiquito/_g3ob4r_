@@ -1,3 +1,7 @@
+    var NG_HIDE_CLASS = 'ng-hide';
+var NG_HIDE_IN_PROGRESS_CLASS = 'ng-hide-animate';
+
+
 angular.module('Utils',[]) 
 
     .factory('DistancePostion', function(){
@@ -22,4 +26,19 @@ angular.module('Utils',[])
                 return dist
             }
         }}) 
+
+
+    .directive('fadeIn', function($timeout){
+        return {
+            restrict: 'A',
+            link: function($scope, $element, attrs){
+                $element.addClass("ng-hide-remove");
+                $element.on('load', function() {
+                    $element.addClass("ng-hide-add");
+                  
+                });
+            }
+        }
+    })
+
 
