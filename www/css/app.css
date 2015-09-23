@@ -340,19 +340,22 @@ body{
 }
 .enterSeccionShow{
     display: block!important;
-    /* -webkit-transform: translateX(0%);*/
+        pointer-events:auto;
+   
 }
 .enterSeccionHide{
     display: none;
-  /* -webkit-transform: translateX(100%) */
+      pointer-events:none;
+
 }
 .backSeccionShow{
     display: block!important;
-  /* -webkit-transform: translateX(0%) */
+        pointer-events:auto;
+
 }
 .backSeccionHide{
     display: none;
-   /* -webkit-transform: translateX(-30%) */
+     pointer-events:none;
 }
 
 
