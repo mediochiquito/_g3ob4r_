@@ -131,6 +131,8 @@ SECCIONES
 .backSeccionHide-add-active
 {
   transition: 0.35s;
+   pointer-events:none !important;
+
 }
 
 .enterSeccionShow-add{
