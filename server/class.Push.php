@@ -18,8 +18,8 @@ class Push{
 		
 		$this->stream_context = stream_context_create();
 		stream_context_set_option($this->stream_context, 'ssl', 'local_cert', $this->apns_cert);
-		$this->apns = stream_socket_client('ssl://' . $this->apns_url . ':' . $this->apns_port, $error, $error_string, 2, STREAM_CLIENT_CONNECT, $this->stream_context);
-				
+		$this->apns = stream_socket_client('ssl://' . $this->apns_url . ':' . $this->apns_port, $error, $error_string, 20, STREAM_CLIENT_CONNECT, $this->stream_context);
+		
 	}
 	
 	
@@ -30,7 +30,11 @@ class Push{
 		$payload = json_encode($payload);
 
 		$apns_message = chr(0) . chr(0) . chr(32) . pack('H*', str_replace(' ', '', $token)) . chr(0) . chr(strlen($payload)) . $payload;
-		fwrite($this->apns, $apns_message);
+		$result =fwrite($this->apns, $apns_message);
+
+		$result = fwrite($fp, $msg, strlen($msg));
+
+		print_r($result);
 
 	}
 	

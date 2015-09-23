@@ -4,7 +4,7 @@
 
       function load_script() {
 
-       document.getElementById('gMapsScripts').innerHTML = ''
+           document.getElementById('gMapsScripts').innerHTML = ''
 
             var s = document.createElement('script'); // use global document since Angular's $document is weak
             s.id = 'gMaps' ;
@@ -16,7 +16,6 @@
 
       function lazyLoadApi(key) {
 
-
           var deferred = $q.defer();
           $window.initMap = function () {
               $timeout(function(){
@@ -24,19 +23,8 @@
                  deferred.resolve();
 
               })
-             
-             /// alert('initMap')
-
           };
-          // thanks to Emil Stenström: http://friendlybit.com/js/lazy-loading-asyncronous-javascript/
-         /* if ($window.attachEvent) {  
-              $window.attachEvent('onload', load_script); 
-
-          } else {
-
-              $window.addEventListener('load', load_script, false);
-          }*/
-
+        
           load_script()  
 
           return deferred.promise;
@@ -168,32 +156,10 @@
            scope._set = function ($obj){       
 
 
-              
-          /*   if ($window.google && $window.google.maps) {
-             }else{
-
-                if(!mapa_ya_inicializado) {
-                   $timeout.cancel(timer);
-                   timer = $timeout(function(){
-                       
-                    
-                           init_with_lazy_load(scope._set($obj));
-                      
-                         
-                    }, 5000);
-                  
-                    return;
-                }
-
-
-             }
-             */
-
-              
                 bounds = new google.maps.LatLngBounds(); 
                 mapa_type = $obj.type
                 scope.itemSelected = null; 
-
+             
                 var my_pos = cordovaGeolocationService.getUltimaPosicion();
 
                 $timeout(function (){
@@ -235,7 +201,7 @@
                         if($obj.item.tipo ==5) stroke_color = '#9282A8';
 
                         directionsDisplay.setOptions({polylineOptions:{strokeColor: stroke_color, strokeOpacity: 0.7, strokeWeight: 8}})
-
+                        
                     } 
                     
                     if(mapa_type == 'item'){
@@ -283,7 +249,8 @@
                         } else {
 
                             ToastService.show('No hemos enctroado tu ubicación.', 'long', 'center');
-
+                            map.setCenter(new google.maps.LatLng(-34.905754, -56.194327));
+                            
                         }
 
                     }
@@ -298,14 +265,15 @@
                            map.setZoom(16);
                            map.setCenter(new google.maps.LatLng($obj.item.lat, $obj.item.lon));
                         }
-                        else if($obj.type == 'dir'){
+                        else if(my_pos != null && $obj.type == 'dir'){
                              map.fitBounds(bounds);
                              ver_ruta()
-
                         }
-                        else{
+                        else if(my_pos != null){
+
                             map.fitBounds(bounds);
                         }
+                        else {}
 
                     }, 100);
 

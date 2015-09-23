@@ -13,8 +13,12 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
     
     	$scope.goMapa = function (){
     		
-    		navigateService.go('mapa', {type:'item', item: $scope.item});
     		
+    	   if ($window.google && $window.google.maps) {  
+              navigateService.go('mapa', {type:'item', item: $scope.item});
+           }else{
+              ToastService.show('Debes conectarte a internet para ver el mapa.', 'long', 'center');
+           }
     	}
     	
     	$scope.goTel =  function (){
@@ -101,8 +105,12 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
 
     	$scope.goDir =  function (){
 
-    		navigateService.go('mapa', {type:'dir', item: $scope.item});
     		
+    	   if ($window.google && $window.google.maps) {  
+              navigateService.go('mapa', {type:'dir', item: $scope.item}  )
+           }else{
+              ToastService.show('Debes conectarte a internet para ver el mapa.', 'long', 'center');
+           }
     	}
 
 		$scope._set = function ($obj, $callback){
@@ -113,12 +121,11 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
 			//$scope.url_img = SERVER + 'img/pois/';
 			Loading.mostrar();
 
-
-
 			if(!angular.isUndefined($scope.item.tipo)){
-
+                
 				$scope.url_img = 'img/default/';
-				$scope.fotos_detalle = [$scope.item.tipo + '.png'];
+                //$scope.fotos_detalle = [$scope.item.tipo + '.png'];
+				$scope.fotos_detalle = [];
 				
 			}else{
 				$scope.fotos_detalle = [];

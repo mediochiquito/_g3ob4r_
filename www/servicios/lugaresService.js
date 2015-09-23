@@ -4,7 +4,6 @@ geobarApp.factory('lugaresService', function($window, cordovaGeolocationService,
     var all_a_distancia = [];
     var distancia_cargada = 5000
 
-
 	return {
 
 		setAll: function() {

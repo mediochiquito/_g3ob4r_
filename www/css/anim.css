@@ -1,6 +1,6 @@
-	.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
-    transition: all linear 2.5s;
-    display: block !important;
+.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+
+    transition: all linear .5s;
 }
 
 .animate-show.ng-hide-add.ng-hide-add-active, .animate-show.ng-hide-remove {
@@ -8,6 +8,7 @@
 }
 
 .animate-show.ng-hide-add, .animate-show.ng-hide-remove.ng-hide-remove-active {
+
     opacity: 1;
 }
 

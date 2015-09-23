@@ -3,7 +3,7 @@
 	session_cache_expire(360);
 	ob_start("ob_gzhandler");
 	ignore_user_abort ( true );
-	error_reporting( E_ALL ^ E_NOTICE ^  E_DEPRECATED );
+	//error_reporting( E_ALL ^ E_NOTICE ^  E_DEPRECATED );
 
 	if($_SERVER['HTTP_HOST'] == '127.0.0.1' || $_SERVER['HTTP_HOST'] == '192.168.0.2' || $_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'mateomenestrina.no-ip.org' || $_SERVER['HTTP_HOST'] == '192.168.235.153') 	
 	{

@@ -3,9 +3,7 @@ angular.module('plugins.toast', [])
   .factory('ToastService', ['$q', '$window', function ($q, $window) {
 
     return {
-
-
-
+      
       showShortTop: function (message) {
         var q = $q.defer();
         $window.plugins.toast.showShortTop(message, function (response) {

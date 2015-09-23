@@ -7,7 +7,8 @@ geobarApp.directive('touchSlider', function($document,Loading, SERVER, $log, nav
     scope: {
     		fotos: '=',
         urlImgs: '=',
-			  imgDefault: '@'
+			  imgDefault: '@',
+     
 	   },
 
     templateUrl: 'directivas/componentes/touchSlider/touchSlider.html',
@@ -17,7 +18,7 @@ geobarApp.directive('touchSlider', function($document,Loading, SERVER, $log, nav
         scope.t = 0;
         scope.pagina = 0;
         scope.enx = 0;
-
+        scope.server = SERVER
         var offsetX = 0;
         var finX = 0;
         var ultimo_x = 0;

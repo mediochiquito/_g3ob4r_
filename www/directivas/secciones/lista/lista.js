@@ -17,6 +17,7 @@ geobarApp.directive('lista', function($window, $log, favService, navigateService
        
         //console.log($scope.allFavs);
         // $scope.type = $obj
+        
         var timer;
         var en_lista;
         $scope._set = function ($obj){

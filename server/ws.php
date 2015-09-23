@@ -21,6 +21,17 @@ switch($_GET['method']){
   		
   	break;
 
+	case 'setPush':
+
+		mysql_query ('UPDATE devices SET devices_activo='. mysql_real_escape_string($params->act) .' WHERE devices_puhstoken = "'. mysql_real_escape_string($params->token) .'" ;');
+		
+		$rs = mysql_query('SELECT devices_activo FROM devices WHERE 
+										 			  devices_puhstoken = "' . mysql_real_escape_string($params->token) . '" LIMIT 1;');
+		$row = mysql_fetch_object($rs);
+
+		die($row->devices_activo);
+  			
+  	break;
 	case 'setFav':
 
 
@@ -104,7 +115,9 @@ switch($_GET['method']){
 			$id_envio =  mysql_insert_id();
 
 
-			$rs_devices_a_enviar = mysql_query("SELECT MAX(devices_id) as devices_id FROM `devices`   WHERE `devices_usuarios_id`>0  AND devices_puhstoken !='' GROUP BY devices_uuid");
+			$rs_devices_a_enviar = mysql_query("SELECT MAX(devices_id) as devices_id FROM `devices`   
+												WHERE `devices_usuarios_id`>0 AND devices_puhstoken !='' AND devices_activo=1 GROUP BY devices_uuid");
+			
 			while($row_a_enviar = mysql_fetch_object($rs_devices_a_enviar)){
 	            mysql_query("INSERT INTO salida SET 
 

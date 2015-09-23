@@ -1,4 +1,4 @@
-geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regService, $cordovaDevice,  $cordovaFacebook) {
+geobarApp.directive('reg', function(ToastService, $rootScope,  Loading,  $http, SERVER , regService, $cordovaDevice,  $cordovaFacebook) {
   
 
   return {
@@ -66,10 +66,12 @@ geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regS
                     
                     window.localStorage.setItem('userId',  parseInt(data.data));
                     scope.userId = parseInt(data.data);
+                    $rootScope.userId = parseInt(data.data);
                     ToastService.show('Gracias por registrarte', 'long', 'center');   
                     Loading.ocultar()
                     scope.showRegistro = false;
                     regService.callback_ok()
+
 
                 }, function(){
                     Loading.ocultar()
@@ -181,6 +183,7 @@ geobarApp.directive('reg', function(ToastService, Loading,  $http, SERVER , regS
                   Loading.ocultar()
                   scope.showRegistro = false;
                   regService.callback_ok()
+                  $rootScope.userId = parseInt(data.data);
 
               }, function(){
                   Loading.ocultar()

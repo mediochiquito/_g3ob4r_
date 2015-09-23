@@ -3,6 +3,8 @@ geobarApp.directive('home', function($window, navigateService, ToastService,  SE
     restrict: 'E',
     templateUrl: 'directivas/secciones/home/home.html', 
     scope:{},
+
+    
     link: function(scope, elem, attrs){
 
       var _callback;

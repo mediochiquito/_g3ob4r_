@@ -1,6 +1,15 @@
 <?php
 include "init.php";
+error_reporting(E_ALL);
+
 include "class.Push.php";
+
+/*if(!isset($_GET['send'])){
+	//header("Location: );
+
+	echo "<script>document.location.href = 'send_push.php?send=1&id=" . $_GET['id'] . "'</script>";
+	exit;
+}*/
 
 $rs_enviar = mysql_query("SELECT * FROM salida 
 
@@ -38,7 +47,7 @@ while($row_enviar = mysql_fetch_object($rs_enviar)){
 									 $row_enviar->envios_poi_id);
 
 			}else{
-
+				
 				$p->enviar_push_ios( $row_enviar->devices_puhstoken, 
 									 $row_enviar->envios_titulo, 
 									 $row_enviar->envios_desc,
@@ -46,7 +55,7 @@ while($row_enviar = mysql_fetch_object($rs_enviar)){
 
 			}
 
-			echo $bulce . ". enviado a: " .  $row_enviar->usuarios_nombre . " ".   $row_enviar->usuarios_menestrina . " (" . $row_enviar->devices_platform . ") 
+echo $bulce . ". enviado a: " .  $row_enviar->usuarios_nombre . " ".   $row_enviar->usuarios_menestrina . " (" . $row_enviar->devices_platform . ") 
 				";
 			$bulce++;
 

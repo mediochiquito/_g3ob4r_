@@ -1,12 +1,18 @@
 
 <div class='tiraSlide' style=' width: {{fotos.length*100}}%; -webkit-transition: {{ t }}; -webkit-transform:translate3d( {{enx}}px, 0px, 0px )' >
-	
+		
 	<div ng-repeat='foto in fotos track by $index'  class='itemSlide' 
 	     md-ink-ripple  ng-disabled=" foto.home_og_poi == 0 ||  foto.home_og_poi == null" 
-		 style='width: {{ 100 / fotos.length }}%; left:{{ $index * (100 / fotos.length ) }}%'
-		 ng-click = 'go(1)'  >
+		 style='width: {{ 100 / fotos.length }}%; left:{{ $index * (100 / fotos.length ) }}%;' 
+		 ng-click = 'go(1)' >
+		   	
+		 <!--   	<div class='image-bg' style='background-image:url( 
 
-			<img ng-src='{{urlImgs}}{{array_src_fotos[$index]}}'  style='width: 100%;' fade-in  />
+
+		   	{{urlImgs}}{{array_src_fotos[$index]}}
+
+		   	)'></div> -->
+			<img ng-src='{{urlImgs}}{{array_src_fotos[$index]}}'  style='width: 100%;' class='animate-show' fade-in  /> 
 
 	</div>
 	

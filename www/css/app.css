@@ -85,9 +85,7 @@ body{
     background-color: #ff99ff
 }
 .bg-color-restaurante{
-
  background-color: #EFE923
-
 }
 .bg-color-cine{
   background-color: #28eaa4 
@@ -555,7 +553,7 @@ body{
     width: 100%;
     top: 0px;
     -webkit-flex: none;
-    display: inline;
+    display: block;
 }
 
 #detalle-menu-info{
@@ -791,17 +789,28 @@ margin-top:0px;
     top: 0px;
     left: 0px;
     height: 100%;
-   
 }
 
 .touchSlider .itemSlide{
     position: absolute;
     top: 0px;
-
     height: 100%;
     outline: none;
+ 
 }
 
+.touchSlider .itemSlide > img{
+    position: relative;
+    /* height: 100%; */
+}
+.touchSlider .itemSlide .image-bg{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    transition: background linear 1s;
+background-position: center;}
 .touch-slide-holder-bullets{
 
     position: absolute;
@@ -867,7 +876,7 @@ margin-top:0px;
     font-family: 'robotobold';
     font-size: 15px;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 19px;
     margin-bottom: 15px;
     box-sizing: border-box;
 }
@@ -898,6 +907,22 @@ margin-top:0px;
     height: 40px;
     /* margin-top: 5px; */
 }
+.config-disabled{
+    opacity: .1;
+    pointer-events:none;
+}
+#config-scrolling{
+
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    
+    -webkit-transform: translateZ(0);
+    
+padding-bottom: 40px;}
+
 
 /*Check box*/
 .checkBox{
@@ -1003,11 +1028,11 @@ reg{
     background-position: center;
     background-color: #666;
     text-align: center;
-
+   
     display: -webkit-flex;
-   -webkit-flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
 }
 
 
@@ -1129,21 +1154,17 @@ reg{
 }
 
 .reg-row check-box{
+
     float: none;
-
-
     display: inline-block;
     margin-top: -4px;
-    /* width: 35px; */
-    /* height: 35px; */
     float: left;
     margin-left: -9px;
     margin-right: 11px;
 }
+
 .reg-input > div{
     display: block;
-
-    
     float: left;
     padding: 9px;
     font-size: 13px;
@@ -1169,29 +1190,28 @@ reg{
 
 .itemLista-count-favs{
     
-height: 20px;
-    
-line-height: 20px;
-    
-font-size: 10px;
-    
-top: 64px;
-    
-position: absolute !important;
-    
-left: 5px;
-    
-padding-left: 0 !important;
+    height: 20px;
+        
+    line-height: 20px;
+        
+    font-size: 10px;
+        
+    top: 64px;
+        
+    position: absolute !important;
+        
+    left: 5px;
+        
+    padding-left: 0 !important;
 }
 .itemLista-count-favs > img{
     
-width: 15px;    
-float: left;
+    width: 15px;    
+    float: left;
 }
 
 .itemLista-count-favs > div{
 
-    /* width: 20px; */
     float: left;   
     margin-left: 3px;    
     margin-top: 0px;  
@@ -1201,3 +1221,7 @@ float: left;
     text-shadow: 1px 1px 0px #000;
 
 }
+
+
+
+
