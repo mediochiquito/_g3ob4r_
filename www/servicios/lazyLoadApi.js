@@ -1,5 +1,7 @@
-geobarApp.service('lazyLoadApi', function lazyLoadApi($window, $q) {
+geobarApp.service('lazyLoadApi', function ($window, $q) {
+ 
   function loadScript() {
+
     //console.log('loadScript')
     // use global document since Angular's $document is weak
     var s = document.createElement('script')

@@ -180,9 +180,6 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
   }, false);
 
-
-
-
 geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazyLoadApi,  $rootScope, favService, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
 
 	$scope.aceptoTerms = -1;
@@ -192,10 +189,11 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazy
 	$scope.ultima_ubilcacion  = cordovaGeolocationService.getUltimaPosicion();
 
 
-	$rootScope.$on('$cordovaNetwork:online', function(event, networkState){
-		alert('$cordovaNetwork:online')
-		//if($cordovaNetwork.isOnline()){
+	//$rootScope.$on('$cordovaNetwork:online', function(event, networkState){
 
+
+		//if($cordovaNetwork.isOnline()){
+/*
 			   lazyLoadApi.then(function () {
 
                     //initialize();
@@ -204,11 +202,11 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazy
 					
                	    alert('lazyLoadApi error')
 
-               });
+               });*/
 
 		//}
 
-	})
+	//})
 
 	
 

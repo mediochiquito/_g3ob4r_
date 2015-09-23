@@ -1,6 +1,40 @@
 
-    geobarApp.directive('mapa', function($cordovaNetwork, navigateService, lazyLoadApi, ToastService, lugaresService, eventosService, DistancePostion, cordovaGeolocationService, $window) {
+    geobarApp.directive('mapa', function($cordovaNetwork, $q, $timeout,$rootScope, navigateService, ToastService, lugaresService, eventosService, DistancePostion, cordovaGeolocationService, $window) {
       
+
+      function load_script() {
+
+
+            var s = document.createElement('script'); // use global document since Angular's $document is weak
+            s.src = 'https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyBxU2t0W9wQFwPnGmoXNI-eg95zCy_PiJI&callback=initMap';
+            document.body.appendChild(s);
+      }
+
+      function lazyLoadApi(key) {
+
+
+          var deferred = $q.defer();
+          $window.initMap = function () {
+              
+              deferred.resolve();
+              alert('initMap')
+
+          };
+          // thanks to Emil Stenström: http://friendlybit.com/js/lazy-loading-asyncronous-javascript/
+         /* if ($window.attachEvent) {  
+              $window.attachEvent('onload', load_script); 
+
+          } else {
+
+              $window.addEventListener('load', load_script, false);
+          }*/
+
+          load_script()  
+
+          return deferred.promise;
+      }
+
+
       return {
 
         restrict: 'AE',
@@ -21,9 +55,6 @@
             scope.itemSelected  = null;
             scope.navigateService = navigateService;
 
-          
-
-            
             scope.goInfo = function (){
 
               navigateService.go('detalle',  scope.itemSelected);
@@ -39,8 +70,9 @@
               $window.open('tel://' + scope.itemSelected.tel);
               
             }
+
             function initialize() {
-                    
+                
                     var mapOptions = {
                         zoom: 15,
                         center: new google.maps.LatLng(-34.397, 150.644),
@@ -59,15 +91,11 @@
 
                     };
 
-
-
                     directionsService = new google.maps.DirectionsService();
                     directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers:true});
                     map = new google.maps.Map(document.getElementById('el-mapa'),  mapOptions);
-
-
+                 
                     mapa_ya_inicializado = true
-
             }
 
 
@@ -121,62 +149,33 @@
                 bounds.extend(marker.getPosition());
             }
 
-
            scope.$on('cambioListaLugares', function(){
-       
-              //if(mapa_type == 'all') scope._set({type: 'all'})
                _dispose();
-
            }); 
 
 
-            scope._set = function ($obj){       
+           var timer;
 
-               if(!mapa_ya_inicializado) initialize();
 
-                /*try{
+           scope._set = function ($obj){       
 
-                  if($cordovaNetwork.isOnline()){
+               if(!mapa_ya_inicializado) {
+                   $timeout.cancel(timer);
+                   timer = $timeout(function(){
+                          init_with_lazy_load(scope._set($obj));
+                    }, 1000);
+                  
+                    return;
+                }
 
-                    if(!mapa_ya_inicializado) {
-
-                        lazyLoadApi.then(function () {
-                          // Promised resolved
-                          initialize();
-
-                        }, function () {
-                            // Promise rejected
-                        });
-
-                    }
-                      
-                  }
-
-                }catch(e){
-                
-                   if(!mapa_ya_inicializado) {
-
-                        lazyLoadApi.then(function () {
-                          // Promised resolved
-                          initialize();
-
-                        }, function () {
-                            // Promise rejected
-                        });
-
-                    }
-
-                }*/
-               
-            
-
+              
                 bounds = new google.maps.LatLngBounds(); 
                 mapa_type = $obj.type
                 scope.itemSelected = null; 
 
                 var my_pos = cordovaGeolocationService.getUltimaPosicion();
 
-                setTimeout(function (){
+                $timeout(function (){
                     
                     _dispose();
 
@@ -270,7 +269,7 @@
                     
                   
                    
-                    setTimeout(function (){
+                    $timeout(function (){
                        
                         google.maps.event.trigger(map, 'resize');
 
@@ -309,9 +308,46 @@
                   });
             }
 
-          //initialize()
-          navigateService.setSecciones('mapa', scope._set)
+           
+
+
+            // lazy load maps           
+
+            function init_with_lazy_load($callback){
+
+              if ($window.google && $window.google.maps) {
+
+                     if(!mapa_ya_inicializado) initialize()
+                     if($callback != null)  $callback()
+                } else {
+
+                    lazyLoadApi().then(function () {
+                        console.log('promise resolved');
+                        if ($window.google && $window.google.maps) {
+                           if(!mapa_ya_inicializado) initialize()
+                           if($callback != null)  $callback()
+                        } else {
+                          console.log('gmaps not loaded');
+                        }
+                    }, function () {
+                        console.log('promise rejected');
+                    });
+                }
+                
+            }
             
-        }, 
+
+
+            $rootScope.$on('$cordovaNetwork:online', function(event, networkState){
+
+                init_with_lazy_load(null);
+
+            })
+
+            init_with_lazy_load(null);
+            navigateService.setSecciones('mapa', scope._set);
+
+            
+        }
       };
     });
