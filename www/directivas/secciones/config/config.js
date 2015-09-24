@@ -45,14 +45,14 @@ geobarApp.directive('config', function($rootScope, ToastService, $cordovaPush, $
               scope.update($clave, $val);
 
 
-              if($val){
+              if($val == 1){
 
                      var iosConfig = {
                         "badge": true,
                         "sound": true,
                         "alert": true,
                      };
-
+                      alert('config nuevamente push')
                       $cordovaPush.register(iosConfig).then(function(deviceToken) {
                       
                         alert(deviceToken);

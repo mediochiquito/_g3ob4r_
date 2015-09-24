@@ -11,7 +11,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 })
 
 
-.run(function($http, $cordovaPush, $cordovaDevice, $window, $rootScope, SERVER,navigateService) {
+.run(function($http, $cordovaPush, $timeout, $cordovaDevice, $window, $rootScope, SERVER,navigateService) {
 
 	function enviar_token($token){
 
@@ -122,20 +122,28 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 						    "alert": true,
 						   };
 
+
+						    var interPushRegister = $timeout(function (){
+						     
+						     	$rootScope.pushIosDisabled = true;
+
+						    })
 						    $cordovaPush.register(iosConfig).then(function(deviceToken) {
-						    
+						      
+						       $rootScope.pushIosDisabled = false;
+						       $timeout.cancel(interPushRegister);
 						       enviar_token(deviceToken);
-						       
 
 						    }, function(err) {
 						     
-						     	alert("Registration error: " + err)
+						     	alert("Push registro error: " + err)
 
 						    });
 
-						    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
 
-							  alert('$cordovaPush:notificationReceived')
+
+
+						    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
 
 						      if (notification.alert) {
 

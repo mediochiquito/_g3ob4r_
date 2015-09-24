@@ -29,9 +29,12 @@
 
 
 	<div class='config-label bg-color-cine'>INFORMACIÓN</div>
-	<div class='config-row' ng-class='{ "config-disabled": ($root.userId == 0) }'>
+	<div class='config-row' ng-class='{ "config-disabled": ($root.userId == 0 || $root.pushIosDisabled) }'>
 		<div class='label'>Notificaciones Push </div>
 		<check-box  md-ink-ripple  checked='chkPush' accion='setPush("push", chkPush)'></check-box>
 	</div>
+
+	
+
 
 </div>
