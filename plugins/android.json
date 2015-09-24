@@ -116,10 +116,6 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-                            "count": 2
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
                             "count": 1
                         },
                         {
@@ -177,22 +173,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<preference name=\"webView\" value=\"org.crosswalk.engine.XWalkWebViewEngine\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference default=\"14+\" name=\"xwalkVersion\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference default=\"--disable-pull-to-refresh-effect\" name=\"xwalkCommandLine\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference default=\"embedded\" name=\"xwalkMode\" />",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Accelerometer\"><param name=\"android-package\" value=\"org.apache.cordova.devicemotion.AccelListener\" /></feature>",
                             "count": 1
                         },
@@ -226,6 +206,10 @@
                         },
                         {
                             "xml": "<feature name=\"Toast\"><param name=\"android-package\" value=\"nl.xservices.plugins.Toast\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"webView\" value=\"org.crosswalk.engine.XWalkWebViewEngine\" />",
                             "count": 1
                         }
                     ]
@@ -262,9 +246,6 @@
         "com.wikitude.phonegap.WikitudePlugin": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "cordova-plugin-crosswalk-webview": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
         "cordova-plugin-device-motion": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
@@ -293,6 +274,9 @@
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "nl.x-services.plugins.toast": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },
