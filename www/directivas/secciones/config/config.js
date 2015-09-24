@@ -1,4 +1,4 @@
-geobarApp.directive('config', function($rootScope, ToastService, $cordovaPush, $timeout, $cordovaNetwork, $window, $http, lugaresService, eventosService, SERVER, Loading) {
+geobarApp.directive('config', function($rootScope, ToastService, regService, $cordovaPush, $timeout, $cordovaNetwork, $window, $http, lugaresService, eventosService, SERVER, Loading) {
   
   return {
     restrict: 'E',
@@ -43,7 +43,9 @@ geobarApp.directive('config', function($rootScope, ToastService, $cordovaPush, $
           if(isOnline) {
               
               scope.update($clave, $val);
-              
+                
+
+
               /*
               if($val == 1){
 
@@ -77,6 +79,11 @@ geobarApp.directive('config', function($rootScope, ToastService, $cordovaPush, $
           
       }
 
+      scope.goReg = function (){
+
+        regService.mostrar(function (){}, function (){})
+
+      }
 
       scope.update = function ($clave, $val){
         

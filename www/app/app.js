@@ -64,8 +64,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 	if($window.localStorage.getItem('json_eventos') == null) $window.localStorage.setItem('json_eventos','[{"id":"23","tipo":"4","cat":"Evento","name":"Jet Black","tel":"","dir":"","lat":"-34.8382628161465","lon":"-56.03090610355139","alt":"15.187","pub_ini":"0000-00-00 00:00:00","pub_fin":"2016-11-30 00:00:00","thumb":"25aa9ebc670e17a21d02f4dcce3f064a.jpg"},{"id":"5","tipo":"4","cat":"Evento","name":"Rodelu","tel":"324234","dir":"324weleñfjkjfñlsdk ñas","lat":"-34.915748","lon":"-56.167437","alt":"14.1","pub_ini":"0000-00-00 00:00:00","pub_fin":"2015-11-02 00:00:00","thumb":"23c20c2b530f5d5812c03f25798e4dda.jpg"},{"id":"6","tipo":"4","cat":"Evento","name":"Skate park","tel":"324234","dir":"324weleñfjs{dlkjfñlsdk ñas","lat":"-34.910883","lon":"-56.133464","alt":"2.8","pub_ini":"0000-00-00 00:00:00","pub_fin":"2015-11-27 00:00:00","thumb":"3acc9f4a636e3a63c91612d108bce36a.jpg"},{"id":"4","tipo":"4","cat":"Evento","name":"Smirnoff Mauss Party","tel":"23123123","dir":"Sheraton","lat":"-34.924265","lon":"-56.158033","alt":"24.6","pub_ini":"0000-00-00 00:00:00","pub_fin":"2015-12-07 00:00:00","thumb":"a5cd9dc8185d604cd7b2050d94f86e3a.jpg"}]');
    
 	
-	$rootScope.pushIosDisabled = true;
-
+	$rootScope.pushIosDisabled = false;
 
 	try{
 		
@@ -120,20 +119,16 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 	
 		if( $cordovaDevice.getPlatform() == 'iOS'){
 
-		    			 var iosConfig = {
+		    			  var iosConfig = {
 						    "badge": true,
 						    "sound": true,
 						    "alert": true,
 						   };
 
-
-						    
+						    $rootScope.pushIosDisabled = true;
 						    $cordovaPush.register(iosConfig).then(function(deviceToken) {
 						      
 						       $rootScope.pushIosDisabled = false;
-						       alert('deviceToken')
-						       
-						       alert(deviceToken);
 						       enviar_token(deviceToken);
 						       
 						    }, function(err) {

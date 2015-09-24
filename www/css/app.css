@@ -896,7 +896,11 @@ background-position: center;}
     margin-top: 13px;
     font-size: 12px;
 }
+.config-row > .label a{
 
+    color: #ffff00;
+    text-decoration: underline;
+}
 .config-conent-slider{
     position: relative;
 
