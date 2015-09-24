@@ -120,3 +120,4 @@ geobarApp.directive('config', function($rootScope, ToastService, $cordovaPush, $
   
 
   };
+});
