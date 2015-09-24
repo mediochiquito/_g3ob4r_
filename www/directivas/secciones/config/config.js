@@ -1,4 +1,4 @@
-geobarApp.directive('config', function($rootScope, ToastService, $timeout, $cordovaNetwork, $window, $http, lugaresService, eventosService, SERVER, Loading) {
+geobarApp.directive('config', function($rootScope, ToastService, $cordovaPush, $timeout, $cordovaNetwork, $window, $http, lugaresService, eventosService, SERVER, Loading) {
   
   return {
     restrict: 'E',
@@ -41,14 +41,37 @@ geobarApp.directive('config', function($rootScope, ToastService, $timeout, $cord
           }
 
           if(isOnline) {
+              
               scope.update($clave, $val);
+
+
+              if($val){
+
+                     var iosConfig = {
+                        "badge": true,
+                        "sound": true,
+                        "alert": true,
+                     };
+
+                      $cordovaPush.register(iosConfig).then(function(deviceToken) {
+                      
+                        alert(deviceToken);
+                         
+
+                      }, function(err) {
+                       
+                        alert("Registration error: " + err)
+
+                      });
+             }
+                       
           }else{
               
                ToastService.show('Debes conectarte a internet para llevar a cabo esta acción.', 'long', 'center');
              
                $timeout(function(){
                     scope.chkPush = $val==1?0:1;
-                })
+               })
           }
           
       }
@@ -97,4 +120,3 @@ geobarApp.directive('config', function($rootScope, ToastService, $timeout, $cord
   
 
   };
-});

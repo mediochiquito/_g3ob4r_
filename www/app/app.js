@@ -125,14 +125,17 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 						    $cordovaPush.register(iosConfig).then(function(deviceToken) {
 						    
 						       enviar_token(deviceToken);
-
+						       
 
 						    }, function(err) {
 						     
-						     	// alert("Registration error: " + err)
+						     	alert("Registration error: " + err)
+
 						    });
 
 						    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
+
+							  alert('$cordovaPush:notificationReceived')
 
 						      if (notification.alert) {
 
