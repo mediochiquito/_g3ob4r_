@@ -19,6 +19,7 @@ geobarApp.directive('checkBox', function($log) {
              else scope.checked = 1;
              scope.$apply()
              scope.accion()
+             
     	})
 
         

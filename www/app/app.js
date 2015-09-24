@@ -311,7 +311,6 @@ geobarApp.controller("menuCtrl", function($scope, navigateService, regService){
 })	
 
 
-
 geobarApp.controller("seccionLoaderController",  function($scope, $rootScope, navigateService, $timeout) {
 	
 	$scope.navigateService = navigateService;

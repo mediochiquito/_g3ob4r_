@@ -1,8 +1,5 @@
-
-geobarApp.directive('config', function($rootScope, $cordovaNetwork, $window, $http, lugaresService, eventosService, SERVER, Loading) {
+geobarApp.directive('config', function($rootScope, ToastService, $timeout, $cordovaNetwork, $window, $http, lugaresService, eventosService, SERVER, Loading) {
   
-	
-
   return {
     restrict: 'E',
     templateUrl: 'directivas/secciones/config/config.html',
@@ -20,8 +17,6 @@ geobarApp.directive('config', function($rootScope, $cordovaNetwork, $window, $ht
       scope.distancia = $window.localStorage.getItem('distancia')
 		  scope.chkPush = $window.localStorage.getItem('push')
 
-      //scope.userId = $window.localStorage.getItem('userId')
-
       scope.$watch('distancia', function($a, $b){
      
         $window.localStorage.setItem('distancia',  scope.distancia);
@@ -34,14 +29,28 @@ geobarApp.directive('config', function($rootScope, $cordovaNetwork, $window, $ht
 
       scope.setPush = function($clave, $val){
 
-          if ($cordovaNetwork.isOnline()) {  
+          var isOnline;
+
+          try{
+            
+            isOnline = $cordovaNetwork.isOnline();
+
+          }catch(e){
+
+            isOnline = true;
+          }
+
+          if(isOnline) {
               scope.update($clave, $val);
-           }else{
-              ToastService.show('Debes conectarte a internet para llevar a cabo esta acción.', 'long', 'center');
-           }
-
-        
-
+          }else{
+              
+               ToastService.show('Debes conectarte a internet para llevar a cabo esta acción.', 'long', 'center');
+             
+               $timeout(function(){
+                    scope.chkPush = $val==1?0:1;
+                })
+          }
+          
       }
 
 
@@ -64,8 +73,6 @@ geobarApp.directive('config', function($rootScope, $cordovaNetwork, $window, $ht
           $http(req).then( 
 
               function(data){
-                  
-
                   Loading.ocultar()
 
               }, function(){

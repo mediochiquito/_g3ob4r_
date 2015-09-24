@@ -13,7 +13,6 @@ $params = json_decode(file_get_contents('php://input'));
 
 switch($_GET['method']){
 
-
 	case 'init':
 		
 		guardar_device($params->uuid, $params->platform, $params->pushtoken, $params->u);
@@ -32,8 +31,8 @@ switch($_GET['method']){
 		die($row->devices_activo);
   			
   	break;
-	case 'setFav':
 
+	case 'setFav':
 
 		$rs = mysql_query('SELECT favoritos_id FROM favoritos WHERE 
 										 favoritos_lugares_id = ' . mysql_real_escape_string($params->poiId) . '
