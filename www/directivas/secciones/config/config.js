@@ -43,8 +43,8 @@ geobarApp.directive('config', function($rootScope, ToastService, $cordovaPush, $
           if(isOnline) {
               
               scope.update($clave, $val);
-
-
+              
+              /*
               if($val == 1){
 
                      var iosConfig = {
@@ -63,8 +63,9 @@ geobarApp.directive('config', function($rootScope, ToastService, $cordovaPush, $
                         alert("Registration error: " + err)
 
                       });
-             }
-                       
+              }
+              */
+
           }else{
               
                ToastService.show('Debes conectarte a internet para llevar a cabo esta acción.', 'long', 'center');
