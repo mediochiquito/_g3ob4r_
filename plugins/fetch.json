@@ -157,13 +157,5 @@
             "APP_ID": "398706416993551",
             "APP_NAME": "GeoBar"
         }
-    },
-    "cordova-plugin-crosswalk-webview": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-crosswalk-webview@1.2.0"
-        },
-        "is_top_level": true,
-        "variables": {}
     }
 }
