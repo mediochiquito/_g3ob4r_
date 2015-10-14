@@ -72,14 +72,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.wikitude.phonegap.WikitudePlugin": {
-        "source": {
-            "type": "local",
-            "path": "C:\\developer\\plugins-cordova\\wikitude-cordova-plugin"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-geolocation": {
         "source": {
             "type": "registry",
@@ -147,15 +139,31 @@
         "is_top_level": true,
         "variables": {}
     },
+    "com.wikitude.phonegap.WikitudePlugin": {
+        "source": {
+            "type": "local",
+            "path": "C:\\developer\\plugins-cordova\\wikitude-cordova-plugin-master"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
     "com.phonegap.plugins.facebookconnect": {
         "source": {
             "type": "local",
-            "path": "/Users/mateomenrstrina/developer/cordova-plugins/phonegap-facebook-plugin"
+            "path": "C:\\developer\\plugins-cordova\\telerik-facebook-plugin-master"
         },
         "is_top_level": true,
         "variables": {
             "APP_ID": "398706416993551",
             "APP_NAME": "GeoBar"
         }
+    },
+    "cordova-plugin-crosswalk-webview": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-crosswalk-webview"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

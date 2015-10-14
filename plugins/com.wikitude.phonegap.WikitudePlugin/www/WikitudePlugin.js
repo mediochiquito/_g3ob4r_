@@ -11,11 +11,10 @@
 		 */
 		this._sdkKey = "kV5ZqAyYm+AOmyhQtR7+0owliSIF85GUrZ0G8+Du2IDZMltK/sVxfUN2H2TaPj373PLsA2xSx/UqtTo0c+sbE0ysSCJutNz9T1npBWQ71Ps9Qn0Eo3GHTNMkvQXlw4Ydkk1GRhFFypm+7nn4Yo0RzaBZ+0IokvaoJ4DTg76aTYVTYWx0ZWRfX9lM/t2gSZ7eB3tafdcexSofa1XsQ0qiLB7yFeDWVhJHwdSi1Ck8L74qaWjeAZaUoiNOhbVU/e/E7NLqFNymfzpFZ5rT7zxIPj8Mmp9mG+28w1oROEHTG8sHMXNNQuRD5q5ePsJXt/bU8w7jOn/sLeiB3a2iuIHuv523oq5lO3Elnym5OSNxIUx79XP43SCI5Nja1WeNJWGV+AokjMOJfWHSO8JJSRUJLoXAOfGEgHcpYrbEEgyFN/HVf+zVr/LYRe+p9ctOyBbR2Mn5r7DXa4JeCXJaB5rAzUxWcFNM1CqYXZGMfnl8dZm4HoF6T1ORxOAxX/Zds53NQS2kaT6uwvatP89EokIjw1zM4+DvvMn3QpWFxKBWGq1Xwk2kZOQ00zbHVyyjxm9hRSl39et5JIHLKqzPdF+itWOY0N09iqxA32VreAwVGZf+W/LlCV0XLTN9dIlUNpYdY61pct0RBwKunzflrkBdbCSrNb/jV04VOOIe0Au/CmM=";
 
-
 		/**
 		 *  The Wikitude SDK can run in different modes.
 		 *      * Geo means, that objects are placed at latitude/longitude positions.
-		 *      * IR means that only image recognition is used in the ARchitect World.
+		 *      * 2DTracking means that only image recognition is used in the ARchitect World.
 		 *  When your ARchitect World uses both, geo and ir, than set this value to "IrAndGeo". Otherwise, if the ARchitectWorld only needs image recognition, placing "IR" will require less features from the device and therefore, support a wider range of devices. Keep in mind that image recognition requires a dual core cpu to work satisfyingly.
 		 */
         this.FeatureGeo         = "geo";
@@ -89,7 +88,7 @@
 		// We add an event listener on the resume and pause event of the application life-cycle
 		document.addEventListener("resume", this.onResume, false);
 		document.addEventListener("pause", this.onPause, false);
-		//document.addEventListener("backbutton", this.onBackButton, false);
+		document.addEventListener("backbutton", this.onBackButton, false);
 	};
 
 	/* Managing the Wikitude SDK Lifecycle */
@@ -100,7 +99,7 @@
 
 		document.removeEventListener("pause", this.onPause, false);
 		document.removeEventListener("resume", this.onResume, false);
-		//document.removeEventListener("backbutton", this.onBackButton, false);
+		document.removeEventListener("backbutton", this.onBackButton, false);
 
 		cordova.exec(this.onWikitudeOK, this.onWikitudeError, "WikitudePlugin", "close", [""]);
 	};
@@ -206,7 +205,7 @@
 
 		// Call the Wikitude SDK that it should resume.
 		//cordova.exec(this.onWikitudeOK, this.onWikitudeError, "WikitudePlugin", "close", [""]);
-		//WikitudePlugin.prototype.close();
+		WikitudePlugin.prototype.close();
 	};
 
 	/**

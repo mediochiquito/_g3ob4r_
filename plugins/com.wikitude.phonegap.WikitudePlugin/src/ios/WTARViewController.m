@@ -206,11 +206,11 @@ NSString * const WTArchitectDebugDelegateMessageKey = @"WTArchitectDebugDelegate
 
 - (void)didSwipeBack:(UISwipeGestureRecognizer *)recognizer
 {
-   /* if (self.architectDelegate) {
+    if (self.architectDelegate) {
         if ([self.architectDelegate respondsToSelector:@selector(architectViewControllerWillDisappear:)]) {
             [self.architectDelegate architectViewControllerWillDisappear:self];
         }
-    }*/
+    }
 }
 
 @end

@@ -671,8 +671,7 @@ public class WikitudePlugin extends CordovaPlugin implements ArchitectUrlListene
 						if (WikitudePlugin.this.locationProvider != null) {
 							WikitudePlugin.this.locationProvider.onPause();
 						}
-						// MATEO
-						//removeArchitectView();
+						removeArchitectView();
 						return true;
 
 					} else {
