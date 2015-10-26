@@ -320,9 +320,9 @@ geobarApp.controller("menuCtrl", function($scope, navigateService, regService){
 geobarApp.controller("seccionLoaderController",  function($scope, $rootScope, navigateService, $timeout) {
 	
 	$scope.navigateService = navigateService;
-	$scope.active_page = 'home';
+	$scope.active_page =  navigateService.active_page;
 
-	$scope.getAnimationClass = function ($secc){
+	/*$scope.getAnimationClass = function ($secc){
 		
 		var habil_trans = navigateService.habilTranciosinar($secc)
 		
@@ -332,18 +332,56 @@ geobarApp.controller("seccionLoaderController",  function($scope, $rootScope, na
 		if($scope.active_page == $secc) r = $scope.dir_animate + 'Show'
 		return r
 	}
+*/
 
-
-	$scope.$watch('navigateService.status', function(oldVal, newVal, scope) {
+	/*$scope.$watch('navigateService.status', function(oldVal, newVal, scope) {
 	   	
 	    $scope.dir_animate = navigateService.dir_animate
 	    $scope.active_page = navigateService.active_page;
 	   
 	});
-
+*/
 
 	$scope.cliqueando = function (){
 		$scope.visible = false;
 	}
 
+});
+
+
+
+geobarApp.animation('.enter', function() {
+  return {
+    enter : function(element, done) {
+      jQuery(element).css({
+        color:'#FF0000'
+      });
+
+      //node the done method here as the 2nd param
+      jQuery(element).animate({
+        color:'#0000FF'
+      }, done);
+
+      return function(cancelled) {
+        /* this (optional) function is called when the animation is complete
+           or when the animation has been cancelled (which is when
+           another animation is started on the same element while the
+           current animation is still in progress). */
+        if(cancelled) {
+          jQuery(element).stop();
+        }
+      }
+    },
+
+    leave : function(element, done) { done(); },
+    move : function(element, done) { done(); },
+
+    beforeAddClass : function(element, className, done) { done(); },
+    addClass : function(element, className, done) { done(); },
+
+    beforeRemoveClass : function(element, className, done) { done(); },
+    removeClass : function(element, className, done) { done(); },
+
+    allowCancel : function(element, event, className) {}
+  };
 });

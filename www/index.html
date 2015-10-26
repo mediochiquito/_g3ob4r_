@@ -18,14 +18,21 @@
 
   <body ng-controller="mainController" ng-init="init()" >
  
-      <div ng-controller="seccionLoaderController" id='seccionLoaderController' style='height:{{alto_screen-80}}px'>
+      <div ng-controller="seccionLoaderController" class='{{$root.dirAnim}}' id='seccionLoaderController' style='height:{{alto_screen-80}}px'>
 
-          <home      ng-class=' getAnimationClass("home") '    class='seccion' ></home>
+          <home      ng-show=' navigateService.active_page == "home" '      class='seccion' ></home>
+          <lista     ng-show=' navigateService.active_page == "lista" '     class='seccion' ></lista>
+          <config    ng-show=' navigateService.active_page == "config" '    class='seccion' ></config>
+          <detalle   ng-show=' navigateService.active_page == "detalle" '   class='seccion' ></detalle>
+          <taxi      ng-show=' navigateService.active_page == "taxi" '      class='seccion' id='taxi' ></taxi>
+          <mapa      ng-show=' navigateService.active_page == "mapa" '      class='seccion' id='mapa'></mapa> 
+
+          <!--<home      ng-class=' getAnimationClass("home") '    class='seccion' ></home>
           <lista     ng-class=' getAnimationClass("lista") '   class='seccion' ></lista>
           <config    ng-class=' getAnimationClass("config") '  class='seccion' ></config>
           <detalle   ng-class=' getAnimationClass("detalle") ' class='seccion' ></detalle>
           <taxi      ng-class=' getAnimationClass("taxi") '    class='seccion' id='taxi' ></taxi>
-          <mapa      ng-class=' getAnimationClass("mapa") '    class='seccion' id='mapa'></mapa>
+          <mapa      ng-class=' getAnimationClass("mapa") '    class='seccion' id='mapa'></mapa>-->
           
       </div>  
 
@@ -61,7 +68,6 @@
     <script src="libs/angular-aria.min.js"></script>
     <script src="libs/angular-material.min.js"></script>
     
-
     <script src="app/app.js"></script>
     <script src="servicios/lazyLoadApi.js"></script>
     <script src="servicios/cordovaGeolocationModule.js"></script>
@@ -90,7 +96,6 @@
     <script src="directivas/componentes/touchSlider/touchSlider.js"></script>
     <script src="directivas/componentes/elLoading/elLoading.js"></script>
     <script src="directivas/componentes/checkBox/checkBox.js"></script>
-    
 
     <script type="text/javascript" src="cordova.js"></script>
     <script src="app/index.js"></script>

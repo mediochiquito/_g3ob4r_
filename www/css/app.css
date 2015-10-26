@@ -322,7 +322,7 @@ body{
     width: 100%;
     margin: 0px;  
     padding: 0;
-    /*overflow: hidden;*/
+  
 }
 
 .seccion {
@@ -331,12 +331,11 @@ body{
     width: 100%;
     top: 0px;
 
-    display: none;
-    /*backface-visibility: hidden;
-    perspective: 1000;*/
+ /*   display: none;*/
+   
    
 }
-.enterSeccionShow{
+/*.enterSeccionShow{
     display: block!important;
         pointer-events:auto;
    
@@ -356,7 +355,7 @@ body{
      pointer-events:none;
 }
 
-
+*/
 
 #lista-content-input{
     padding: 0px 10px 0px 10px;

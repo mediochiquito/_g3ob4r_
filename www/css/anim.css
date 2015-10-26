@@ -135,15 +135,22 @@
 
 }
 
+
+
+
+
+
+
 /*   
-SECCIONES 
-*/
+SECCIONES */
+
+/*
 .enterSeccionShow-add-active,
 .enterSeccionHide-add-active,
 .backSeccionShow-add-active,
 .backSeccionHide-add-active
 {
-  transition: 0.35s;
+  transition: 2.35s;
    pointer-events:none !important;
 
 }
@@ -151,7 +158,7 @@ SECCIONES
 .enterSeccionShow-add{
 	display: block!important;
 	-webkit-transform: translateX(100%);
-	/*z-index: 999999;*/
+	
 	opacity: 1.0;
 }
 .enterSeccionShow-add-active{
@@ -160,7 +167,7 @@ SECCIONES
 }
 .enterSeccionHide-add{
 	display: block!important;
-/*	z-index: 999998;*/
+
 	-webkit-transform: translateX(0px);
 	opacity:  1.0;
 }
@@ -170,7 +177,6 @@ SECCIONES
 }
 .backSeccionShow-add{
 	display: block!important;
-	/*z-index: 99998;*/
 	-webkit-transform: translateX(-70px);
 	opacity: 0.0;
 }
@@ -180,7 +186,7 @@ SECCIONES
 }
 .backSeccionHide-add{
 	display: block!important;
-/*	z-index: 99999;*/
+
 	-webkit-transform: translateX(0px);
 	opacity:  1.0;
 }
@@ -188,3 +194,80 @@ SECCIONES
 	-webkit-transform: translateX(100%);
 	opacity:  1.0;
 }
+*/
+
+
+.enter .seccion.ng-hide-add, .enter .seccion.ng-hide-remove {
+  transition: 0s linear all;
+}
+.enter .seccion.ng-hide-add-active,
+.enter .seccion.ng-hide-remove-active {
+   transition: 0.35s;
+   pointer-events:none !important;
+}
+
+.enter .seccion.ng-hide-add { 
+	-webkit-transform: translateX(0px);
+	opacity:  1.0;
+}
+.enter .seccion.ng-hide-add.ng-hide-add-active { 
+	display: block!important;
+	-webkit-transform: translateX(-170px) scale(.9,.9);;
+	opacity: 0.0;
+ }
+.enter .seccion.ng-hide-remove { 
+
+	display: block!important;
+	-webkit-transform: translateX(100%);
+	opacity: 1.0;
+
+ }
+.enter .seccion.ng-hide-remove.ng-hide-remove-active { 
+	-webkit-transform: translateX(0px);
+	opacity:  1.0;
+}
+
+
+.back .seccion.ng-hide-add, .back .seccion.ng-hide-remove {
+  transition: 0s linear all;
+}
+.back .seccion.ng-hide-add-active,
+.back .seccion.ng-hide-remove-active {
+   transition: 0.35s;
+   pointer-events:none !important;
+}
+
+.back .seccion.ng-hide-add { 
+
+	-webkit-transform: translateX(0px);
+	opacity:  1;
+	
+}
+.back .seccion.ng-hide-add.ng-hide-add-active { 
+	
+	display: block!important;
+	-webkit-transform: translateX(100%) scale(1,1);
+	opacity: 1.0;
+
+ }
+.back .seccion.ng-hide-remove { 
+
+	
+
+	display: block!important;
+	-webkit-transform: translateX(-170px) scale(.9,.9);
+
+	opacity: 0.0;
+
+ }
+.back .seccion.ng-hide-remove.ng-hide-remove-active { 
+	
+	-webkit-transform: translateX(0px);
+	opacity:  1.0;
+	
+
+}
+
+
+
+
