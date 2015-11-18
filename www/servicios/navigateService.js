@@ -1,23 +1,23 @@
-geobarApp.service('navigateService', function($log, mapaService, $rootScope, $injector, $timeout){
+geobarApp.service('navigateService', function($log, mapaService, $rootScope, $injector){
 
 	var en_seccion = '';
-	var historia = new Array();
+	var historia = [];
 	var ultima_seccion_eliminada_de_historia = null;
 	var self = this;
 
 	this.status = 0;
  	//this.dir_animate  = 'enterSeccion';
- 	this.secciones = new Object()
+ 	this.secciones = {};
  	this.active_page = 'home';
 	// // Here is your tag
  	document.addEventListener("backbutton", backKeyDown, false);
 
 
 
- 	function backKeyDown(e){
+ 	function backKeyDown(){
 
  		$rootScope.$apply(function(){
- 			self.back()
+ 			self.back();
  			var arService = $injector.get('arService');
  			arService.hide()
  			
@@ -27,13 +27,13 @@ geobarApp.service('navigateService', function($log, mapaService, $rootScope, $in
 
  	this.esPrimerPage = function(){	
  		return (historia.length==1);
- 	}
+ 	};
 
  	this.setSecciones = function ($key, $init){
  		
  		this.secciones[$key] = $init;
  		
- 	}
+ 	};
 
 	this.go = function (secc, obj, entra_a_historia, $dir_animate, $recargar){
 
@@ -79,18 +79,18 @@ geobarApp.service('navigateService', function($log, mapaService, $rootScope, $in
 
 				if(!$recargar) go_execute(secc, obj, entra_a_historia, $dir_animate);
 				else{
-					this.secciones['lista'](obj)
+					this.secciones['lista'](obj);
 					go_execute(secc, obj, entra_a_historia, $dir_animate)
 				}
 
 				break;
 
 			default:
-				go_execute(secc, obj, entra_a_historia, $dir_animate)
+				go_execute(secc, obj, entra_a_historia, $dir_animate);
 				break;
 		}
 
-	}
+	};
 
 	function go_execute(secc, obj, entra_a_historia, $dir_animate){
 
@@ -127,30 +127,30 @@ geobarApp.service('navigateService', function($log, mapaService, $rootScope, $in
 		
 			setTimeout(function(){
 				ultima_seccion_eliminada_de_historia =  null;
-			},100)
+			},100);
 
 		var penultimo_elemento = historia[historia.length-1];	
-		var recargar = false
+		var recargar = false;
 		if(penultimo_elemento.secc == 'mapa') recargar = true;
 
 		this.go(penultimo_elemento.secc, penultimo_elemento.obj, false, 'backSeccion', recargar);
-	}
+	};
 
 
 
 	this.habilTranciosinar = function ($secc){
 			
 			if(ultima_seccion_eliminada_de_historia !=  null && ultima_seccion_eliminada_de_historia.secc == $secc) return true;
-			
+			var elem;
 			if(historia.length>0){
-				var elem = historia[historia.length-1];
+				elem = historia[historia.length-1];
 				if(elem.secc == $secc)  return true;
 			}
 			if(this.dir_animate == 'enterSeccion' && historia.length > 1){
-				var elem = historia[historia.length-2];
+				 elem = historia[historia.length-2];
 				if(elem.secc == $secc)  return true;
 			}
 			return false;
 	}
 
-})
+});

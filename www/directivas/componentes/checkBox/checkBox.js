@@ -1,4 +1,4 @@
-geobarApp.directive('checkBox', function($log) {
+geobarApp.directive('checkBox', function() {
   return {
     
     restrict: 'E', 
@@ -8,16 +8,16 @@ geobarApp.directive('checkBox', function($log) {
 	},
     template:'<div class="checkBox-bg"><div class="checkBox-selected" ng-show=" checked==1"></div></div>',
 
-    link: function(scope, elem, attrs){
+    link: function(scope, elem){
 
-        elem.addClass('checkBox')   
+        elem.addClass('checkBox');
 
 
     	elem.on('touchend', function(){
          
     		 if(scope.checked == 1) scope.checked = 0;
              else scope.checked = 1;
-             scope.$apply()
+             scope.$apply();
              scope.accion()
              
     	})

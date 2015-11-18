@@ -5,7 +5,7 @@ geobarApp.directive('taxi', function() {
     templateUrl: 'directivas/secciones/taxi/taxi.html',
 	
     
-    link:function (scope, elem, attrs){
+    link:function (scope){
 
 	   	scope.visible = true;
 
@@ -16,7 +16,7 @@ geobarApp.directive('taxi', function() {
           else                            window.open('https://itunes.apple.com/us/app/voy-en-taxi/id939470696?l=es&ls=1&mt=8', '_system');
          }catch(e){}
         
-      }
+      };
 
       scope.easytaxi = function(){
           try{
@@ -25,7 +25,7 @@ geobarApp.directive('taxi', function() {
           }catch(e){}
       }
 
-    }, 
+    }
    
 
   };

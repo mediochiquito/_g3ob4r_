@@ -99,9 +99,9 @@ cordovaGeolocationModule.factory('cordovaGeolocationService', ['$rootScope', '$l
 
                function(position) {
                     
-                     console.log(position)
+
                      pocision = position;
-                     $rootScope.position = position
+                     $rootScope.position = position;
                      $rootScope.$apply()
 
                 }, function onError(error) {

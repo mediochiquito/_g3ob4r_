@@ -5,26 +5,26 @@ geobarApp.directive('config', function($rootScope, ToastService, regService, $co
     templateUrl: 'directivas/secciones/config/config.html',
 	  scope:{caca:'@'},
     
-    link:function (scope, elem, attrs){
+    link:function (scope){
       
-      scope.screen_alto = window.innerHeight
+      scope.screen_alto = window.innerHeight;
 	   	scope.visible = true;
       
-      scope.chkBares = $window.localStorage.getItem('bares')
-      scope.chkRestaurantes = $window.localStorage.getItem('restaurantes')
-      scope.chkCines = $window.localStorage.getItem('cines')
-      scope.chkTeatros = $window.localStorage.getItem('teatros')
-      scope.distancia = $window.localStorage.getItem('distancia')
-		  scope.chkPush = $window.localStorage.getItem('push')
+      scope.chkBares = $window.localStorage.getItem('bares');
+      scope.chkRestaurantes = $window.localStorage.getItem('restaurantes');
+      scope.chkCines = $window.localStorage.getItem('cines');
+      scope.chkTeatros = $window.localStorage.getItem('teatros');
+      scope.distancia = $window.localStorage.getItem('distancia');
+		  scope.chkPush = $window.localStorage.getItem('push');
 
-      scope.$watch('distancia', function($a, $b){
+      scope.$watch('distancia', function(){
      
         $window.localStorage.setItem('distancia',  scope.distancia);
            
-        lugaresService.setAll()
+        lugaresService.setAll();
         eventosService.setAll()
         
-      })
+      });
 
 
       scope.setPush = function($clave, $val){
@@ -43,30 +43,7 @@ geobarApp.directive('config', function($rootScope, ToastService, regService, $co
           if(isOnline) {
               
               scope.update($clave, $val);
-                
 
-
-              /*
-              if($val == 1){
-
-                     var iosConfig = {
-                        "badge": true,
-                        "sound": true,
-                        "alert": true,
-                     };
-                      alert('config nuevamente push')
-                      $cordovaPush.register(iosConfig).then(function(deviceToken) {
-                      
-                        alert(deviceToken);
-                         
-
-                      }, function(err) {
-                       
-                        alert("Registration error: " + err)
-
-                      });
-              }
-              */
 
           }else{
               
@@ -77,13 +54,13 @@ geobarApp.directive('config', function($rootScope, ToastService, regService, $co
                })
           }
           
-      }
+      };
 
       scope.goReg = function (){
 
         regService.mostrar(function (){}, function (){})
 
-      }
+      };
 
       scope.update = function ($clave, $val){
         
@@ -99,11 +76,11 @@ geobarApp.directive('config', function($rootScope, ToastService, regService, $co
                  'Content-Type':  'application/x-www-form-urlencoded;charset=utf-8'
                },
                data: {token: $rootScope.pushToken, act: $val}
-          }   
+          };
 
           $http(req).then( 
 
-              function(data){
+              function(){
                   Loading.ocultar()
 
               }, function(){
@@ -116,7 +93,7 @@ geobarApp.directive('config', function($rootScope, ToastService, regService, $co
         }
 
         $window.localStorage.setItem($clave,  $val);
-        lugaresService.setAll()
+        lugaresService.setAll();
         $rootScope.$broadcast('cambioListaLugares');
 
 
@@ -124,7 +101,7 @@ geobarApp.directive('config', function($rootScope, ToastService, regService, $co
 
       
 
-    }, 
+    }
   
 
   };

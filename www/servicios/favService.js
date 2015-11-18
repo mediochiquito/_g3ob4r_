@@ -7,14 +7,15 @@ geobarApp.service('favService', function($window){
             this.all =  JSON.parse( $window.localStorage.getItem('favs'));
         }catch(e){}
         
-    }
+    };
 
     this.getAll = function (){
         return  this.all 
-    }
+    };
+
     this.getCantFavPoriId = function($idPoi) {
         return this.all['p_' + $idPoi];
-    }
+    };
 
     this.setFav =  function($idPoi, $val) {
 
@@ -28,5 +29,5 @@ geobarApp.service('favService', function($window){
 
     }
 
-})
+});
 

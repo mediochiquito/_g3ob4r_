@@ -4,7 +4,7 @@
 
       function load_script() {
 
-           document.getElementById('gMapsScripts').innerHTML = ''
+           document.getElementById('gMapsScripts').innerHTML = '';
 
             var s = document.createElement('script'); // use global document since Angular's $document is weak
             s.id = 'gMaps' ;
@@ -14,7 +14,7 @@
 
        }
 
-      function lazyLoadApi(key) {
+      function lazyLoadApi() {
 
           var deferred = $q.defer();
           $window.initMap = function () {
@@ -25,7 +25,7 @@
               })
           };
         
-          load_script()  
+          load_script();
 
           return deferred.promise;
       }
@@ -37,11 +37,11 @@
         scope: {},
         templateUrl: 'directivas/secciones/mapa/mapa.html',
 
-        link: function (scope, elem, attrs){
+        link: function (scope){
 
             var map;
             var mapa_ya_inicializado = false;
-            var array_markers =  new Array();
+            var array_markers =  [];
             var myMarker  = null;
             var bounds;
             var mapa_type = '';
@@ -55,17 +55,17 @@
 
               navigateService.go('detalle',  scope.itemSelected);
                 
-            }
+            };
             scope.goDir =  function (){
 
               navigateService.go('mapa', {type:'dir', item: scope.itemSelected});
               
-            }
+            };
             scope.goTel =  function (){
 
               $window.open('tel://' + scope.itemSelected.tel);
               
-            }
+            };
 
             function initialize() {
                 
@@ -96,7 +96,7 @@
 
 
             function _dispose(){
-                for (i in array_markers) {
+                for (var i in array_markers) {
                   array_markers[i].setMap(null);
                 }
                 if(myMarker != null) myMarker.setMap(null);
@@ -150,14 +150,11 @@
            }); 
 
 
-           var timer;
-
-
            scope._set = function ($obj){       
 
 
                 bounds = new google.maps.LatLngBounds(); 
-                mapa_type = $obj.type
+                mapa_type = $obj.type;
                 scope.itemSelected = null; 
              
                 var my_pos = cordovaGeolocationService.getUltimaPosicion();
@@ -166,7 +163,7 @@
                     
                     _dispose();
 
-                    array_markers = new Array();
+                    array_markers = [];
  
                     if(my_pos != null){
                         
@@ -191,7 +188,7 @@
 
                     if(mapa_type == 'dir'){
 
-                        agregar_marcador($obj.item)  
+                        agregar_marcador($obj.item);
                         directionsDisplay.setMap(map);
                         var stroke_color;
                         if($obj.item.tipo ==1) stroke_color = '#ff99ff';
@@ -240,7 +237,7 @@
                             
                             //eventos
                             var eventos = eventosService.getDistancia();
-                            var cantidad_eventos = eventos.length
+                            var cantidad_eventos = eventos.length;
                             for (i = 0; i < cantidad_eventos; i++) {  
                               //if(eventos[i].distancia <= $window.localStorage.getItem('distancia'))
                                 agregar_marcador(eventos[i] )
@@ -278,7 +275,7 @@
                     }, 100);
 
                 }, 600);
-            }
+            };
 
 
             function ver_ruta() {
@@ -306,14 +303,14 @@
 
               if ($window.google && $window.google.maps) {
 
-                     if(!mapa_ya_inicializado) initialize()
+                     if(!mapa_ya_inicializado) initialize();
                      if($callback != null)  $callback()
                 } else {
 
                     lazyLoadApi().then(function () {
                         console.log('promise resolved');
                         if ($window.google && $window.google.maps) {
-                           if(!mapa_ya_inicializado) initialize()
+                           if(!mapa_ya_inicializado) initialize();
                            if($callback != null)  $callback()
                         } else {
                           console.log('gmaps not loaded');
@@ -327,11 +324,11 @@
             
 
 
-            $rootScope.$on('$cordovaNetwork:online', function(event, networkState){
+            $rootScope.$on('$cordovaNetwork:online', function(){
 
                 init_with_lazy_load(null);
 
-            })
+            });
 
             init_with_lazy_load(null);
             navigateService.setSecciones('mapa', scope._set);

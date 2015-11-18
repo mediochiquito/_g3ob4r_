@@ -16,8 +16,8 @@ window.onerror = function(message, file, line) {
 var World = {
 
 
-	array_lugares: new Array(), 
-	array_eventos: new Array(), 
+	array_lugares: [],
+	array_eventos: [],
 
 	/*array_lugares : [{"id":"4","tipo":"4","cat":"Evento","name":"Sheraton 3","tel":"23123123","dir":"dir dir dirsdad asd asd ","lat":"-34.924265","lon":"-56.158033","alt":"24.6","pub_ini":null,"pub_fin":null},{"id":"5","tipo":"4","cat":"Evento","name":"Rodelu 4","tel":"324234","dir":"324weleñfjs{dlkjfñlsdk ñas","lat":"-34.915748","lon":"-56.167437","alt":"14.1","pub_ini":null,"pub_fin":null},{"id":"6","tipo":"4","cat":"Evento","name":"Skate park 5","tel":"324234","dir":"324weleñfjs{dlkjfñlsdk ñas","lat":"-34.910883","lon":"-56.133464","alt":"2.8","pub_ini":null,"pub_fin":null}], 
 	array_eventos : [{"id":"1","tipo":"1","cat":"Bar","name":"Yatay 0","tel":"23059020","dir":"Luis Alberto Herrera 941","lat":"-34.864598","lon":" -56.213087","alt":"8.7"},{"id":"2","tipo":"2","cat":"Restaurante","name":"Rosedal 1","tel":"23059020","dir":"Luis Alberto Herrera 213","lat":"-34.859702","lon":"-56.205906","alt":"15.8"},{"id":"3","tipo":"3","cat":"Cine","name":"P. Legislativo 2","tel":"23059020","dir":"Luis Alberto Herrera 213","lat":"-34.891497","lon":"-56.187308","alt":"22.8"}], 
@@ -51,12 +51,12 @@ var World = {
 
 
 		var cantidad_eventos = World.array_eventos.length;
-		for (var i = 0; i < cantidad_eventos; i++) {
+		for (var u = 0; u < cantidad_eventos; u++) {
 		
-			var obj = World.array_eventos[i];
-				obj.arrayNum = i
-				obj.type = 'evento'
-				World.markerList.push(new Marker(obj));
+			var obj2 = World.array_eventos[u];
+				obj2.arrayNum = i;
+				obj2.type = 'evento';
+				World.markerList.push(new Marker(obj2));
 		}
 
 
@@ -77,7 +77,7 @@ var World = {
 	}
 };
 
-AR.context.onLocationChanged = World.locationChanged
+AR.context.onLocationChanged = World.locationChanged;
 
 //World.cargar_todos_los_markers()
 //AR.context.scene.cullingDistance = 5000
@@ -87,7 +87,7 @@ AR.context.onLocationChanged = World.locationChanged
 function setWorld($json_lugares, $json_eventos){
 
 	//alert(1)
-	$('#info').hide()
+	$('#info').hide();
 
 	// destruyo todos los markers
 	for(var i = 0; i < World.markerList.length; i++){      
@@ -112,16 +112,16 @@ var obj_selected;
 
 function info(obj){
 
-	obj_selected = obj
+	obj_selected = obj;
 
-	$('.name').html(obj_selected.name)
-    $('.tipo').html(obj_selected.cat)
-    $('.tel').html('T. ' + obj_selected.tel)
-    $('.dir').html(obj_selected.dir)
+	$('.name').html(obj_selected.name);
+    $('.tipo').html(obj_selected.cat);
+    $('.tel').html('T. ' + obj_selected.tel);
+    $('.dir').html(obj_selected.dir);
 
     $('#pic').empty();	
 
-    var img = new Image()
+    var img = new Image();
     
     $('#pic').append($(img));
 
@@ -146,26 +146,26 @@ $(document).ready(function(){
 		var func = encodeURIComponent("action=closeWikitudePlugin");
 		document.location = "architectsdk://" + func;
 		return false;
-	})
+	});
 	
 	new BotonImg($('#btn_tel'), function (){
 		document.location = 'tel://' + obj_selected.tel
-	})
+	});
 	new BotonImg($('#btn_dir'), function (){
 		var func = encodeURIComponent("action=dir:" + obj_selected.type + ':' + obj_selected.arrayNum);
 		document.location = "architectsdk://" + func;
 		return false;
 	
-	})
+	});
 	new BotonImg($('#btn_star'), function (){
 		var func = encodeURIComponent("action=fav:" + obj_selected.type + ':' + obj_selected.arrayNum);
 		document.location = "architectsdk://" + func;
 		return false;
-	})
+	});
 	new BotonImg($('#btn_info'), function (){
 		var func = encodeURIComponent("action=info:" + obj_selected.type + ':' + obj_selected.arrayNum);
 		document.location = "architectsdk://" + func;
 		return false;
 	})
 
-})
+});

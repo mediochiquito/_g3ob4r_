@@ -4,16 +4,16 @@ geobarApp.service('lazyLoadApi', function ($window, $q) {
 
     //console.log('loadScript')
     // use global document since Angular's $document is weak
-    var s = document.createElement('script')
-    s.src = '//maps.googleapis.com/maps/api/js?sensor=false&language=es&callback=initMap'
+    var s = document.createElement('script');
+    s.src = '//maps.googleapis.com/maps/api/js?sensor=false&language=es&callback=initMap';
     document.body.appendChild(s)
   }
-  var deferred = $q.defer()
+  var deferred = $q.defer();
 
   $window.initMap = function () {
-  	alert('initMap')
+  	alert('initMap');
     deferred.resolve()
-  }
+  };
 
   if ($window.attachEvent) {
     $window.attachEvent('onload', loadScript)

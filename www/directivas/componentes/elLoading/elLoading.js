@@ -3,10 +3,10 @@ geobarApp.directive('elLoading', function(Loading){
 					restrict:'E',
 					template:'<div><img src="img/loader.png" /></div>',
 					
-					link:function($scope, $elem, $attrs){
+					link:function($scope, $elem){
 						
 						Loading.setInstancia($elem);
 
 					}
 				}
-})
+});

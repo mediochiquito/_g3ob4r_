@@ -1,139 +1,139 @@
-geobarApp.directive('lista', function($window, $log, favService, navigateService, SCREEN_SIZE,$filter, $timeout, lugaresService, eventosService) {
- 
- return {
-    restrict: 'E',
-    templateUrl: 'directivas/secciones/lista/lista.html',
+geobarApp.directive('lista', function ($window, $log, favService, navigateService, SCREEN_SIZE, $filter, $timeout, lugaresService, eventosService) {
 
-    link:function ($scope, $elem, $attrs){
+    return {
+        restrict: 'E',
+        templateUrl: 'directivas/secciones/lista/lista.html',
 
-        $scope.filtro = ''
-		    $scope.screen_alto = window.innerHeight
-        $scope.en_pagina = 10
-        $scope.favService = favService;
+        link: function ($scope) {
 
-        $scope.$watch('favService.all', function(oldVal, newVal, scope) {
-          $scope.favs = favService.getAll();
-        })
-       
-        //console.log($scope.allFavs);
-        // $scope.type = $obj
-        
-        var timer;
-        var en_lista;
-        $scope._set = function ($obj){
-          $scope.filtro = ''
-          $scope.txtfiltro = '';
-          document.querySelector('.listado').scrollTop = 0;   
-          $scope.en_pagina = 10;
-          if($obj == 'lugares')  $scope.array_items =  lugaresService.get();
-          if($obj == 'eventos') $scope.array_items = eventosService.get();
-          $scope.total  = $scope.array_items.length;
-          en_lista = $obj 
-        }
+            $scope.filtro = '';
+            $scope.screen_alto = window.innerHeight;
+            $scope.en_pagina = 10;
+            $scope.favService = favService;
 
-       $scope.$on('cambioListaLugares', function(){
-        
-           if(en_lista == 'lugares') $scope._set('lugares')
-          
-       }); 
+            $scope.$watch('favService.all', function () {
+                $scope.favs = favService.getAll();
+            });
 
-         
-        $scope.resetFiltro = function(){
-          
-          $scope.filtro = ''
-          $scope.txtfiltro = '';
-            
-        }
+            //console.log($scope.allFavs);
+            // $scope.type = $obj
 
-
-        navigateService.setSecciones('lista', $scope._set);
- 
-
-        $scope.cargarMas = function (){
-        
-            setTimeout(function (){
-                $scope.en_pagina += 10;
-                $scope.$apply()
-            }, 300);
-            
-        }
-
-
-
-        $scope.keyDownFilter = function() {
-            $timeout.cancel(timer)
-            timer = $timeout(function(){
-                $scope.filtro =  $scope.txtfiltro
+            var timer;
+            var en_lista;
+            $scope._set = function ($obj) {
+                $scope.filtro = '';
+                $scope.txtfiltro = '';
                 document.querySelector('.listado').scrollTop = 0;
                 $scope.en_pagina = 10;
-            }, 300);            
-        }
+                if ($obj == 'lugares')  $scope.array_items = lugaresService.get();
+                if ($obj == 'eventos') $scope.array_items = eventosService.get();
+                $scope.total = $scope.array_items.length;
+                en_lista = $obj
+            };
 
-        
-        $scope.$watch('filtro', function (){
+            $scope.$on('cambioListaLugares', function () {
 
-            try{
-               $scope.total =  $filter('filter')($scope.array_items, $scope.filtro).length
-            }catch(e){}
-           
-        })
+                if (en_lista == 'lugares') $scope._set('lugares')
+
+            });
 
 
-      	var holder_scrolleable = angular.element(document.querySelector('.listado'));
-  		  holder_scrolleable.on("scroll", function() {
+            $scope.resetFiltro = function () {
 
-          	var _scrollTop = this.scrollTop; // por donde va el scroll
-          	var _offsetHeight = this.offsetHeight; // alto de la mascara
-          	var _scrollHeight = this.scrollHeight; // alto del contenido
-            $scope.enscroll =	_scrollTop;
-            $scope.altoholder =  _offsetHeight;
-            if((_offsetHeight +_scrollTop) > _scrollHeight-300) {
-                $scope.en_pagina += 10;
+                $scope.filtro = '';
+                $scope.txtfiltro = '';
+
+            };
+
+
+            navigateService.setSecciones('lista', $scope._set);
+
+
+            $scope.cargarMas = function () {
+
+                setTimeout(function () {
+                    $scope.en_pagina += 10;
+                    $scope.$apply()
+                }, 300);
+
+            };
+
+
+            $scope.keyDownFilter = function () {
+                $timeout.cancel(timer);
+                timer = $timeout(function () {
+                    $scope.filtro = $scope.txtfiltro;
+                    document.querySelector('.listado').scrollTop = 0;
+                    $scope.en_pagina = 10;
+                }, 300);
+            };
+
+
+            $scope.$watch('filtro', function () {
+
+                try {
+                    $scope.total = $filter('filter')($scope.array_items, $scope.filtro).length
+                } catch (e) {
+                }
+
+            });
+
+
+            var holder_scrolleable = angular.element(document.querySelector('.listado'));
+            holder_scrolleable.on("scroll", function () {
+
+                var _scrollTop = this.scrollTop; // por donde va el scroll
+                var _offsetHeight = this.offsetHeight; // alto de la mascara
+                var _scrollHeight = this.scrollHeight; // alto del contenido
+                $scope.enscroll = _scrollTop;
+                $scope.altoholder = _offsetHeight;
+                if ((_offsetHeight + _scrollTop) > _scrollHeight - 300) {
+                    $scope.en_pagina += 10;
+                }
+                $scope.$apply();
+
+            });
+
+
+            $scope.enscroll = 0;
+            $scope.altoholder = 1000;
+
+            $scope.select_item = function ($item) {
+                $timeout(function () {
+                    navigateService.go('detalle', $item);
+                }, 250);
+
+
             }
-            $scope.$apply();
-
-        });		
-
-        
-  		$scope.enscroll =	 0;
-	    $scope.altoholder =  1000;
-	     
-	    $scope.select_item = function ($item){
-           $timeout(function(){
-                 navigateService.go('detalle',  $item);
-            }, 250);        
-	 		   
-
-	   	}
-    }	
-  };
+        }
+    };
 })
 
-.directive('itemLista', function(SERVER) {
-  return {
-    restrict: 'A',
-    scope: {
-           
-            item:'=', 
-            index:'@', 
-            enscroll: '=',
-            altoholder: '=',
-            siempreVisible: '@',
-            favs:'='
-     },
+    .directive('itemLista', function (SERVER) {
+        return {
+            restrict: 'A',
+            scope: {
 
-    templateUrl: 'directivas/secciones/lista/itemLista.html',
-    link:function ($scope, $elem, $attrs){
-      
-      $scope.img_url = SERVER + 'pic/?file=pois/'
+                item: '=',
+                index: '@',
+                enscroll: '=',
+                altoholder: '=',
+                siempreVisible: '@',
+                favs: '='
+            },
 
-      $scope.getFav = function($fav){
-         if(angular.isUndefined($fav)) return 0;
-          return $fav;
-      }
+            templateUrl: 'directivas/secciones/lista/itemLista.html',
+            link: function ($scope) {
 
-    }
+                $scope.img_url = SERVER + 'pic/?file=pois/';
 
-  };
+                $scope.getFav = function ($fav) {
+                    if (angular.isUndefined($fav)) return 0;
+                    return $fav;
+                }
 
-});
+            }
+
+        };
+
+    });

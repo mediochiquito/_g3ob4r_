@@ -1,7 +1,7 @@
 geobarApp.factory('arService', function($window, $rootScope, navigateService, ToastService, lugaresService, eventosService, Loading,cordovaGeolocationService){
 
     var wikitudePlugin;
-	  var arExperienceUrl =  "www/AR/index.html";
+	var arExperienceUrl =  "www/AR/index.html";
     var requiredFeatures = [  "geo" ];
     var isDeviceSupported ;
     var startupConfiguration = { "camera_position": "back"  };
@@ -10,9 +10,8 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
 	  return {
         
         set: function(){
-
             try{
-                
+
                 wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
                 wikitudePlugin.isDeviceSupported(this.onDeviceSupported, this.onDeviceNotSupported, requiredFeatures);
                 wikitudePlugin.setOnUrlInvokeCallback(this.onURLInvoked);
@@ -39,7 +38,7 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
           if(_url == 'architectsdk://action=closeWikitudePlugin') wikitudePlugin.hide();
           else {
 
-                var split_url = _url.split('architectsdk://action=')
+                var split_url = _url.split('architectsdk://action=');
                 var method_parms_array = split_url[1].split(':');
                 var item;
 
@@ -50,25 +49,25 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
 
                     case 'dir':   
                         wikitudePlugin.hide(); 
-                        Loading.mostrar()
+                        Loading.mostrar();
                         
                         setTimeout(function (){
 
                            //  Loading.ocultar()
                              navigateService.go('mapa', {type:'dir', item: item}); 
                             $rootScope.$apply();
-                         }, 100)                            
+                         }, 100);
                         break;
 
                     case 'fav':   alert('FPO add favoritos'); break;
                     case 'info': 
                         wikitudePlugin.hide();      
                         $rootScope.$apply(); 
-                        Loading.mostrar() 
+                        Loading.mostrar();
                          setTimeout(function (){
                              navigateService.go('detalle',  item); 
                         
-                        }, 100)
+                        }, 100);
                         break;
 
                 }
@@ -126,13 +125,13 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
                 }, 666);
 
             }else{
-              alert('Este dispositivo no soporta AR')
+              alert('Este dispositivo no soporta AR');
             // console.log (this.escapeSpecialChars(angular.toJson(lugaresService.get())))
              console.log(this.escapeSpecialChars(angular.toJson(lugaresService.getDistancia())))
 
             }
             
-            return;       
+
         },  
 
         escapeSpecialChars: function($json){
@@ -165,8 +164,9 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
             this.setPosPoisEnWikitude(e.coords)
         },
 
-        onLocationError: function(e) {
-            alert('No hemos enctroado tu ubicación global. Revisa tu configuración del GPS.')
+        onLocationError: function() {
+
+            alert('No hemos enctroado tu ubicación global. Revisa tu configuración del GPS.');
             ToastService.show('No hemos enctroado tu ubicación global. Revisa tu configuración del GPS.', 'long', 'center');
         },
 
@@ -186,11 +186,11 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
         },  
 
         onDeviceNotSupported:function(errorMessage){
-            isDeviceSupported = false
+            isDeviceSupported = false;
             alert(errorMessage);
         }
 
 
     };
 
-})
+});

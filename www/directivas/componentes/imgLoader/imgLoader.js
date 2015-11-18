@@ -1,12 +1,10 @@
-geobarApp.directive('imgLoader', function(Loading) {
+geobarApp.directive('imgLoader', function() {
   return {
     
     restrict: 'E', 
    
     scope:{
 
-    /*  server: '=',
-      default: '=', */
       imgurl: '=',
       hashfile: '@',
       itemid: '=',
@@ -15,13 +13,13 @@ geobarApp.directive('imgLoader', function(Loading) {
     },
 
     template : '<img class="item-lista-img" ng-src="{{ imagen }}" />', 
-    link: function(scope, elem, attrs){
+    link: function(scope, elem){
 
        
         
-        scope.$watch('hashfile', function(n, v){     
+        scope.$watch('hashfile', function(){
            scope.imagen = scope.imgurl + scope.hashfile
-        })
+        });
 
         elem.children('img')[0].onerror = function () {
             scope.imagen = 'img/default/thumb_' + scope.itemtipo + '.png';

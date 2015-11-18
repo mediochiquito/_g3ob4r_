@@ -6,9 +6,9 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
     scope: {},
     templateUrl: 'directivas/secciones/detalle/detalle.html',
 
-    link:function ($scope, $elem, $attrs){
+    link:function ($scope){
 		
-    	var _callback
+    	var _callback;
     	$scope.navigateService = navigateService;
     
     	$scope.goMapa = function (){
@@ -19,18 +19,18 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
            }else{
               ToastService.show('Debes conectarte a internet para ver el mapa.', 'long', 'center');
            }
-    	}
+    	};
     	
     	$scope.goTel =  function (){
 
     		$window.open('tel://' + $scope.item.tel);
     		
-    	}
+    	};
 
     	$scope.goFav =  function (){
 
 
-				var  userId= $window.localStorage.getItem('userId')
+				var  userId= $window.localStorage.getItem('userId');
 			
 				if(userId==0){
 
@@ -45,17 +45,17 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
 
     		
 
-    	}
+    	};
 
     	function marcar_como_favorito(){
 
 
-    		var  userId = $window.localStorage.getItem('userId')
+    		var  userId = $window.localStorage.getItem('userId');
 
             var objSend = {
                 userId : userId, 
                 poiId: $scope.item.id
-            }
+            };
             
             var  req = {
                  method: 'POST',
@@ -64,20 +64,20 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
                    'Content-Type':  'application/x-www-form-urlencoded;charset=utf-8'
                  },
                  data: objSend
-            }   
+            };
             
-            Loading.mostrar()
+            Loading.mostrar();
 
             $http(req).then( 
 
                 function(data){
           			
-                	$scope.item.mi_fav = data.data
+                	$scope.item.mi_fav = data.data;
 
-                	if(data.data == 0) $scope.item.favs = parseInt($scope.item.favs)  - 1
-                	if(data.data == 1) $scope.item.favs = parseInt($scope.item.favs)  + 1
+                	if(data.data == 0) $scope.item.favs = parseInt($scope.item.favs)  - 1;
+                	if(data.data == 1) $scope.item.favs = parseInt($scope.item.favs)  + 1;
                 	
-                    favService.setFav($scope.item.id, data.data)
+                    favService.setFav($scope.item.id, data.data);
 
                 	Loading.ocultar()
 
@@ -95,13 +95,13 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
 
             window.open(SERVER + 'redirect/?u=' + encodeURIComponent($scope.item.fb), '_system');
             
-        }
+        };
 
         $scope.goSite = function (){
 
             window.open(SERVER + 'redirect/?u=' + encodeURIComponent($scope.item.site), '_system');
 
-        }
+        };
 
     	$scope.goDir =  function (){
 
@@ -111,7 +111,7 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
            }else{
               ToastService.show('Debes conectarte a internet para ver el mapa.', 'long', 'center');
            }
-    	}
+    	};
 
 		$scope._set = function ($obj, $callback){
 
@@ -132,11 +132,11 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
 
 			}
 			
-			var  userId= $window.localStorage.getItem('userId')
+			var  userId= $window.localStorage.getItem('userId');
 
 			$http.get(SERVER+'ws.php?method=getDetalle&id=' + $scope.item.id + '&uid=' + userId).
 
-			  success(function(data, status, headers, config) {
+			  success(function(data) {
 					
 					$scope.long_desc = '';	
 					
@@ -145,23 +145,23 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
 					$timeout(function (){
 						$scope.url_img = SERVER + 'img/pois/';
 						$scope.fotos_detalle =  data.fotos;
-					}, 500)
+					}, 500);
 					//
-					$scope.item = data
+					$scope.item = data;
 					Loading.ocultar();
 					_callback()
 
 			  }).
 			  
-			  error(function(data, status, headers, config) {
+			  error(function() {
 			  		$scope.long_desc = '';	
 			  		$scope.url_img = 'img/default/';
-					$scope.fotos_detalle = [$scope.item.tipo + '.png']
+					$scope.fotos_detalle = [$scope.item.tipo + '.png'];
 			  		Loading.ocultar();
 			  		_callback()
 			  });
 
-		}
+		};
 
 
 		navigateService.setSecciones('detalle', $scope._set)

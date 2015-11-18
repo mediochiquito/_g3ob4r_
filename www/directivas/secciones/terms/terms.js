@@ -13,12 +13,12 @@ geobarApp.directive('terms', function(ToastService) {
 
 	 },
     
-    link:function (scope, elem, attrs){
+    link:function (scope){
 
 	  scope.visible = true;
 	  scope.chkEdad = false;
 
-      scope.aceptar = function(chk){
+      scope.aceptar = function(){
 
       	if( scope.chkEdad == 1){
 
@@ -34,7 +34,7 @@ geobarApp.directive('terms', function(ToastService) {
       }
 
 
-    }, 
+    }
    
 
   };

@@ -32,7 +32,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 				platform : _platform,
 				pushtoken : $token, 
 				u: $window.localStorage.getItem('userId')
-			}
+			};
         	var  req = {
                method: 'POST',
                url: SERVER + 'ws.php?method=init',
@@ -40,7 +40,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
                  'Content-Type':  'application/x-www-form-urlencoded;charset=utf-8'
                },
                data: objSend
-            }
+            };
 
             $http(req).then(function(data){ }, function(){ });  
 
@@ -78,7 +78,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 		   
 		    }, function(err) {
 		      
-		    })
+		    });
 		   
 		    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
 		    
@@ -122,8 +122,8 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 		    			  var iosConfig = {
 						    "badge": true,
 						    "sound": true,
-						    "alert": true,
-						   };
+						    "alert": true
+						  };
 
 						    $rootScope.pushIosDisabled = true;
 						    $cordovaPush.register(iosConfig).then(function(deviceToken) {
@@ -194,7 +194,7 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazy
 
 	$scope.aceptoTerms = -1;
 	$scope.showRegistro = false;
-	$scope.rootScope = $rootScope
+	$scope.rootScope = $rootScope;
 	$scope.alto_screen = $window.innerHeight;
 	$scope.ultima_ubilcacion  = cordovaGeolocationService.getUltimaPosicion();
 
@@ -205,8 +205,7 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazy
 		$rootScope.position = null;
 		cordovaGeolocationService.watchPosition();
 
-		$http.get(SERVER+'sync.php?ac=' + new Date().getTime()).success(function(json_sync, status, headers, config) {
-		
+		$http.get(SERVER + 'sync.php?ac=' + new Date().getTime()).success(function (json_sync) {
 			$window.localStorage.setItem('favs', JSON.stringify(json_sync.favs));
 
 			var local_sync_lugares = $window.localStorage.getItem('local_sync_lugares');	
@@ -214,14 +213,14 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazy
 
 			var debe_sincronzar = '';
 
-			if(json_sync.pois.lugares != local_sync_lugares) debe_sincronzar += 'lugares'
-			if(json_sync.pois.eventos != local_sync_eventos) debe_sincronzar += 'eventos'
+			if(json_sync.pois.lugares != local_sync_lugares) debe_sincronzar += 'lugares';
+			if(json_sync.pois.eventos != local_sync_eventos) debe_sincronzar += 'eventos';
 
 			if(debe_sincronzar != ''){
 
 				$http.get(SERVER+'ws.php?method=getLista&data=' + debe_sincronzar + '&ac=' + new Date().getTime())
 
-				.success(function(data, status, headers, config) {
+				.success(function(data) {
 
 					if(typeof data.lugares != 'undefined'){
 						$window.localStorage.setItem('json_lugares', JSON.stringify(data.lugares));
@@ -248,23 +247,23 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazy
 
 			iniciar_app()
 		})
-	}
+	};
 
 	function iniciar_app(){		
 
 		//alert('0 iniciar_app')
 		favService.setAll();
 		////alert('1 iniciar_app')
-		$rootScope.$watch("position", function (nuevo, viejo){
+		$rootScope.$watch("position", function (){
 
 			lugaresService.setAll();
 			eventosService.setAll();	
 
-		})
+		});
 
 		//alert('2 iniciar_app')
-		arService.set()
-		Loading.ocultar()
+		arService.set();
+		Loading.ocultar();
 
 		var callbak_cuando_init = mostrar_home;
 		if(!angular.isUndefined($rootScope.navegarAPoi)){
@@ -299,8 +298,8 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazy
 		$document.off('touchmove', hack)
 	}
 
-	$scope.aceptoTerms = $window.localStorage.getItem('aceptoTerms')
-	$scope.userId = $window.localStorage.getItem('userId')
+	$scope.aceptoTerms = $window.localStorage.getItem('aceptoTerms');
+	$scope.userId = $window.localStorage.getItem('userId');
 	$rootScope.userId = $window.localStorage.getItem('userId');
 
 	if($scope.userId==0){
@@ -310,37 +309,18 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazy
 });	
 
 
-geobarApp.controller("menuCtrl", function($scope, navigateService, regService){
+geobarApp.controller("menuCtrl", function($scope, navigateService){
 	
 	$scope.navigateService = navigateService;
 	
-})	
+});
 
 
-geobarApp.controller("seccionLoaderController",  function($scope, $rootScope, navigateService, $timeout) {
+geobarApp.controller("seccionLoaderController",  function($scope, $rootScope, navigateService) {
 	
 	$scope.navigateService = navigateService;
 	$scope.active_page =  navigateService.active_page;
 
-	/*$scope.getAnimationClass = function ($secc){
-		
-		var habil_trans = navigateService.habilTranciosinar($secc)
-		
-		if(!habil_trans) return;
-
-		var r = $scope.dir_animate + 'Hide'
-		if($scope.active_page == $secc) r = $scope.dir_animate + 'Show'
-		return r
-	}
-*/
-
-	/*$scope.$watch('navigateService.status', function(oldVal, newVal, scope) {
-	   	
-	    $scope.dir_animate = navigateService.dir_animate
-	    $scope.active_page = navigateService.active_page;
-	   
-	});
-*/
 
 	$scope.cliqueando = function (){
 		$scope.visible = false;

@@ -1,6 +1,6 @@
 function BotonImg($element, $callback){
 	
-	var self = this
+	var self = this;
 	this.main = $($element);
 	
 	$(this.main).bind("touchend", do_mouseout);
@@ -11,11 +11,11 @@ function BotonImg($element, $callback){
 		$callback(evt);
 	}
 	
-	function do_mouseover(evt){
+	function do_mouseover(){
 		$(self.main).addClass('botonOver')
 	}
 	
-	function do_mouseout(evt){
+	function do_mouseout(){
 		$(self.main).removeClass('botonOver')
 	}
 
