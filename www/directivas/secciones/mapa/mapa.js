@@ -9,7 +9,7 @@
             var s = document.createElement('script'); // use global document since Angular's $document is weak
             s.id = 'gMaps' ;
             s.type = "text/javascript";
-            s.src = 'https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyBxU2t0W9wQFwPnGmoXNI-eg95zCy_PiJI&callback=initMap';
+            s.src = 'https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyBxU2t0W9wQFwPnGmoXNI-eg95zCy_PiJI&callback=initMap';
             document.getElementById('gMapsScripts').appendChild(s);
 
        }

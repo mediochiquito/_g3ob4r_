@@ -4,307 +4,16 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Globalization\"><param name=\"ios-package\" value=\"CDVGlobalization\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"PushPlugin\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"ios-package\" value=\"FacebookConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<plugin name=\"FacebookConnectPlugin\" value=\"FacebookConnectPlugin\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://m.facebook.com\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://graph.facebook.com\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://api.facebook.com\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://*.fbcdn.net\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://*.akamaihd.net\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"WikitudePlugin\"><param name=\"ios-package\" value=\"WTWikitudePlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Accelerometer\"><param name=\"ios-package\" value=\"CDVAccelerometer\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Compass\"><param name=\"ios-package\" value=\"CDVCompass\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Toast\"><param name=\"ios-package\" value=\"Toast\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "framework": {
-                "parents": {
-                    "libsqlite3.dylib": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "Social.framework": [
-                        {
-                            "xml": true,
-                            "count": 1
-                        }
-                    ],
-                    "Accounts.framework": [
-                        {
-                            "xml": true,
-                            "count": 1
-                        }
-                    ],
-                    "Security.framework": [
-                        {
-                            "xml": true,
-                            "count": 1
-                        },
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "Accelerate.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "AssetsLibrary.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "AVFoundation.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "CFNetwork.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "CoreGraphics.framework": [
-                        {
-                            "xml": false,
-                            "count": 3
-                        }
-                    ],
-                    "CoreLocation.framework": [
-                        {
-                            "xml": false,
-                            "count": 3
-                        }
-                    ],
-                    "CoreMedia.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "CoreMotion.framework": [
-                        {
-                            "xml": false,
-                            "count": 2
-                        }
-                    ],
-                    "CoreText.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "CoreVideo.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "Foundation.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "MediaPlayer.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "OpenGLES.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "QuartzCore.framework": [
-                        {
-                            "xml": false,
-                            "count": 2
-                        }
-                    ],
-                    "SystemConfiguration.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        },
-                        {
-                            "xml": true,
-                            "count": 1
-                        }
-                    ],
-                    "UIKit.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "libc++.dylib": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "libz.dylib": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "AudioToolbox.framework": [
-                        {
-                            "xml": true,
-                            "count": 2
-                        }
-                    ]
-                }
-            },
-            "*-Info.plist": {
-                "parents": {
-                    "FacebookAppID": [
-                        {
-                            "xml": "<string>398706416993551</string>",
-                            "count": 1
-                        }
-                    ],
-                    "FacebookDisplayName": [
-                        {
-                            "xml": "<string>GeoBar</string>",
-                            "count": 1
-                        }
-                    ],
-                    "CFBundleURLTypes": [
-                        {
-                            "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>fb398706416993551</string></array></dict></array>",
-                            "count": 1
-                        }
-                    ],
-                    "NSLocationWhenInUseUsageDescription": [
-                        {
-                            "xml": "<string />",
-                            "count": 1
-                        }
-                    ],
-                    "NSAppTransportSecurity": [
-                        {
-                            "xml": "<dict><key>NSAllowsArbitraryLoads</key><true /></dict>",
-                            "count": 1
-                        }
-                    ]
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
-        "com.google.playservices": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "com.phonegap.plugins.PushPlugin": {
+        "cordova-plugin-console": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "com.phonegap.plugins.facebookconnect": {
-            "APP_ID": "398706416993551",
-            "APP_NAME": "GeoBar",
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
-        "com.wikitude.phonegap.WikitudePlugin": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
-        "cordova-plugin-crosswalk-webview": {
+        "cordova-plugin-device": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "cordova-plugin-device-motion": {
@@ -328,28 +37,17 @@
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "cordova-plugin-whitelist": {
+        "phonegap-plugin-push": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "nl.x-services.plugins.toast": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
-        "sk.kcorp.cordova.ios-security": {
+        "cordova-plugin-facebook4": {
+            "APP_ID": "398706416993551",
+            "APP_NAME": "GeoBar",
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
-        "org.apache.cordova.globalization": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        }
-    }
+    "dependent_plugins": {}
 }

@@ -19,8 +19,6 @@
 
 # cordova-plugin-vibration
 
-[![Build Status](https://travis-ci.org/apache/cordova-plugin-vibration.svg)](https://travis-ci.org/apache/cordova-plugin-vibration)
-
 This plugin aligns with the W3C vibration specification http://www.w3.org/TR/vibration/
 
 This plugin provides a way to vibrate the device.
@@ -110,10 +108,6 @@ Vibrates the device with a given pattern
     navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
 
 ####Windows Phone 8 Quirks
-
-- vibrate(pattern) falls back on vibrate with default duration
-
-####Windows Quirks
 
 - vibrate(pattern) falls back on vibrate with default duration
 

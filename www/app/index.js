@@ -1,4 +1,4 @@
-/*window.onerror = function(message, file, line) {
+window.onerror = function(message, file, line) {
   var error = [];
   error.push('---[error]');
   if (typeof message == "object") {
@@ -11,7 +11,7 @@
     error.push(message);
   }
   alert(error.join("\n"));
-};*/
+};
 
 var app = {
 
@@ -31,7 +31,6 @@ var app = {
             window.open = cordova.InAppBrowser.open;
             //if(device.platform == 'iOS') StatusBar.hide();
             angular.bootstrap(document, ["geobarApp"]);
-
 
           }catch(e){
 

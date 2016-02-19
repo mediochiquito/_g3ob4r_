@@ -2,216 +2,671 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72083673-24de-4280-b240-3e0123c0729a" name="Default" comment="php storm">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/node_modules/spdx-license-ids/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-license-ids/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/PluginError.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/completion/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/node_modules/spdx-license-ids/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-exceptions/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-license-ids/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/_g3ob4r_.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/completion/bash" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/basic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/examples/beep.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/test/beep.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/bitbucket-https-with-embedded-auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/bitbucket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/buffer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/builtin-modules.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/bin/cli.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/combine.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/lib/completion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/.bin/dateformat.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/lib/dateformat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/.bin/dateformat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/env.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/extract_description.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/test/field.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/completion/fish" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/fixer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/gist.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/git-host-info.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/git-host.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/github.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/gitlab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/gulp.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/bin/gulp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/gulp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/https-with-inline-auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/ansi-styles/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/escape-string-regexp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/supports-color/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-differ/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-uniq/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/beeper/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/get-stdin/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/camelcase/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/map-obj/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/loud-rejection/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-exceptions/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/isBuffer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/isNull.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/isStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/ansi-styles/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/escape-string-regexp/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/supports-color/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/beeper/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/get-stdin/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/camelcase/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/map-obj/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/loud-rejection/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/log.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/make_warning.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/test/method.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/examples/multi_line.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/test/multi_line.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/test/non_unicode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/noop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/normalize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/ansi-styles/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/escape-string-regexp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/supports-color/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-differ/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-uniq/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/beeper/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/get-stdin/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/camelcase/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/map-obj/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/loud-rejection/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/node_modules/spdx-license-ids/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-exceptions/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-license-ids/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/completion/powershell" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/ansi-styles/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/escape-string-regexp/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/supports-color/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-differ/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-uniq/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/beeper/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/get-stdin/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/camelcase/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/map-obj/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/loud-rejection/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/safe_format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/.bin/semver.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/.bin/semver" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/node_modules/spdx-license-ids/spdx-license-ids.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/lib/standard-tests.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/static.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/lib/taskTree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/typos.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/warning_messages.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/completion/zsh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/AR/js/BotonImg.js" afterPath="$PROJECT_DIR$/www/AR/js/BotonImg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/libs/google-play-services.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/libs/google-play-services.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/proguard.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/project.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/color/common_signin_btn_text_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/color/common_signin_btn_text_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/color/wallet_primary_text_holo_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/color/wallet_secondary_text_holo_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_ic_googleplayservices.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/powered_by_google_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-hdpi/powered_by_google_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/powered_by_google_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-mdpi/powered_by_google_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-tvdpi/ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-tvdpi/ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-tvdpi/ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-tvdpi/ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/powered_by_google_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xhdpi/powered_by_google_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/powered_by_google_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable-xxhdpi/powered_by_google_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable/common_signin_btn_icon_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable/common_signin_btn_icon_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable/common_signin_btn_text_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/drawable/common_signin_btn_text_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-af/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-am/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ar/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-be/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-bg/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-bn-rBD/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ca/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-cs/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-da/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-de/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-el/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-en-rGB/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-en-rIN/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-es-rUS/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-es/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-es/wallet_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-et-rEE/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-eu-rES/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-fa/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-fi/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-fr-rCA/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-fr/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-gl-rES/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-hi/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-hr/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-hu/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-hy-rAM/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-in/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-is-rIS/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-it/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-iw/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ja/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ka-rGE/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-kk-rKZ/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-km-rKH/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-kn-rIN/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ko/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ky-rKG/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-lo-rLA/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-lt/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-lv/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-mk-rMK/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ml-rIN/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-mn-rMN/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-mr-rIN/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ms-rMY/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-my-rMM/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-nb/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ne-rNP/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-nl/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-pl/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-pt-rBR/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-pt-rPT/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-pt/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ro/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ru/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-si-rLK/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-sk/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-sl/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-sr/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-sv/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-sw/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ta-rIN/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-te-rIN/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-th/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-tl/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-tr/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-uk/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-ur-rPK/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-uz-rUZ/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-vi/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-zh-rCN/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-zh-rHK/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-zh-rTW/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values-zu/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/admob_ads_attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/admob_iap_style.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/admob_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/common_colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/maps_attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/version.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/wallet_attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/wallet_colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/wallet_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/res/values/wallet_styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/libs/google-play-services_lib/src/android/UnusedStub.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.google.playservices/version.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/Example/server/pushADM.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/Example/server/pushAPNS.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/Example/server/pushGCM.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/Example/www/beep.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/Example/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/MIT-LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/genericpush.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/html/HtmlReporter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/html/HtmlReporterHelpers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/html/ReporterView.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/html/SpecView.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/html/SuiteView.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/html/TrivialReporter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/spec/test-runner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/amazon/ADMHandlerActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/amazon/ADMMessageHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/amazon/PushPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/android/com/plugin/android-support-v4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/android/com/plugin/gcm/CordovaGCMBroadcastReceiver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/android/com/plugin/gcm/PushHandlerActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/android/com/plugin/gcm/PushPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/ios/AppDelegate+notification.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/ios/AppDelegate+notification.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/ios/PushPlugin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/ios/PushPlugin.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/windows8/PushPluginProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/wp8/Newtonsoft.Json.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/src/wp8/PushPlugin.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/www/PushNotification.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.PushPlugin/www/blackberry10/PushPluginProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/Facebook-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/Facebook-master/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/Facebook-master/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/Facebook-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/Facebook-master/TROUBLESHOOTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/Facebook-master/facebookConnectPlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/Facebook-master/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/TROUBLESHOOTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/facebookConnectPlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.phonegap.plugins.facebookconnect/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/android/WikitudePlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/android/libs/build-extras.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/android/libs/wikitudesdk.aar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WTARViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WTARViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WTArchitectView+Plugins.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WTArchitectView.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WTArchitectViewDebugDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WTNavigation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WTStartupConfiguration.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WTWikitudePlugin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WTWikitudePlugin.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WTWikitudeTypes.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/WikitudeSDK.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/libWikitudeSDK.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/src/ios/libWikitudeSDK_simulator.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview/NOTICE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview/PlatformScriptsWorkflow.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview/hooks/after_plugin_install/000-shared_mode_special.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview/hooks/before_plugin_uninstall/000-shared_mode_special.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/src/browser/accelerometer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/src/browser/compass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/www/browser/network.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/NOTICE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/RELEASENOTES.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/de/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/de/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/es/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/es/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/fr/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/fr/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/it/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/it/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/ja/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/ja/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/ko/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/ko/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/pl/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/pl/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/ru/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/zh/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/doc/zh/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/src/android/StatusBar.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/src/ios/CDVStatusBar.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/src/ios/CDVStatusBar.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/src/wp/StatusBar.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/tests/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/tests/tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/www/statusbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/src/ios/CDVNavigationWhitelistPlugin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/src/ios/CDVNavigationWhitelistPlugin.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/screenshots/screenshot-android-toast.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/screenshots/screenshot-ios-toast.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/screenshots/screenshot-wp8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/android/nl/xservices/plugins/Toast.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/.cproject" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/device/libToast.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/device/public/json_reader.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/device/public/json_value.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/device/public/json_writer.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/device/public/plugin.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/device/public/tokenizer.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/device/src/Logger.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/device/src/toast_js.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/device/src/toast_ndk.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json/autolink.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json/config.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json/features.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json/forwards.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json/json.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json/reader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json/value.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json/writer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json_batchallocator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json_internalarray.inl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json_internalmap.inl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json_reader.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json_value.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json_valueiterator.inl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/json_writer.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/plugin.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/plugin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/tokenizer.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/public/tokenizer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/simulator/libToast.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/simulator/public/json_reader.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/simulator/public/json_value.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/simulator/public/json_writer.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/simulator/public/plugin.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/simulator/public/tokenizer.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/simulator/src/Logger.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/simulator/src/toast_js.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/simulator/src/toast_ndk.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/src/Logger.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/src/Logger.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/src/toast_js.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/src/toast_js.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/src/toast_ndk.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/blackberry10/native/src/toast_ndk.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/ios/Toast+UIView.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/ios/Toast+UIView.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/ios/Toast.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/ios/Toast.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/wp8/Toast.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/test/tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/www/Toast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/NOTICE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/RELEASENOTES.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/doc/de/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/doc/es/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/doc/fr/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/doc/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/doc/it/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/doc/ja/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/doc/ko/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/doc/pl/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/doc/ru/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/doc/zh/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/android/Globalization.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/android/GlobalizationError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/.cproject" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/device/libGlobalization.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json/autolink.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json/config.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json/features.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json/forwards.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json/json.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json/reader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json/value.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json/writer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json_batchallocator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json_internalarray.inl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json_internalmap.inl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json_reader.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json_value.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json_valueiterator.inl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/json_writer.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/plugin.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/plugin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/tokenizer.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/public/tokenizer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/simulator/libGlobalization.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/src/globalization_js.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/src/globalization_js.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/src/globalization_ndk.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/blackberry10/native/src/globalization_ndk.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/firefoxos/GlobalizationProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/ios/CDVGlobalization.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/ios/CDVGlobalization.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/tizen/GlobalizationProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/ubuntu/globalization.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/ubuntu/globalization.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy.winmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy/GlobalizationProxy.sln" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy/GlobalizationProxy/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy/GlobalizationProxy/Cordova/JSON/JsonHelper.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy/GlobalizationProxy/Globalization/GlobalizationApiTypes.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy/GlobalizationProxy/Globalization/GlobalizationImpl.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy/GlobalizationProxy/Globalization/SettableCultureInfo.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy/GlobalizationProxy/GlobalizationProxy.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy/GlobalizationProxy/GlobalizationProxy.csproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/windows/GlobalizationProxy/GlobalizationProxy/Properties/AssemblyInfo.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/src/wp/Globalization.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/tests/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/tests/tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/GlobalizationError.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/l10n.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/l10n_date.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.as.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ast.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.bg.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.bn-BD.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.bn-IN.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ca.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.cs.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.cy.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.da.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.de.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.el.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.en-GB.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.en-US.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.eo.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.et.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.eu.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ff.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.fr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.fy-NL.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ga-IE.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.gd.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.gl.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.gu.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.he.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.hi-IN.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.hr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.hu.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.id.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.it.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ja.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.km.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.kn.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ko.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.lij.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.lt.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.mai.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.mk.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ml.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.mr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ms.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.nb-NO.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ne-NP.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.nl.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.or.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.pa.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.pl.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.pt-BR.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ro.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ru.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.si.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.sk.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.sl.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.son.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.sq.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.sr-Cyrl.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.sr-Latn.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.sv-SE.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.sw.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ta.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.te.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.th.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.tr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.ur.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.vi.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.xh.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.zh-CN.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/firefoxos/locales/date.zh-TW.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/globalization.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.globalization/www/ubuntu/globalization.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/sk.kcorp.cordova.ios-security/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/sk.kcorp.cordova.ios-security/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/sk.kcorp.cordova.ios-security/plugin.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/it/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/it/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/ko/index.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/ko/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/RELEASENOTES.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/RELEASENOTES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/src/android/AccelListener.java" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/src/android/AccelListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/src/ios/CDVAccelerometer.h" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/src/ios/CDVAccelerometer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/src/ios/CDVAccelerometer.m" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/src/ios/CDVAccelerometer.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/tests/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/tests/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/tests/tests.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/tests/tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/www/accelerometer.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/www/accelerometer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/RELEASENOTES.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/RELEASENOTES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/src/android/CompassListener.java" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/src/android/CompassListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/src/blackberry10/index.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/src/blackberry10/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/tests/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/tests/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/www/compass.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/www/compass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/RELEASENOTES.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/RELEASENOTES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/android/Device.java" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/android/Device.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/ios/CDVDevice.m" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/ios/CDVDevice.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/windows/DeviceProxy.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/windows/DeviceProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/wp/Device.cs" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/wp/Device.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/tests/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/tests/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/tests/tests.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/tests/tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/www/device.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/www/device.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/RELEASENOTES.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/RELEASENOTES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/android/Notification.java" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/android/Notification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/firefoxos/notification.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/firefoxos/notification.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ios/CDVNotification.m" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ios/CDVNotification.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/windows/NotificationProxy.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/windows/NotificationProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/tests/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/tests/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/notification.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/notification.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/RELEASENOTES.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/RELEASENOTES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/de/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/de/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/de/index.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/de/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/es/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/es/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/es/index.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/es/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/fr/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/fr/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/fr/index.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/fr/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/it/index.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/it/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/ja/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/ja/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/ko/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/ko/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/pl/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/pl/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/zh/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/zh/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/zh/index.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/doc/zh/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/src/ios/CDVLocation.m" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/src/ios/CDVLocation.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/src/windows/GeolocationProxy.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/src/windows/GeolocationProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/tests/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/tests/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/tests/tests.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/tests/tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/www/Position.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/www/Position.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/www/PositionError.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/www/PositionError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/www/geolocation.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/www/geolocation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/RELEASENOTES.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/RELEASENOTES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/src/android/InAppBrowser.java" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/src/android/InAppBrowser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/src/browser/InAppBrowserProxy.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/src/browser/InAppBrowserProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/src/ios/CDVInAppBrowser.h" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/src/ios/CDVInAppBrowser.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/src/ios/CDVInAppBrowser.m" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/src/ios/CDVInAppBrowser.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/src/windows/InAppBrowserProxy.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/src/windows/InAppBrowserProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/tests/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/tests/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/tests/tests.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/tests/tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/www/inappbrowser.css" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/www/inappbrowser.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/www/windows8/InAppBrowserProxy.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/www/windows8/InAppBrowserProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/RELEASENOTES.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/RELEASENOTES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/android/NetworkManager.java" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/android/NetworkManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/ios/CDVConnection.m" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/ios/CDVConnection.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/tests/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/tests/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/RELEASENOTES.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/RELEASENOTES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/src/android/SplashScreen.java" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/src/android/SplashScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/src/ios/CDVSplashScreen.h" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/src/ios/CDVSplashScreen.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/src/ios/CDVSplashScreen.m" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/src/ios/CDVSplashScreen.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/src/ios/CDVViewController+SplashScreen.m" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/src/ios/CDVViewController+SplashScreen.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/src/wp/SplashScreen.cs" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/src/wp/SplashScreen.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/tests/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/tests/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/RELEASENOTES.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/RELEASENOTES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/windows/VibrationProxy.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/windows/VibrationProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/tests/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/tests/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/tests/tests.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/tests/tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/www/vibration.js" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/www/vibration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/README.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/RELEASENOTES.md" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/RELEASENOTES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/plugin.xml" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ios.json" afterPath="$PROJECT_DIR$/plugins/ios.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/app.js" afterPath="$PROJECT_DIR$/www/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/servicios/arService.js" afterPath="$PROJECT_DIR$/www/servicios/arService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/componentes/botonBase/botonBase.js" afterPath="$PROJECT_DIR$/www/directivas/componentes/botonBase/botonBase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/componentes/botonLista/botonLista.js" afterPath="$PROJECT_DIR$/www/directivas/componentes/botonLista/botonLista.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/componentes/botonSistema/botonSistema.js" afterPath="$PROJECT_DIR$/www/directivas/componentes/botonSistema/botonSistema.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/componentes/checkBox/checkBox.js" afterPath="$PROJECT_DIR$/www/directivas/componentes/checkBox/checkBox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/config/config.js" afterPath="$PROJECT_DIR$/www/directivas/secciones/config/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/servicios/cordovaGeolocationModule.js" afterPath="$PROJECT_DIR$/www/servicios/cordovaGeolocationModule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/detalle/detalle.js" afterPath="$PROJECT_DIR$/www/directivas/secciones/detalle/detalle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/componentes/elLoading/elLoading.js" afterPath="$PROJECT_DIR$/www/directivas/componentes/elLoading/elLoading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/AR/css/estilos.css" afterPath="$PROJECT_DIR$/www/AR/css/estilos.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/servicios/favService.js" afterPath="$PROJECT_DIR$/www/servicios/favService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/home/home.js" afterPath="$PROJECT_DIR$/www/directivas/secciones/home/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/componentes/imgLoader/imgLoader.js" afterPath="$PROJECT_DIR$/www/directivas/componentes/imgLoader/imgLoader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/index.js" afterPath="$PROJECT_DIR$/www/app/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/servicios/lazyLoadApi.js" afterPath="$PROJECT_DIR$/www/servicios/lazyLoadApi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/lista/lista.js" afterPath="$PROJECT_DIR$/www/directivas/secciones/lista/lista.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/servicios/loading.js" afterPath="$PROJECT_DIR$/www/servicios/loading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/servicios/lugaresService.js" afterPath="$PROJECT_DIR$/www/servicios/lugaresService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js" afterPath="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/servicios/mapaService.js" afterPath="$PROJECT_DIR$/www/servicios/mapaService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/servicios/navigateService.js" afterPath="$PROJECT_DIR$/www/servicios/navigateService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/reg/reg.js" afterPath="$PROJECT_DIR$/www/directivas/secciones/reg/reg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/servicios/regService.js" afterPath="$PROJECT_DIR$/www/servicios/regService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/taxi/taxi.js" afterPath="$PROJECT_DIR$/www/directivas/secciones/taxi/taxi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/terms/terms.js" afterPath="$PROJECT_DIR$/www/directivas/secciones/terms/terms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/componentes/touchSlider/touchSlider.js" afterPath="$PROJECT_DIR$/www/directivas/componentes/touchSlider/touchSlider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/servicios/utils.js" afterPath="$PROJECT_DIR$/www/servicios/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/AR/js/world.js" afterPath="$PROJECT_DIR$/www/AR/js/world.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <ignored path="_g3ob4r_.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -232,15 +687,94 @@
     <favorites_list name="_g3ob4r_" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.125">
+              <caret line="18" column="120" selection-start-line="18" selection-start-column="120" selection-end-line="18" selection-end-column="138" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.65986395">
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comandos.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comandos.txt">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="160" selection-start-line="3" selection-start-column="160" selection-end-line="3" selection-end-column="160" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mapa.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="26" />
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="209" column="32" selection-start-line="209" selection-start-column="32" selection-end-line="209" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sync.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/sync.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ng-cordova.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/libs/ng-cordova.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cordovaGeolocationModule.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/servicios/cordovaGeolocationModule.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -254,9 +788,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/www/servicios/arService.js" />
-        <option value="$PROJECT_DIR$/www/servicios/cordovaGeolocationModule.js" />
         <option value="$PROJECT_DIR$/www/servicios/favService.js" />
-        <option value="$PROJECT_DIR$/www/servicios/lazyLoadApi.js" />
         <option value="$PROJECT_DIR$/www/servicios/loading.js" />
         <option value="$PROJECT_DIR$/www/servicios/lugaresService.js" />
         <option value="$PROJECT_DIR$/www/servicios/mapaService.js" />
@@ -266,7 +798,6 @@
         <option value="$PROJECT_DIR$/www/AR/js/BotonImg.js" />
         <option value="$PROJECT_DIR$/www/AR/js/world.js" />
         <option value="$PROJECT_DIR$/www/AR/css/estilos.css" />
-        <option value="$PROJECT_DIR$/www/app/app.js" />
         <option value="$PROJECT_DIR$/www/directivas/componentes/botonBase/botonBase.js" />
         <option value="$PROJECT_DIR$/www/directivas/componentes/botonLista/botonLista.js" />
         <option value="$PROJECT_DIR$/www/directivas/componentes/botonSistema/botonSistema.js" />
@@ -278,16 +809,23 @@
         <option value="$PROJECT_DIR$/www/directivas/secciones/detalle/detalle.js" />
         <option value="$PROJECT_DIR$/www/directivas/secciones/home/home.js" />
         <option value="$PROJECT_DIR$/www/directivas/secciones/lista/lista.js" />
-        <option value="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js" />
         <option value="$PROJECT_DIR$/www/directivas/secciones/reg/reg.js" />
         <option value="$PROJECT_DIR$/www/directivas/secciones/taxi/taxi.js" />
         <option value="$PROJECT_DIR$/www/directivas/secciones/terms/terms.js" />
-        <option value="$PROJECT_DIR$/www/app/index.js" />
+        <option value="$PROJECT_DIR$/comandos.txt" />
+        <option value="$PROJECT_DIR$/www/servicios/cordovaGeolocationModule.js" />
+        <option value="$PROJECT_DIR$/www/servicios/lazyLoadApi.js" />
+        <option value="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/app/app.js" />
+        <option value="$PROJECT_DIR$/www/app/index.js" />
+        <option value="$PROJECT_DIR$/www/libs/ng-cordova.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <gulpfiles>
@@ -296,18 +834,14 @@
       </GulpfileState>
     </gulpfiles>
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="886" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="839" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -355,6 +889,8 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
@@ -405,6 +941,90 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="servicios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_g3ob4r_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_g3ob4r_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_g3ob4r_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_g3ob4r_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directivas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="secciones" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_g3ob4r_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_g3ob4r_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directivas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="secciones" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_g3ob4r_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_g3ob4r_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="directivas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -433,11 +1053,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="plug&#9;ACTION&#9;WelcomeScreen.Plugins&#10;plugins&#9;ACTION&#9;WelcomeScreen.Plugins&#10;gulp&#9;null&#9;null" />
-    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="lazyLoadApi&#9;null&#9;null&#10;plug&#9;ACTION&#9;WelcomeScreen.Plugins&#10;plugins&#9;ACTION&#9;WelcomeScreen.Plugins&#10;gulp&#9;null&#9;null" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Gulp.js.default">
     <configuration default="false" name="default" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
@@ -503,30 +1123,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="839" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3245033" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.50298506" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13630041" sideWeight="0.49701494" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31011236" sideWeight="0.4875" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33147633" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23071979" sideWeight="0.25430465" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23071979" sideWeight="0.74569535" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25820896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32059926" sideWeight="0.50764954" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34501347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23319027" sideWeight="0.28600407" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23319027" sideWeight="0.71399593" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.50298506" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13630041" sideWeight="0.49701494" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25820896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34178907" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32059926" sideWeight="0.50764954" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3245033" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34501347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25416666" sideWeight="0.48181817" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -549,6 +1169,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/servicios/arService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -570,14 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.098265894">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/servicios/arService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54332876">
@@ -586,19 +1206,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/servicios/cordovaGeolocationModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4965612">
-          <caret line="108" column="64" selection-start-line="107" selection-start-column="17" selection-end-line="108" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/https-with-inline-auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44429162">
           <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -606,15 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44429162">
           <caret line="19" column="106" selection-start-line="19" selection-start-column="106" selection-end-line="19" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/servicios/lazyLoadApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14030261">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,7 +1272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +1295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39752406">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +1302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53782666">
           <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,9 +1309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,7 +1316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,7 +1323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33287483">
           <caret line="115" column="4" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,7 +1330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6368638">
           <caret line="58" column="56" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +1338,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,9 +1347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,14 +1354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09353507">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.344828">
-          <caret line="322" column="0" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -864,14 +1446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="125" column="63" selection-start-line="125" selection-start-column="63" selection-end-line="125" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/directivas/secciones/reg/reg.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -896,23 +1470,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/index.js">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7895461">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="26" />
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/servicios/lazyLoadApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32258064">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comandos.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.125">
+          <caret line="18" column="120" selection-start-line="18" selection-start-column="120" selection-end-line="18" selection-end-column="138" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/favs">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="160" selection-start-line="3" selection-start-column="160" selection-end-line="3" selection-end-column="160" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/sync.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="209" column="32" selection-start-line="209" selection-start-column="32" selection-end-line="209" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/servicios/cordovaGeolocationModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/ng-cordova.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65986395">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

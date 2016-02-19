@@ -1,0 +1,58 @@
+cordova create g30b4r com.metamorf.geobar Geobar
+
+
+cordova plugin add cordova-plugin-device
+cordova plugin add cordova-plugin-network-information
+cordova plugin add cordova-plugin-geolocation
+cordova plugin add cordova-plugin-dialogs
+cordova plugin add cordova-plugin-splashscreen
+cordova plugin add cordova-plugin-device-motion
+cordova plugin add cordova-plugin-device-orientation
+cordova plugin add cordova-plugin-vibration
+cordova plugin add cordova-plugin-inappbrowser
+cordova plugin add phonegap-plugin-push
+cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
+
+
+
+cordova plugin add https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git
+cordova plugin add cordova-plugin-crosswalk-webview
+cordova plugin add C:\developer\plugins-cordova\wikitude-cordova-plugin
+
+//cordova plugin add https://github.com/phonegap-build/PushPlugin.git
+cordova plugin add https://github.com/Telerik-Verified-Plugins/PushNotification
+
+// facebook
+// https://github.com/Wizcorp/phonegap-facebook-plugin.git
+cordova plugin add C:\developer\plugins-cordova\telerik-facebook-plugin-master --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar" 
+ android:minSdkVersion="14" android:targetSdkVersion="17" 
+
+keytool -exportcert -alias motoneta -keystore C:\wamp\www\_g3ob4r_\certs\geobar-release-key.keystore | openssl sha1 -binary | openssl base64
+//---------
+
+
+ !!!! remover javascritp wikitude backbutton
+ !!!! remover del wikitude WARViewController la liena de swipe para cerrar
+
+cordova build android
+adb install -r C:\wamp\www\_g3ob4r_\platforms\android\build\outputs\apk/android-armv7-debug.apk
+
+adb install -r C:\wamp\www\_g3ob4r_\platforms\android\build\outputs\apk/android-debug.apk
+
+
+keytool -list -v -keystore C:\wamp\www\g30b4r\certs\geobar-release-key.keystore
+keytool -list -v -keystore C:\wamp\www\g30b4r\certs\geobar-release-key.keystore -alias motoneta -storepass android -keypass vespa.1
+keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android 
+keytool -list -v -keystore "C:\wamp\www\g30b4r\certs/geobar-release-key.keystore" -alias motoneta -storepass vespa.1 -keypass vespa.1
+keytool -genkey -v -keystore my-release-key.keystore -alias motoneta -keyalg RSA -keysize 2048 -validity 10000
+
+
+
+martin.canabal@me.com
+Geobarapp,.-1
+
+
+
+https://64.13.253.219:8443/
+metamorf.com.uy
+pass: g$4Gds94

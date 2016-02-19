@@ -207,7 +207,7 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork,lazy
 
 		$http.get(SERVER + 'sync.php?ac=' + new Date().getTime()).success(function (json_sync) {
 			$window.localStorage.setItem('favs', JSON.stringify(json_sync.favs));
-
+			alert(json_sync.favs)
 			var local_sync_lugares = $window.localStorage.getItem('local_sync_lugares');	
 			var local_sync_eventos = $window.localStorage.getItem('local_sync_eventos');	
 
