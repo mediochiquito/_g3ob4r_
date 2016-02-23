@@ -87,14 +87,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "phonegap-plugin-push": {
-        "source": {
-            "type": "registry",
-            "id": "phonegap-plugin-push"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-facebook4": {
         "source": {
             "type": "registry",
@@ -105,5 +97,13 @@
             "APP_ID": "398706416993551",
             "APP_NAME": "GeoBar"
         }
+    },
+    "phonegap-plugin-push": {
+        "source": {
+            "type": "registry",
+            "id": "phonegap-plugin-push"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

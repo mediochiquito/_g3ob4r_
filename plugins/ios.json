@@ -40,12 +40,12 @@
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "phonegap-plugin-push": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
         "cordova-plugin-facebook4": {
             "APP_ID": "398706416993551",
             "APP_NAME": "GeoBar",
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "phonegap-plugin-push": {
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },

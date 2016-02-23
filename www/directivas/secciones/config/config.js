@@ -1,4 +1,4 @@
-geobarApp.directive('config', function($rootScope, ToastService, regService, $cordovaPush, $timeout, $cordovaNetwork, $window, $http, lugaresService, eventosService, SERVER, Loading) {
+geobarApp.directive('config', function($rootScope, ToastService, regService, $timeout, $cordovaNetwork, $window, $http, lugaresService, eventosService, SERVER, Loading) {
   
   return {
     restrict: 'E',

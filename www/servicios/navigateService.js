@@ -40,10 +40,6 @@ geobarApp.service('navigateService', function($log, mapaService, $rootScope, $in
 		if(typeof obj == 'undefined') obj = null;
 		if(typeof $recargar == 'undefined') $recargar = true;
 
-		/*angular.element('.seccion').removeClass('ng-hide-remove'); 
-		angular.element('.seccion').removeClass('ng-hide-remove-active'); 
-		angular.element('.seccion').removeClass('ng-hide');*/
-
 		switch(secc){
 			
 			case 'home':
@@ -95,13 +91,9 @@ geobarApp.service('navigateService', function($log, mapaService, $rootScope, $in
 	function go_execute(secc, obj, entra_a_historia, $dir_animate){
 
 		if(typeof entra_a_historia == 'undefined') entra_a_historia = true;
-		//if(typeof $dir_animate == 'undefined') $dir_animate  = 'enterSeccion';
 
 		if(entra_a_historia) $rootScope.dirAnim = 'enter';
 		else $rootScope.dirAnim = 'back';
-
-
-	//	$timeout(function(){
 
 			self.dir_animate  = $dir_animate;
 			self.active_page = secc;
@@ -114,8 +106,7 @@ geobarApp.service('navigateService', function($log, mapaService, $rootScope, $in
 			en_seccion = secc;
 			
 			self.status++;
-		//})
-		
+
 	}
 
 
