@@ -27,10 +27,10 @@ $rs_enviar = mysql_query("SELECT * FROM salida
 
   ";
 
-  
+
 
 $p = new Push();
-//$p->enviar_push_ios('2842f7860c6d8b8e1229c2a7a462e6a70cf1dc314c264887c40b5addd29df11c', 'Titulo',  'Desc desc', 0, 0, 2);
+$p->enviar_push_ios('4588f4c38589f6087dae5ea461ea15d488c6f0d4350df2ce7cdf6e9072615570', 'Titulo',  'Desc desc', 0, 0, 2);
 //
 $bulce = 1;
 while($row_enviar = mysql_fetch_object($rs_enviar)){

@@ -4,8 +4,8 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 //.constant('SERVER', 'http://192.168.0.2/_g3ob4r_/server/')
 //.constant('SERVER', 'http://mateomenestrina.no-ip.org/_g3ob4r_/server/')
-//.constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
-.constant('SERVER', 'https://mdinteractivo.com/geo/')
+.constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
+	//.constant('SERVER', 'https://mdinteractivo.com/geo/')
 
 .constant('SCREEN_SIZE', {ancho: window.innerWidth, alto: window.innerHeight})
 
@@ -16,8 +16,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 })
 
-/*
-.run(function($http, $cordovaPushV5, $timeout, $cordovaDevice, $window, $rootScope, SERVER,navigateService) {
+.run(function($http, $cordovaPushV5, $timeout, $cordovaDevice, $window, $rootScope, SERVER, navigateService) {
 
 	console.log("RUN");
 
@@ -57,9 +56,6 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 	}
 
-
-
-
 	if($window.localStorage.getItem('local_sync_lugares') == null) $window.localStorage.setItem('local_sync_lugares', 0);
 	if($window.localStorage.getItem('local_sync_eventos') == null)  $window.localStorage.setItem('local_sync_eventos', 0);
 	if($window.localStorage.getItem('distancia') == null) $window.localStorage.setItem('distancia', 5);
@@ -75,10 +71,6 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 	if($window.localStorage.getItem('favs') == null) $window.localStorage.setItem('favs', '');
 	if($window.localStorage.getItem('json_lugares') == null) $window.localStorage.setItem('json_lugares','[{"id":"37","tipo":"1","cat":"Bar","name":"AVALON Resto-bar","tel":"(01) 4463369","dir":"Calle 2 de Mayo 385","lat":"-12.118048","lon":"-77.032147","alt":"0","thumb":"28a7b962f81e6ee438cfed2a78e72cfb.jpg"},{"id":"34","tipo":"1","cat":"Bar","name":"Bass","tel":"","dir":"Charrua 2547 Esq. Brito del Pino","lat":"-34.905281","lon":"-56.157982","alt":"100.1","thumb":"5021d3649daee63a344b9bc44af9ef56.jpg"},{"id":"30","tipo":"1","cat":"Bar","name":"Casitanno","tel":"2409 7236","dir":"Maldonado 2051 (Pablo de María)","lat":"-34.9081366","lon":"-56.1706496","alt":"100.1","thumb":"c2a2ef804baa729648ad7eb67c7e006a.jpg"},{"id":"7","tipo":"5","cat":"Teatro","name":"El Cilindro","tel":"12312321 23","dir":"cerca del parque rodo","lat":"-34.86319730239704","lon":"-56.15334793925285","alt":"37.430","thumb":"f55faab04fd0c40d086baa83afe82361.jpg"},{"id":"32","tipo":"1","cat":"Bar","name":"El Living","tel":"2402 3795","dir":"Juan Paullier y Edil Hugo Prato","lat":"-34.9092933","lon":"-56.1671314","alt":"100.1","thumb":"6212b10071517248f96267682a765bf7.jpg"},{"id":"18","tipo":"2","cat":"Restaurante","name":"El Palenqe","tel":"11111","dir":"dasd","lat":"-34.90543652103986","lon":"-56.211585234850645","alt":"8.645","thumb":"b7f68a58c58413896dea0da3f92a31ef.jpg"},{"id":"1","tipo":"3","cat":"Cine","name":"Esquina Metamorf","tel":"xxxx020","dir":"11Luis Alberto Herrera 941","lat":"-34.90890485114102","lon":"-56.15121147595346","alt":"26.467","thumb":"ab316ee877f25673e1036d80e40994a1.jpg"},{"id":"35","tipo":"1","cat":"Bar","name":"JACKSON BAR","tel":"098 626 480","dir":"Jackson 1220, Montevideo","lat":"-34.906994","lon":"-56.173031","alt":"100.1","thumb":"c696ea093536ff5096e845f06c8acddb.jpg"},{"id":"15","tipo":"2","cat":"Restaurante","name":"La Estada","tel":"waweq","dir":"wewqe","lat":"-34.90795481601594","lon":"-56.146345341112465","alt":"14.086","thumb":"5d9c449f9184504d50bd3f3f25795fda.jpg"},{"id":"29","tipo":"1","cat":"Bar","name":"La Ronda Cafe","tel":"","dir":"","lat":"-34.90986214411416","lon":"-56.20006246492267","alt":"18.124","thumb":"c6ca9bf6e06b6bd7561a7da146745e93.jpg"},{"id":"31","tipo":"1","cat":"Bar","name":"Loop Bar","tel":"09971012","dir":"Maldonado 2047 (esq. Pablo de Maria)","lat":"-34.9080883","lon":"-56.1708158","alt":"100.0","thumb":"cebc455e3e43c06907ef50d1468dcea0.jpg"},{"id":"3","tipo":"3","cat":"Cine","name":"P. Legislativo","tel":"23059020","dir":"Luis Alberto Herrera 213","lat":"-34.891497","lon":"-56.187308","alt":"22.8","thumb":"a803bdf7b833a7290a599607de633888.jpg"}]');
 	if($window.localStorage.getItem('json_eventos') == null) $window.localStorage.setItem('json_eventos','[{"id":"23","tipo":"4","cat":"Evento","name":"Jet Black","tel":"","dir":"","lat":"-34.8382628161465","lon":"-56.03090610355139","alt":"15.187","pub_ini":"0000-00-00 00:00:00","pub_fin":"2016-11-30 00:00:00","thumb":"25aa9ebc670e17a21d02f4dcce3f064a.jpg"},{"id":"5","tipo":"4","cat":"Evento","name":"Rodelu","tel":"324234","dir":"324weleñfjkjfñlsdk ñas","lat":"-34.915748","lon":"-56.167437","alt":"14.1","pub_ini":"0000-00-00 00:00:00","pub_fin":"2015-11-02 00:00:00","thumb":"23c20c2b530f5d5812c03f25798e4dda.jpg"},{"id":"6","tipo":"4","cat":"Evento","name":"Skate park","tel":"324234","dir":"324weleñfjs{dlkjfñlsdk ñas","lat":"-34.910883","lon":"-56.133464","alt":"2.8","pub_ini":"0000-00-00 00:00:00","pub_fin":"2015-11-27 00:00:00","thumb":"3acc9f4a636e3a63c91612d108bce36a.jpg"},{"id":"4","tipo":"4","cat":"Evento","name":"Smirnoff Mauss Party","tel":"23123123","dir":"Sheraton","lat":"-34.924265","lon":"-56.158033","alt":"24.6","pub_ini":"0000-00-00 00:00:00","pub_fin":"2015-12-07 00:00:00","thumb":"a5cd9dc8185d604cd7b2050d94f86e3a.jpg"}]');
-
-
-
-
 
 	$rootScope.pushIosDisabled = false;
 
@@ -138,6 +130,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 				"sound": true,
 				"alert": true
 			};
+
 			$cordovaPushV5.initialize(iosConfig);
 			$rootScope.pushIosDisabled = true;
 
@@ -162,10 +155,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 							var item={ id: notification.idPoi };
 							navigateService.go('detalle', item);
 						}catch(e){}
-
 					}
-
-
 				}
 
 				if (notification.sound) {
@@ -182,6 +172,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 				}
 
 			});
+
 			// WARNING! dangerous to unregister (results in loss of tokenID)
 			$cordovaPushV5.unregister(options).then(function(result) {
 				// Success!
@@ -200,7 +191,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 
   }, false);
- */
+
 geobarApp.controller("mainController",  function($document, $cordovaNetwork, $rootScope, favService, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
 
 	$scope.aceptoTerms = -1;
@@ -210,72 +201,71 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork, $ro
 	$scope.ultima_ubilcacion  = cordovaGeolocationService.getUltimaPosicion();
 
 	$scope.init = function (){
-
+		//alert('init 0');
 		$rootScope.position = null;
+		//alert('init 1');
 		cordovaGeolocationService.watchPosition();
-
+	//	alert('init 2');
+		//alert('init');
 		//http://dev.metamorf.com.uy/geobar/sync.php?ac=111
-		//iniciar_app();
+		iniciar_app();
 
 
-	/*
-		$http.get(SERVER + 'sync.php?ac=' + new Date().getTime()).success(function (json_sync) {
-
-			alert(json_sync);
-
-			$window.localStorage.setItem('favs', JSON.stringify(json_sync.favs));
-
-			var local_sync_lugares = $window.localStorage.getItem('local_sync_lugares');
-			var local_sync_eventos = $window.localStorage.getItem('local_sync_eventos');
-
-			var debe_sincronzar = '';
-
-			if(json_sync.pois.lugares != local_sync_lugares) debe_sincronzar += 'lugares';
-			if(json_sync.pois.eventos != local_sync_eventos) debe_sincronzar += 'eventos';
-
-			if(debe_sincronzar != ''){
-
-				$http.get(SERVER+'ws.php?method=getLista&data=' + debe_sincronzar + '&ac=' + new Date().getTime())
-
-				.success(function(data) {
-
-					if(typeof data.lugares != 'undefined'){
-						$window.localStorage.setItem('json_lugares', JSON.stringify(data.lugares));
-						$window.localStorage.setItem('local_sync_lugares', json_sync.pois.lugares)
-					}
-
-					if(typeof data.eventos != 'undefined'){
-						$window.localStorage.setItem('json_eventos', JSON.stringify(data.eventos));
-						$window.localStorage.setItem('local_sync_eventos', json_sync.pois.eventos)
-					}
-
-					// actualizo ok
-				    iniciar_app();
-
-				})
-				.error(function(){
-					iniciar_app()
-				});
-
-			} else  iniciar_app();
-
-		}).error(function(){
-
-alert('ERRROOR');
-			iniciar_app()
-		});*/
+		//$http.get(SERVER + 'sync.php?ac=' + new Date().getTime()).success(function (json_sync) {
+        //
+		//	$window.localStorage.setItem('favs', JSON.stringify(json_sync.favs));
+        //
+		//	var local_sync_lugares = $window.localStorage.getItem('local_sync_lugares');
+		//	var local_sync_eventos = $window.localStorage.getItem('local_sync_eventos');
+        //
+		//	var debe_sincronzar = '';
+        //
+		//	if(json_sync.pois.lugares != local_sync_lugares) debe_sincronzar += 'lugares';
+		//	if(json_sync.pois.eventos != local_sync_eventos) debe_sincronzar += 'eventos';
+        //
+		//	if(debe_sincronzar != ''){
+        //
+		//		$http.get(SERVER+'ws.php?method=getLista&data=' + debe_sincronzar + '&ac=' + new Date().getTime())
+        //
+		//		.success(function(data) {
+        //
+		//			if(typeof data.lugares != 'undefined'){
+		//				$window.localStorage.setItem('json_lugares', JSON.stringify(data.lugares));
+		//				$window.localStorage.setItem('local_sync_lugares', json_sync.pois.lugares)
+		//			}
+        //
+		//			if(typeof data.eventos != 'undefined'){
+		//				$window.localStorage.setItem('json_eventos', JSON.stringify(data.eventos));
+		//				$window.localStorage.setItem('local_sync_eventos', json_sync.pois.eventos)
+		//			}
+        //
+		//		    iniciar_app();
+        //
+		//		})
+		//		.error(function(){
+		//			iniciar_app()
+		//		});
+        //
+		//	} else  iniciar_app();
+        //
+		//}).error(function(){
+        //
+		//	iniciar_app()
+		//});
 
 	};
 
-	function iniciar_app(){		
-
+	function iniciar_app(){
+		//alert('iniciar_app 0');
 		favService.setAll();
+		//alert('iniciar_app 1');
 		$rootScope.$watch("position", function (){
 
 			lugaresService.setAll();
 			eventosService.setAll();	
 
 		});
+		//alert('iniciar_app 2');
 		arService.set();
 		Loading.ocultar();
 

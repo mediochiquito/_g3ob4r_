@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
@@ -25,10 +22,12 @@
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "cordova-plugin-geolocation": {
+        "cordova-plugin-facebook4": {
+            "APP_ID": "398706416993551",
+            "APP_NAME": "GeoBar",
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "cordova-plugin-inappbrowser": {
+        "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "cordova-plugin-network-information": {
@@ -40,9 +39,7 @@
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "cordova-plugin-facebook4": {
-            "APP_ID": "398706416993551",
-            "APP_NAME": "GeoBar",
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "phonegap-plugin-push": {

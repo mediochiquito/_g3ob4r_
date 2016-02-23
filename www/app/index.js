@@ -28,7 +28,7 @@ var app = {
       
         try{
 
-            window.open = cordova.InAppBrowser.open;
+             //  window.open = cordova.InAppBrowser.open;
             //if(device.platform == 'iOS') StatusBar.hide();
             angular.bootstrap(document, ["geobarApp"]);
 

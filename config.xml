@@ -53,7 +53,6 @@
         <splash height="1334" src="res/screen/ios/Default-667h.png" width="750" />
         <splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" />
     </platform>
-
     <preference name="Fullscreen" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="Orientation" value="portrait" />
@@ -64,7 +63,6 @@
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="android-minSdkVersion" value="16" />
-
     <plugin name="cordova-plugin-facebook4" spec="~1.6.3">
         <variable name="APP_ID" value="398706416993551" />
         <variable name="APP_NAME" value="GeoBar" />

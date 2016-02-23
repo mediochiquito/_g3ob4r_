@@ -1,6 +1,6 @@
-cordova create g30b4r com.metamorf.geobar Geobar
+cordova create _g30b4r_ com.diageo.geobar Geobar
 
-
+cordova plugin add cordova-plugin-console
 cordova plugin add cordova-plugin-device
 cordova plugin add cordova-plugin-network-information
 cordova plugin add cordova-plugin-geolocation
@@ -11,21 +11,24 @@ cordova plugin add cordova-plugin-device-orientation
 cordova plugin add cordova-plugin-vibration
 cordova plugin add cordova-plugin-inappbrowser
 cordova plugin add phonegap-plugin-push
+
+cordova -d plugin add git_fork/phonegap-facebook-plugin --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
+
+
+cordova -d plugin add https://github.com/Wizcorp/phonegap-facebook-plugin.git --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
 cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
 
 
 
-cordova plugin add https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git
+
+
+
+
+
 cordova plugin add cordova-plugin-crosswalk-webview
 cordova plugin add C:\developer\plugins-cordova\wikitude-cordova-plugin
 
-//cordova plugin add https://github.com/phonegap-build/PushPlugin.git
-cordova plugin add https://github.com/Telerik-Verified-Plugins/PushNotification
 
-// facebook
-// https://github.com/Wizcorp/phonegap-facebook-plugin.git
-cordova plugin add C:\developer\plugins-cordova\telerik-facebook-plugin-master --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar" 
- android:minSdkVersion="14" android:targetSdkVersion="17" 
 
 keytool -exportcert -alias motoneta -keystore C:\wamp\www\_g3ob4r_\certs\geobar-release-key.keystore | openssl sha1 -binary | openssl base64
 //---------
@@ -34,10 +37,6 @@ keytool -exportcert -alias motoneta -keystore C:\wamp\www\_g3ob4r_\certs\geobar-
  !!!! remover javascritp wikitude backbutton
  !!!! remover del wikitude WARViewController la liena de swipe para cerrar
 
-cordova build android
-adb install -r C:\wamp\www\_g3ob4r_\platforms\android\build\outputs\apk/android-armv7-debug.apk
-
-adb install -r C:\wamp\www\_g3ob4r_\platforms\android\build\outputs\apk/android-debug.apk
 
 
 keytool -list -v -keystore C:\wamp\www\g30b4r\certs\geobar-release-key.keystore
@@ -47,9 +46,8 @@ keytool -list -v -keystore "C:\wamp\www\g30b4r\certs/geobar-release-key.keystore
 keytool -genkey -v -keystore my-release-key.keystore -alias motoneta -keyalg RSA -keysize 2048 -validity 10000
 
 
-
 martin.canabal@me.com
-Geobarapp,.-1
+Geobar,.-1app
 
 
 
