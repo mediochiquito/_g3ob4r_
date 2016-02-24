@@ -1,19 +1,15 @@
 var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial',
-											 'ngCordova.plugins.device' ,
+											 'ngCordova.plugins.device' , 'templates',
 	'ngCordova.plugins.facebook' , 'ngCordova.plugins.network' , 'ngCordova.plugins.push_v5' , 'Utils', 'cordovaGeolocationModule', 'plugins.toast'])
 
 //.constant('SERVER', 'http://192.168.0.2/_g3ob4r_/server/')
 //.constant('SERVER', 'http://mateomenestrina.no-ip.org/_g3ob4r_/server/')
 .constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
-	//.constant('SERVER', 'https://mdinteractivo.com/geo/')
-
 .constant('SCREEN_SIZE', {ancho: window.innerWidth, alto: window.innerHeight})
 
 .config(function( $mdGestureProvider) {
     $mdGestureProvider.skipClickHijack();
 	console.log("CONFIG")
-
-
 })
 
 .run(function($http, $cordovaPushV5, $timeout, $cordovaDevice, $window, $rootScope, SERVER, navigateService) {
@@ -201,71 +197,69 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork, $ro
 	$scope.ultima_ubilcacion  = cordovaGeolocationService.getUltimaPosicion();
 
 	$scope.init = function (){
-		//alert('init 0');
+
 		$rootScope.position = null;
-		//alert('init 1');
+
 		cordovaGeolocationService.watchPosition();
-	//	alert('init 2');
-		//alert('init');
-		//http://dev.metamorf.com.uy/geobar/sync.php?ac=111
+
 		iniciar_app();
 
 
-		//$http.get(SERVER + 'sync.php?ac=' + new Date().getTime()).success(function (json_sync) {
-        //
-		//	$window.localStorage.setItem('favs', JSON.stringify(json_sync.favs));
-        //
-		//	var local_sync_lugares = $window.localStorage.getItem('local_sync_lugares');
-		//	var local_sync_eventos = $window.localStorage.getItem('local_sync_eventos');
-        //
-		//	var debe_sincronzar = '';
-        //
-		//	if(json_sync.pois.lugares != local_sync_lugares) debe_sincronzar += 'lugares';
-		//	if(json_sync.pois.eventos != local_sync_eventos) debe_sincronzar += 'eventos';
-        //
-		//	if(debe_sincronzar != ''){
-        //
-		//		$http.get(SERVER+'ws.php?method=getLista&data=' + debe_sincronzar + '&ac=' + new Date().getTime())
-        //
-		//		.success(function(data) {
-        //
-		//			if(typeof data.lugares != 'undefined'){
-		//				$window.localStorage.setItem('json_lugares', JSON.stringify(data.lugares));
-		//				$window.localStorage.setItem('local_sync_lugares', json_sync.pois.lugares)
-		//			}
-        //
-		//			if(typeof data.eventos != 'undefined'){
-		//				$window.localStorage.setItem('json_eventos', JSON.stringify(data.eventos));
-		//				$window.localStorage.setItem('local_sync_eventos', json_sync.pois.eventos)
-		//			}
-        //
-		//		    iniciar_app();
-        //
-		//		})
-		//		.error(function(){
-		//			iniciar_app()
-		//		});
-        //
-		//	} else  iniciar_app();
-        //
-		//}).error(function(){
-        //
-		//	iniciar_app()
-		//});
+		$http.get(SERVER + 'sync.php?ac=' + new Date().getTime()).success(function (json_sync) {
+
+			$window.localStorage.setItem('favs', JSON.stringify(json_sync.favs));
+
+			var local_sync_lugares = $window.localStorage.getItem('local_sync_lugares');
+			var local_sync_eventos = $window.localStorage.getItem('local_sync_eventos');
+
+			var debe_sincronzar = '';
+
+			if(json_sync.pois.lugares != local_sync_lugares) debe_sincronzar += 'lugares';
+			if(json_sync.pois.eventos != local_sync_eventos) debe_sincronzar += 'eventos';
+
+			if(debe_sincronzar != ''){
+
+				$http.get(SERVER+'ws.php?method=getLista&data=' + debe_sincronzar + '&ac=' + new Date().getTime())
+
+				.success(function(data) {
+
+					if(typeof data.lugares != 'undefined'){
+						$window.localStorage.setItem('json_lugares', JSON.stringify(data.lugares));
+						$window.localStorage.setItem('local_sync_lugares', json_sync.pois.lugares)
+					}
+
+					if(typeof data.eventos != 'undefined'){
+						$window.localStorage.setItem('json_eventos', JSON.stringify(data.eventos));
+						$window.localStorage.setItem('local_sync_eventos', json_sync.pois.eventos)
+					}
+
+				    iniciar_app();
+
+				})
+				.error(function(){
+					iniciar_app()
+				});
+
+			} else  iniciar_app();
+
+		}).error(function(){
+
+			iniciar_app()
+		});
 
 	};
 
 	function iniciar_app(){
-		//alert('iniciar_app 0');
+
 		favService.setAll();
-		//alert('iniciar_app 1');
+
 		$rootScope.$watch("position", function (){
 
 			lugaresService.setAll();
 			eventosService.setAll();	
 
 		});
-		//alert('iniciar_app 2');
+
 		arService.set();
 		Loading.ocultar();
 

@@ -1,106 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' https://*.googleapis.com 'unsafe-inline'; script-src 'self' https://*.googleapis.com https://maps.gstatic.com https://maps.googleapis.com 'unsafe-inline' 'unsafe-eval'">
+<head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--
+          <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    -->
+
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * data: gap: ; style-src 'self' https://*.googleapis.com 'unsafe-inline'; script-src 'self' https://*.googleapis.com https://maps.gstatic.com https://maps.googleapis.com 'unsafe-inline' 'unsafe-eval'">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-    <link rel="stylesheet" href="css/anim.css">
+    <!--<link rel="stylesheet" href="css/anim.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/angular-material.min.css">
-    
-  </head>
+    <link rel="stylesheet" href="css/angular-material.min.css">-->
 
-  <body ng-controller="mainController" ng-init="init()" >
+    <link rel="stylesheet" href="dist/all.css"/>
 
-      <div ng-controller="seccionLoaderController" class='{{$root.dirAnim}}' id='seccionLoaderController' style='height:{{alto_screen-80}}px'>
+</head>
 
-          <home      ng-show=' navigateService.active_page == "home" '      class='seccion' ></home>
-          <lista     ng-show=' navigateService.active_page == "lista" '     class='seccion' ></lista>
-          <config    ng-show=' navigateService.active_page == "config" '    class='seccion' ></config>
-          <detalle   ng-show=' navigateService.active_page == "detalle" '   class='seccion' ></detalle>
-          <taxi      ng-show=' navigateService.active_page == "taxi" '      class='seccion' id='taxi' ></taxi>
-          <mapa      ng-show=' navigateService.active_page == "mapa" '      class='seccion' id='mapa'></mapa>
+<body ng-controller="mainController" ng-init="init()">
 
-      </div>  
+<div ng-controller="seccionLoaderController" class='{{$root.dirAnim}}' id='seccionLoaderController'
+     style='height:{{ alto_screen-80 }}px'>
 
-      <div ng-controller="menuCtrl" id='header_menu'>
+    <home ng-show=' navigateService.active_page == "home" ' class='seccion'></home>
+    <lista ng-show=' navigateService.active_page == "lista" ' class='seccion'></lista>
+    <config ng-show=' navigateService.active_page == "config" ' class='seccion'></config>
+    <detalle ng-show=' navigateService.active_page == "detalle" ' class='seccion'></detalle>
+    <taxi ng-show=' navigateService.active_page == "taxi" ' class='seccion' id='taxi'></taxi>
+    <mapa ng-show=' navigateService.active_page == "mapa" ' class='seccion' id='mapa'></mapa>
 
-        <div id='menu-header' ng-class='{"menu-header-en-home": navigateService.esPrimerPage()}' class='menu-header-en-home' >
+</div>
 
-            <boton-sistema md-ink-ripple  id='btn_back'  
-                            ng-class='{botonDisabled: navigateService.esPrimerPage()}' accion="navigateService.back()" imagen="img/btns/back.svg"></boton-sistema>
+<div ng-controller="menuCtrl" id='header_menu'>
 
-            <img src="img/header_separador.svg"  id='header_separador_0' class='header_separador' />
-            <boton-sistema  md-ink-ripple  id='btn_menu' accion="navigateService.go('config')" imagen="img/btns/menu.svg"></boton-sistema>
-            <img src="img/header_separador.svg" id='header_separador_1' class='header_separador' />
-            <boton-sistema id='header_geobar' accion="navigateService.go('home')" imagen="img/header_geobar.svg"></boton-sistema>
-            </div>
+    <div id='menu-header' ng-class='{"menu-header-en-home": navigateService.esPrimerPage()}'
+         class='menu-header-en-home'>
 
-            <div id='header_linea' ></div>
-           
-            <boton-sistema imagen="img/btns/taxi.svg" accion="navigateService.go('taxi')" id='btn_taxi'></boton-sistema>
+        <boton-sistema md-ink-ripple id='btn_back'
+                       ng-class='{botonDisabled: navigateService.esPrimerPage()}' accion="navigateService.back()"
+                       imagen="img/btns/back.svg"></boton-sistema>
 
-      </div>
- 
-    <!--   ng-if=' userId == 0 ' -->
-    <reg    ng-show = ' showRegistro '      show-registro = ' showRegistro '  ng-cloak class='registro'></reg>
-    <terms  ng-show = ' aceptoTerms == 0 '  ng-if=' aceptoTerms == 0 '        acepto-terms=' aceptoTerms ' ng-cloak></terms>
-    
-    <!---->
-    <el-loading id='loader'></el-loading>
-
-    <script src="libs/angular.min.js"></script>
-    <script src="libs/angular-animate.min.js"></script>
-    <script src="libs/angular-touch.min.js"></script>
-    <script src="libs/angular-aria.min.js"></script>
-    <script src="libs/angular-material.min.js"></script>
-    
-    <script src="app/app.js"></script>
-    <script src="servicios/cordovaGeolocationModule.js"></script>
-    <script src="servicios/navigateService.js"></script>
-    <script src="servicios/mapaService.js"></script>
-    <script src="servicios/lugaresService.js"></script>
-    <script src="servicios/utils.js"></script>
-    <script src="servicios/loading.js"></script>
-    <script src="servicios/ToastService.js"></script>
-    <script src="servicios/arService.js"></script>
-    <script src="servicios/regService.js"></script>
-    <script src="servicios/favService.js"></script>
-      <script src="servicios/ngcordova/device.js"></script>
-      <script src="servicios/ngcordova/facebook.js"></script>
-      <script src="servicios/ngcordova/network.js"></script>
-      <script src="servicios/ngcordova/push_v5.js"></script>
-    <script src="directivas/secciones/terms/terms.js"></script>
-    <script src="directivas/secciones/home/home.js"></script>
-    <script src="directivas/secciones/lista/lista.js"></script>
-    <script src="directivas/secciones/config/config.js"></script>
-    <script src="directivas/secciones/detalle/detalle.js"></script>
-    <script src="directivas/secciones/taxi/taxi.js"></script>
-    <script src="directivas/secciones/mapa/mapa.js"></script>
-    <script src="directivas/secciones/reg/reg.js"></script>
-    <script src="directivas/componentes/botonSistema/botonSistema.js"></script>
-    <script src="directivas/componentes/botonBase/botonBase.js"></script>
-    <script src="directivas/componentes/botonLista/botonLista.js"></script>
-    <script src="directivas/componentes/imgLoader/imgLoader.js"></script>
-    <script src="directivas/componentes/touchSlider/touchSlider.js"></script>
-    <script src="directivas/componentes/elLoading/elLoading.js"></script>
-    <script src="directivas/componentes/checkBox/checkBox.js"></script>
-
-    <script type="text/javascript" src="cordova.js"></script>
-    <script src="app/index.js"></script>
-
-    <script type="text/javascript">
-       app.initialize();
-    </script>
-    <div id='gMapsScripts'>
-
+        <img src="img/header_separador.svg" id='header_separador_0' class='header_separador'/>
+        <boton-sistema md-ink-ripple id='btn_menu' accion="navigateService.go('config')"
+                       imagen="img/btns/menu.svg"></boton-sistema>
+        <img src="img/header_separador.svg" id='header_separador_1' class='header_separador'/>
+        <boton-sistema id='header_geobar' accion="navigateService.go('home')"
+                       imagen="img/header_geobar.svg"></boton-sistema>
     </div>
 
-  </body>
+    <div id='header_linea'></div>
+
+    <boton-sistema imagen="img/btns/taxi.svg" accion="navigateService.go('taxi')" id='btn_taxi'></boton-sistema>
+
+</div>
+
+<!--   ng-if=' userId == 0 ' -->
+<reg ng-show=' showRegistro ' show-registro=' showRegistro ' ng-cloak class='registro'></reg>
+<terms ng-show=' aceptoTerms == 0 ' ng-if=' aceptoTerms == 0 ' acepto-terms=' aceptoTerms ' ng-cloak></terms>
+
+<!---->
+<el-loading id='loader'></el-loading>
+<div id='gMapsScripts'></div>
+
+
+<script type="text/javascript" src="cordova.js"></script>
+
+
+
+
+<script src="libs/angular.min.js"></script>
+<script src="libs/angular-animate.min.js"></script>
+<script src="libs/angular-touch.min.js"></script>
+<script src="libs/angular-aria.min.js"></script>
+<script src="libs/angular-material.min.js"></script>
+
+<!--<script src="app/app.js"></script>
+
+<script src="servicios/cordovaGeolocationModule.js"></script>
+<script src="servicios/navigateService.js"></script>
+<script src="servicios/mapaService.js"></script>
+<script src="servicios/lugaresService.js"></script>
+<script src="servicios/utils.js"></script>
+<script src="servicios/loading.js"></script>
+<script src="servicios/ToastService.js"></script>
+<script src="servicios/arService.js"></script>
+<script src="servicios/regService.js"></script>
+<script src="servicios/favService.js"></script>
+<script src="servicios/ngcordova/device.js"></script>
+<script src="servicios/ngcordova/facebook.js"></script>
+<script src="servicios/ngcordova/network.js"></script>
+<script src="servicios/ngcordova/push_v5.js"></script>
+
+<script src="directivas/secciones/terms/terms.js"></script>
+<script src="directivas/secciones/home/home.js"></script>
+<script src="directivas/secciones/lista/lista.js"></script>
+<script src="directivas/secciones/config/config.js"></script>
+<script src="directivas/secciones/detalle/detalle.js"></script>
+<script src="directivas/secciones/taxi/taxi.js"></script>
+<script src="directivas/secciones/mapa/mapa.js"></script>
+<script src="directivas/secciones/reg/reg.js"></script>
+<script src="directivas/componentes/botonSistema/botonSistema.js"></script>
+<script src="directivas/componentes/botonBase/botonBase.js"></script>
+<script src="directivas/componentes/botonLista/botonLista.js"></script>
+<script src="directivas/componentes/imgLoader/imgLoader.js"></script>
+<script src="directivas/componentes/touchSlider/touchSlider.js"></script>
+<script src="directivas/componentes/elLoading/elLoading.js"></script>
+<script src="directivas/componentes/checkBox/checkBox.js"></script>
+
+<script src="app/index.js"></script>-->
+
+
+
+
+<!-- GULP -->
+<script src="dist/templates/templates.js"></script>
+<script src="dist/all.js"></script>
+<!-- GULP -->
+
+</body>
 </html>
 
 

@@ -11,12 +11,14 @@ cordova plugin add cordova-plugin-device-orientation
 cordova plugin add cordova-plugin-vibration
 cordova plugin add cordova-plugin-inappbrowser
 cordova plugin add phonegap-plugin-push
+cordova plugin add cordova-plugin-statusbar
+cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
+
+
+
 
 cordova -d plugin add git_fork/phonegap-facebook-plugin --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
-
-
 cordova -d plugin add https://github.com/Wizcorp/phonegap-facebook-plugin.git --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
-cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
 
 
 

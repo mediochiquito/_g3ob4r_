@@ -36,13 +36,16 @@
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "cordova-plugin-whitelist": {
+        "phonegap-plugin-push": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "phonegap-plugin-push": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },
