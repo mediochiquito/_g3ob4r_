@@ -65,7 +65,7 @@ var World = {
 
 	locationChanged: function locationChangedFn(lat, lon, alt, acc) {
 
-	//	alert('wikitude locationChanged: ' + lat + ',' + lon + ',' + alt + ',' + acc)
+		//alert('wikitude locationChanged: ' + lat + ',' + lon + ',' + alt + ',' + acc)
 		
 	},
 

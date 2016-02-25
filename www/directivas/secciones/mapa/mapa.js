@@ -1,5 +1,5 @@
 
-    geobarApp.directive('mapa', function($cordovaNetwork, $q, $timeout,$rootScope, navigateService, ToastService, lugaresService, eventosService, DistancePostion, cordovaGeolocationService, $window) {
+    geobarApp.directive('mapa', function($cordovaNetwork, $q, favService, $timeout,$rootScope, navigateService, ToastService, lugaresService, eventosService, DistancePostion, cordovaGeolocationService, $window) {
       
 
       function load_script() {
@@ -9,7 +9,7 @@
             var s = document.createElement('script'); // use global document since Angular's $document is weak
             s.id = 'gMaps' ;
             s.type = "text/javascript";
-            s.src = 'https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyBxU2t0W9wQFwPnGmoXNI-eg95zCy_PiJI&callback=initMap';
+            s.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBxU2t0W9wQFwPnGmoXNI-eg95zCy_PiJI&callback=initMap';
             document.getElementById('gMapsScripts').appendChild(s);
 
        }
@@ -48,6 +48,8 @@
             var directionsDisplay;
             var directionsService;
             var map_circle;
+            scope.favService = favService;
+
             scope.itemSelected  = null;
             scope.navigateService = navigateService;
 
@@ -66,6 +68,10 @@
               $window.open('tel://' + scope.itemSelected.tel);
               
             };
+
+            scope.$watch('favService.all', function () {
+                scope.favs = favService.getAll();
+            });
 
             function initialize() {
                 

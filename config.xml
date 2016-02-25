@@ -64,8 +64,8 @@
     <preference name="AutoHideSplashScreen" value="true" />
 
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#333333" />
-    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="StatusBarBackgroundColor" value="#ff0000" />
+    <preference name="StatusBarStyle" value="blackopaque" />
 
     <preference name="android-minSdkVersion" value="16" />
     <plugin name="cordova-plugin-facebook4" spec="~1.6.3">

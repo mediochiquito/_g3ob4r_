@@ -42,10 +42,19 @@
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
         "phonegap-plugin-push": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-wkwebview-engine": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "com.wikitude.phonegap.WikitudePlugin": {
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },

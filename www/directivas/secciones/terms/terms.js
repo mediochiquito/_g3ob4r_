@@ -3,12 +3,10 @@ geobarApp.directive('terms', function(ToastService) {
 
   return {
     restrict: 'EA',
-    templateUrl: 'directivas/secciones/terms/terms.html',
+      templateUrl: 'directivas/secciones/terms/terms.html',
 
-   scope : {
-
+     scope : {
 		aceptoTerms: '='
-
 	 },
     
     link:function (scope){

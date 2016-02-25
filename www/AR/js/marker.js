@@ -1,7 +1,7 @@
 function Marker($obj) {
 
     this.obj = $obj;
-  
+    alert(parseFloat($obj.lat));
     var markerLocation = new AR.GeoLocation(parseFloat($obj.lat), parseFloat($obj.lon), parseFloat($obj.alt));
     
     var imagen;

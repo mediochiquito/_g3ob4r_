@@ -1,3 +1,4 @@
+/*
 ;window.onerror = function(message, file, line) {
   var error = [];
   error.push('---[error]');
@@ -12,6 +13,7 @@
   }
   alert(error.join("\n"));
 };
+*/
 
 var app = {
 
@@ -28,7 +30,8 @@ var app = {
       
         try{
 
-            window.open = cordova.InAppBrowser.open;
+            ///window.open = cordova.InAppBrowser.open;
+            StatusBar.hide();
             angular.bootstrap(document, ["geobarApp"]);
 
           }catch(e){

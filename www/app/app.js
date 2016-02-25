@@ -202,9 +202,6 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork, $ro
 
 		cordovaGeolocationService.watchPosition();
 
-		iniciar_app();
-
-
 		$http.get(SERVER + 'sync.php?ac=' + new Date().getTime()).success(function (json_sync) {
 
 			$window.localStorage.setItem('favs', JSON.stringify(json_sync.favs));
@@ -222,6 +219,7 @@ geobarApp.controller("mainController",  function($document, $cordovaNetwork, $ro
 				$http.get(SERVER+'ws.php?method=getLista&data=' + debe_sincronzar + '&ac=' + new Date().getTime())
 
 				.success(function(data) {
+
 
 					if(typeof data.lugares != 'undefined'){
 						$window.localStorage.setItem('json_lugares', JSON.stringify(data.lugares));

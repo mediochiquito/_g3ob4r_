@@ -2,186 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72083673-24de-4280-b240-3e0123c0729a" name="Default" comment="php storm">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/gulp.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/.bin/semver.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/examples/beep.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/examples/multi_line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/readme.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/test/beep.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/test/multi_line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/archy/test/non_unicode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/ansi-styles/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/ansi-styles/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/ansi-styles/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/ansi-styles/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/escape-string-regexp/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/escape-string-regexp/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/escape-string-regexp/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/escape-string-regexp/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/has-ansi/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/strip-ansi/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/supports-color/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/supports-color/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/supports-color/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/node_modules/supports-color/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/chalk/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/test/field.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/deprecated/test/method.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/PluginError.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/buffer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/combine.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/env.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/isBuffer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/isNull.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/isStream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/log.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/noop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/lib/template.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/.bin/dateformat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/.bin/dateformat.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-differ/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-differ/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-differ/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-uniq/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-uniq/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/array-uniq/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/beeper/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/beeper/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/beeper/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/beeper/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/bin/cli.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/lib/dateformat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/get-stdin/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/get-stdin/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/get-stdin/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/get-stdin/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/camelcase/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/camelcase/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/camelcase/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/camelcase/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/map-obj/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/map-obj/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/map-obj/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/node_modules/map-obj/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/camelcase-keys/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/loud-rejection/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/loud-rejection/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/loud-rejection/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/loud-rejection/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/AUTHORS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/extract_description.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/fixer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/make_warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/normalize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/safe_format.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/typos.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/lib/warning_messages.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/git-host-info.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/git-host.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/basic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/bitbucket-https-with-embedded-auth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/bitbucket.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/gist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/github.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/gitlab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/https-with-inline-auth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/hosted-git-info/test/lib/standard-tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/builtin-modules.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules/static.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/is-builtin-module/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/node_modules/spdx-license-ids/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/node_modules/spdx-license-ids/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/node_modules/spdx-license-ids/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/node_modules/spdx-license-ids/spdx-license-ids.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-exceptions/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-exceptions/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-exceptions/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-license-ids/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-license-ids/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/node_modules/meow/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/node_modules/spdx-license-ids/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/directivas/secciones/terms/terms.html" afterPath="$PROJECT_DIR$/www/directivas/secciones/terms/terms2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/directivas/secciones/terms/terms2.html" afterPath="$PROJECT_DIR$/www/directivas/secciones/terms/terms.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comandos.txt" afterPath="$PROJECT_DIR$/comandos.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/gulp" afterPath="$PROJECT_DIR$/node_modules/.bin/gulp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/bin/gulp.js" afterPath="$PROJECT_DIR$/node_modules/gulp/bin/gulp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/completion/README.md" afterPath="$PROJECT_DIR$/node_modules/gulp/completion/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/completion/bash" afterPath="$PROJECT_DIR$/node_modules/gulp/completion/bash" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/completion/fish" afterPath="$PROJECT_DIR$/node_modules/gulp/completion/fish" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/completion/powershell" afterPath="$PROJECT_DIR$/node_modules/gulp/completion/powershell" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/completion/zsh" afterPath="$PROJECT_DIR$/node_modules/gulp/completion/zsh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/index.js" afterPath="$PROJECT_DIR$/node_modules/gulp/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/lib/completion.js" afterPath="$PROJECT_DIR$/node_modules/gulp/lib/completion.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/lib/taskTree.js" afterPath="$PROJECT_DIR$/node_modules/gulp/lib/taskTree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/node_modules/gulp/node_modules/.bin/semver" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ios.json" afterPath="$PROJECT_DIR$/plugins/ios.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/AR/js/marker.js" afterPath="$PROJECT_DIR$/www/AR/js/marker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/AR/js/world.js" afterPath="$PROJECT_DIR$/www/AR/js/world.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/app.js" afterPath="$PROJECT_DIR$/www/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/index.js" afterPath="$PROJECT_DIR$/www/app/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.html" afterPath="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js" afterPath="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directivas/secciones/terms/terms.js" afterPath="$PROJECT_DIR$/www/directivas/secciones/terms/terms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/dist/all.js" afterPath="$PROJECT_DIR$/www/dist/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/dist/templates/templates.js" afterPath="$PROJECT_DIR$/www/dist/templates/templates.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <ignored path="_g3ob4r_.iws" />
@@ -204,101 +40,143 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="comandos.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comandos.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WikitudePlugin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wikitude/wikitude-cordova-plugin-5.1.1-3.2.1/www/WikitudePlugin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.666667">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="world.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/AR/js/world.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
+        <entry file="file://$PROJECT_DIR$/www/AR/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.75">
-              <caret line="120" column="51" selection-start-line="120" selection-start-column="51" selection-end-line="120" selection-end-column="51" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="device.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/servicios/ngcordova/device.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="46" />
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <file leaf-file-name="marker.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/AR/js/marker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.08946322">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/dist/all.css">
+      <file leaf-file-name="cordova" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/cordova">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/dist/all.js">
+      <file leaf-file-name="key_ID_Any_PLATFORM_Any.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wikitude/key_ID_Any_PLATFORM_Any.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="84" selection-start-line="1" selection-start-column="75" selection-end-line="1" selection-end-column="84" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="templates.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/dist/templates/templates.js">
+      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wikitude/wikitude-cordova-plugin-5.1.1-3.2.1/plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="66.875">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WikitudePlugin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platforms/ios/www/plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="14" />
+              <caret line="54" column="121" selection-start-line="54" selection-start-column="121" selection-end-line="54" selection-end-column="121" />
               <folding>
-                <marker date="1456350388000" expanded="true" signature="180:292" placeholder="..." />
-                <marker date="1456350388000" expanded="true" signature="477:554" placeholder="..." />
-                <marker date="1456350388000" expanded="true" signature="802:814" placeholder="..." />
-                <marker date="1456350388000" expanded="true" signature="1203:1230" placeholder="..." />
-                <marker date="1456350388000" expanded="true" signature="7464:7492" placeholder="..." />
+                <marker date="1456380511000" expanded="true" signature="110:138" placeholder="/** Release date: 12.01.16 ...*/" />
+                <marker date="1456380511000" expanded="true" signature="1106:1676" placeholder="/**  The Wikitude SDK can run in different modes. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="1776:1860" placeholder="/**  Start-up configuration: camera position (front or back). ...*/" />
+                <marker date="1456380511000" expanded="true" signature="2019:2117" placeholder="/**  Start-up configuration: camera focus range restriction (for iOS only). ...*/" />
+                <marker date="1456380511000" expanded="true" signature="2585:2931" placeholder="/**  Use this function to check if the current device is capable of running ARchitect Worlds. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="3225:4495" placeholder="/**&#9;Use this function to load an ARchitect World. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="5240:5329" placeholder="/**&#9;Use this function to stop the Wikitude SDK and to remove it from the screen. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="5673:5787" placeholder="/**&#9;Use this function to only hide the Wikitude SDK. All location and rendering updates are still active. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="5929:6015" placeholder="/**&#9;Use this function to show the Wikitude SDK again if it was hidden before. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="6199:6408" placeholder="/**&#9;Use this function to call JavaScript which will be executed in the context of the currently loaded ARchitect World. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="6572:6910" placeholder="/**&#9;Use this function to set a callback which will be invoked when the ARchitect World opens an architectsdk =// url. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="7098:7412" placeholder="/**  Use this function to inject a location into the Wikitude SDK. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="7644:8298" placeholder="/**  Use this function to generate a screenshot from the current Wikitude SDK view. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="8592:9111" placeholder="/** Use this function to set a callback that is called every time the Wikitude SDK encounters an internal error or warning. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="9277:9637" placeholder="/** Use this function to set a callback that is called every time the iOS SDK would display the compass calibration screen. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="10184:10268" placeholder="/**&#9;This function gets called every time the application did become active. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="10494:10578" placeholder="/**&#9;This function gets called every time the application did become active. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="10818:10912" placeholder="/**&#9;This function gets called every time the application is about to become inactive. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="11129:11194" placeholder="/**&#9;A generic success callback used inside this wrapper. ...*/" />
+                <marker date="1456380511000" expanded="true" signature="11253:11317" placeholder="/**  A generic error callback used inside this wrapper. ...*/" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="terms.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/directivas/secciones/terms/terms.js">
+      <file leaf-file-name="WikitudePlugin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platforms/ios/platform_www/plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebook.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/servicios/ngcordova/facebook.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="47" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="47" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1456378948000" expanded="true" signature="110:138" placeholder="/** Release date: 12.01.16 ...*/" />
+                <marker date="1456378948000" expanded="true" signature="1106:1676" placeholder="/**  The Wikitude SDK can run in different modes. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="1776:1860" placeholder="/**  Start-up configuration: camera position (front or back). ...*/" />
+                <marker date="1456378948000" expanded="true" signature="2019:2117" placeholder="/**  Start-up configuration: camera focus range restriction (for iOS only). ...*/" />
+                <marker date="1456378948000" expanded="true" signature="2585:2931" placeholder="/**  Use this function to check if the current device is capable of running ARchitect Worlds. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="3225:4495" placeholder="/**&#9;Use this function to load an ARchitect World. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="5240:5329" placeholder="/**&#9;Use this function to stop the Wikitude SDK and to remove it from the screen. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="5673:5787" placeholder="/**&#9;Use this function to only hide the Wikitude SDK. All location and rendering updates are still active. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="5929:6015" placeholder="/**&#9;Use this function to show the Wikitude SDK again if it was hidden before. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="6199:6408" placeholder="/**&#9;Use this function to call JavaScript which will be executed in the context of the currently loaded ARchitect World. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="6572:6910" placeholder="/**&#9;Use this function to set a callback which will be invoked when the ARchitect World opens an architectsdk =// url. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="7098:7412" placeholder="/**  Use this function to inject a location into the Wikitude SDK. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="7644:8298" placeholder="/**  Use this function to generate a screenshot from the current Wikitude SDK view. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="8592:9111" placeholder="/** Use this function to set a callback that is called every time the Wikitude SDK encounters an internal error or warning. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="9277:9637" placeholder="/** Use this function to set a callback that is called every time the iOS SDK would display the compass calibration screen. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="10184:10268" placeholder="/**&#9;This function gets called every time the application did become active. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="10494:10578" placeholder="/**&#9;This function gets called every time the application did become active. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="10818:10912" placeholder="/**&#9;This function gets called every time the application is about to become inactive. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="11129:11194" placeholder="/**&#9;A generic success callback used inside this wrapper. ...*/" />
+                <marker date="1456378948000" expanded="true" signature="11253:11317" placeholder="/**  A generic error callback used inside this wrapper. ...*/" />
               </folding>
             </state>
           </provider>
@@ -312,15 +190,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/servicios/arService.js" />
-        <option value="$PROJECT_DIR$/www/servicios/favService.js" />
-        <option value="$PROJECT_DIR$/www/servicios/loading.js" />
-        <option value="$PROJECT_DIR$/www/servicios/lugaresService.js" />
-        <option value="$PROJECT_DIR$/www/servicios/mapaService.js" />
-        <option value="$PROJECT_DIR$/www/servicios/regService.js" />
         <option value="$PROJECT_DIR$/www/servicios/utils.js" />
         <option value="$PROJECT_DIR$/www/AR/js/BotonImg.js" />
-        <option value="$PROJECT_DIR$/www/AR/js/world.js" />
         <option value="$PROJECT_DIR$/www/AR/css/estilos.css" />
         <option value="$PROJECT_DIR$/www/directivas/componentes/botonBase/botonBase.js" />
         <option value="$PROJECT_DIR$/www/directivas/componentes/botonLista/botonLista.js" />
@@ -335,7 +206,6 @@
         <option value="$PROJECT_DIR$/www/directivas/secciones/taxi/taxi.js" />
         <option value="$PROJECT_DIR$/www/servicios/cordovaGeolocationModule.js" />
         <option value="$PROJECT_DIR$/www/servicios/lazyLoadApi.js" />
-        <option value="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js" />
         <option value="$PROJECT_DIR$/www/libs/ng-cordova.js" />
         <option value="$PROJECT_DIR$/www/directivas/secciones/config/config.js" />
         <option value="$USER_HOME$/Downloads/sync.php" />
@@ -349,19 +219,28 @@
         <option value="$PROJECT_DIR$/www/libs/angular-route.min.js" />
         <option value="$PROJECT_DIR$/www/libs/angular-touch.min.js" />
         <option value="$PROJECT_DIR$/plugins/ios.json" />
-        <option value="$PROJECT_DIR$/comandos.txt" />
-        <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/platforms/ios/www/cordova.js" />
         <option value="$PROJECT_DIR$/../../../SmartFoxServer PRO 1.6.6/Server/config.xml" />
         <option value="$PROJECT_DIR$/www/dist/test/app.js" />
         <option value="$PROJECT_DIR$/www/dist/test/index.js" />
-        <option value="$PROJECT_DIR$/www/app/index.js" />
+        <option value="$PROJECT_DIR$/www/directivas/secciones/terms/terms.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/platforms/ios/www/cordova.js" />
+        <option value="$PROJECT_DIR$/www/dist/templates/templates.js" />
+        <option value="$PROJECT_DIR$/www/directivas/secciones/reg/reg.html" />
         <option value="$PROJECT_DIR$/www/dist/all.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/www/app/index.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/app/app.js" />
-        <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/dist/templates/templates.js" />
-        <option value="$PROJECT_DIR$/www/directivas/secciones/terms/terms.js" />
+        <option value="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.html" />
+        <option value="$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js" />
+        <option value="$PROJECT_DIR$/comandos.txt" />
+        <option value="$PROJECT_DIR$/platforms/ios/www/plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js" />
+        <option value="$PROJECT_DIR$/platforms/ios/platform_www/plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js" />
+        <option value="$PROJECT_DIR$/wikitude/key_ID_Any_PLATFORM_Any.txt" />
+        <option value="$PROJECT_DIR$/wikitude/wikitude-cordova-plugin-5.1.1-3.2.1/www/WikitudePlugin.js" />
+        <option value="$PROJECT_DIR$/www/AR/js/world.js" />
+        <option value="$PROJECT_DIR$/www/AR/js/marker.js" />
       </list>
     </option>
   </component>
@@ -374,9 +253,16 @@
         <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
         <tasks>
           <GulpTaskState>
+            <task-name>cordova-prepare</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
             <task-name>tarea-css</task-name>
           </GulpTaskState>
           <GulpTaskState>
+            <dependencies>
+              <dependency value="templates" />
+              <dependency value="cordova-prepare" />
+            </dependencies>
             <task-name>tarea-js</task-name>
           </GulpTaskState>
           <GulpTaskState>
@@ -398,10 +284,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="35" />
+    <option name="x" value="-3" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="840" />
+    <option name="height" value="839" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -453,6 +339,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -499,7 +386,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servicios" />
+              <option name="myItemId" value="AR" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,11 +404,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servicios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngcordova" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -535,11 +418,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
+              <option name="myItemId" value="wikitude" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -553,15 +432,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
+              <option name="myItemId" value="wikitude" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="wikitude-cordova-plugin-5.1.1-3.2.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,17 +450,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
+              <option name="myItemId" value="wikitude" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="directivas" />
+              <option name="myItemId" value="wikitude-cordova-plugin-5.1.1-3.2.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_g3ob4r_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_g3ob4r_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -668,19 +560,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="23" width="1440" height="840" extended-state="0" />
-    <editor active="true" />
+    <frame x="-3" y="23" width="1440" height="839" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17310444" sideWeight="0.31428573" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17310444" sideWeight="0.6857143" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22961374" sideWeight="0.32391715" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22961374" sideWeight="0.67608285" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328877" sideWeight="0.50454545" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328877" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13630041" sideWeight="0.49701494" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20454545" sideWeight="0.4608379" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2637931" sideWeight="0.4608379" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25820896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18850267" sideWeight="0.49545455" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29105473" sideWeight="0.49545455" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32059926" sideWeight="0.50764954" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -694,6 +586,30 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3245033" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328877" sideWeight="0.50454545" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34501347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13630041" sideWeight="0.49701494" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2637931" sideWeight="0.4608379" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18850267" sideWeight="0.49545455" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17525035" sideWeight="0.32552692" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17525035" sideWeight="0.67447305" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328877" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25820896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32059926" sideWeight="0.50764954" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -721,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,7 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,15 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/servicios/mapaService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="146" column="3" selection-start-line="146" selection-start-column="3" selection-end-line="146" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,7 +708,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="250" column="0" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -819,7 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,39 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/home/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/lista/lista.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="2" selection-start-line="109" selection-start-column="2" selection-end-line="109" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/reg/reg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,7 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,67 +773,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Volumes/www-1/jack/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/www/servicios/ngcordova/facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81632656">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dist/all.js.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dist/all.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dist/all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="84" selection-start-line="1" selection-start-column="75" selection-end-line="1" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.75">
-          <caret line="120" column="51" selection-start-line="120" selection-start-column="51" selection-end-line="120" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.037593983">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="47" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -988,42 +794,500 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/app.js">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/servicios/ngcordova/facebook.js">
+    <entry file="file://$PROJECT_DIR$/platforms/ios/www/cordova.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="47" />
+          <caret line="982" column="34" selection-start-line="982" selection-start-column="34" selection-end-line="982" selection-end-column="34" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/reg/reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/reg/reg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22556391">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/dist/templates/templates.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="14" />
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
           <folding>
-            <marker date="1456350388000" expanded="true" signature="180:292" placeholder="..." />
-            <marker date="1456350388000" expanded="true" signature="477:554" placeholder="..." />
-            <marker date="1456350388000" expanded="true" signature="802:814" placeholder="..." />
-            <marker date="1456350388000" expanded="true" signature="1203:1230" placeholder="..." />
-            <marker date="1456350388000" expanded="true" signature="7464:7492" placeholder="..." />
+            <marker date="1456376404000" expanded="true" signature="190:302" placeholder="..." />
+            <marker date="1456376404000" expanded="true" signature="487:564" placeholder="..." />
+            <marker date="1456376404000" expanded="true" signature="812:824" placeholder="..." />
+            <marker date="1456376404000" expanded="true" signature="1224:1251" placeholder="..." />
+            <marker date="1456376404000" expanded="true" signature="7529:7557" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/servicios/mapaService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="86" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/home/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/directivas/secciones/terms/terms.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.888889">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/index.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/dist/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3446" column="29" selection-start-line="3446" selection-start-column="29" selection-end-line="3446" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <marker date="1456376406000" expanded="true" signature="104:126053" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="105018:105191" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="105117:105189" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="105516:105712" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="106126:106311" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="106557:106768" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="106580:106767" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="106587:106766" placeholder="{&quot;restrict&quot;: &quot;AC&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="106621:106765" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="107040:107349" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="107083:107348" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="107090:107347" placeholder="{&quot;restrict&quot;: &quot;A&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="107125:107346" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="107600:107672" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="107611:107671" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="107618:107670" placeholder="{&quot;restrict&quot;: &quot;A&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="108128:108543" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="108151:108542" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="108158:108541" placeholder="{&quot;transclude&quot;: &quot;element&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="108547:109335" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="108618:109334" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="108625:109333" placeholder="{&quot;restrict&quot;: &quot;ECA&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="108728:109332" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="108810:109331" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="108983:109329" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="109062:109207" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="109072:109206" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="110167:114308" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="110311:114307" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="111148:111255" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="111694:111760" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="112095:112777" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="112108:112242" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="112578:112753" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="112720:112732" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="113029:113486" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="114030:114305" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="114103:114296" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="114312:114982" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="114337:114981" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="114344:114980" placeholder="{&quot;restrict&quot;: &quot;A&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="114450:114979" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="114510:114978" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="114749:114977" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="115023:115351" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="115030:115350" placeholder="{&quot;restrict&quot;: &quot;A&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="115055:115349" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="115087:115348" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="115269:115311" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="115389:115954" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="115428:115953" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="115470:115952" placeholder="{&quot;restrict&quot;: &quot;EA&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="115505:115951" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="115787:115812" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="115958:117873" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="115992:117872" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="116166:117871" placeholder="{&quot;restrict&quot;: &quot;A&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="116272:117870" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="116896:117869" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="117008:117867" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="117281:117392" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="117743:117861" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="118285:118379" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="118318:118374" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="118346:118360" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="118384:119016" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="118407:119015" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="118414:119014" placeholder="{&quot;restrict&quot;: &quot;EA&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="118518:119013" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="118630:119011" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="118857:119009" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="119248:119421" placeholder="{&quot;transclude&quot;: &quot;element&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="119344:119420" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="119393:119418" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="119753:124358" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="119787:124357" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="120022:124356" placeholder="{&quot;restrict&quot;: &quot;E&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="120077:120682" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="120122:120681" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="120501:120574" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="120705:124355" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="121006:121338" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="121355:124024" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="121420:121635" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="121732:123189" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="121892:122099" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="122235:123034" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="123501:123728" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="123521:123726" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="124032:124354" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="124362:124844" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="124389:124843" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="124431:124842" placeholder="{&quot;restrict&quot;: &quot;E&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="124479:124841" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="124566:124840" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="125459:125694" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="125466:125693" placeholder="{&quot;restrict&quot;: &quot;A&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="125521:125692" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="125527:125691" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="126361:126448" placeholder="/*...*/" />
+            <marker date="1456376406000" expanded="true" signature="126465:139781" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="126863:139779" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="126907:139778" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="127147:134422" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="127306:134421" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="127739:128114" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="127944:128058" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="128339:129654" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="128355:128508" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="128465:128480" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="128950:129653" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="129178:129652" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="129318:129651" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="129465:129500" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="129681:131396" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="129907:130213" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="129925:130212" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="130487:130727" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="130934:131045" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="131409:131646" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="131937:132254" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="132001:132218" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="132529:134420" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="133374:134169" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="133820:134167" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="133906:134166" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="134067:134148" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="134438:139776" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="134506:139775" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="134574:134649" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="134894:135297" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="134919:135288" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="134955:135186" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="134973:135185" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="135426:136179" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="136200:137887" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="136600:137878" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="137139:137877" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="137538:137781" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="138108:138219" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="138869:139774" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="139105:139148" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="139634:139686" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="139807:139893" placeholder="/*...*/" />
+            <marker date="1456376406000" expanded="true" signature="139910:143428" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="140590:142481" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="140610:142480" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="140758:141004" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="141010:142479" placeholder="{&quot;restrict&quot;: &quot;A&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="141077:142478" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="141097:142477" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="141219:142476" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="141532:142187" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="141728:142097" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="142445:142474" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="142757:143291" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="142788:143290" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="142795:143289" placeholder="{&quot;restrict&quot;: &quot;A&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="142830:143288" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="142880:143287" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="143455:143555" placeholder="/*...*/" />
+            <marker date="1456376406000" expanded="true" signature="143572:337561" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="149423:149432" placeholder="..." />
+            <marker date="1456376406000" expanded="true" signature="150400:150478" placeholder="..." />
+            <marker date="1456376406000" expanded="true" signature="150492:150503" placeholder="..." />
+            <marker date="1456376406000" expanded="true" signature="206606:210952" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="206710:208600" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="207565:207647" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="228321:242225" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="236448:241781" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="236474:241441" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="239518:241349" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="242728:242746" placeholder="..." />
+            <marker date="1456376406000" expanded="true" signature="271102:271722" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="299164:337558" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="337586:337673" placeholder="/*...*/" />
+            <marker date="1456376406000" expanded="true" signature="337690:341923" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="337721:338275" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="337728:338274" placeholder="{&quot;restrict&quot;: &quot;ECA&quot;...}" />
+            <marker date="1456376406000" expanded="true" signature="338649:341680" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="338665:338703" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="339130:339429" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="339567:341679" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="339674:341678" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="339688:339891" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="339903:340770" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="340220:340590" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="340226:340589" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="340712:340768" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="341151:341335" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="341203:341315" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="341227:341314" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="341951:342038" placeholder="/*...*/" />
+            <marker date="1456376406000" expanded="true" signature="342055:345487" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="342545:343424" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="342556:343423" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="342962:343422" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="342983:343421" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="343053:343099" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="343563:345420" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="343614:345419" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="343768:344099" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="343793:344098" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="343910:344097" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="344332:345418" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="344445:344654" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="344755:345189" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="345551:354696" placeholder="[...]" />
+            <marker date="1456376406000" expanded="true" signature="345595:354696" placeholder="{...}" />
+            <marker date="1456376406000" expanded="true" signature="345705:345817" placeholder="..." />
+            <marker date="1456376406000" expanded="true" signature="346002:346079" placeholder="..." />
+            <marker date="1456376406000" expanded="true" signature="346327:346339" placeholder="..." />
+            <marker date="1456376406000" expanded="true" signature="346739:346766" placeholder="..." />
+            <marker date="1456376406000" expanded="true" signature="353044:353072" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2222223">
+          <caret line="228" column="59" selection-start-line="228" selection-start-column="59" selection-end-line="228" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/lista/itemLista.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5294118">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/lista/lista.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/lista/lista.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="11" selection-start-column="11" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directivas/secciones/mapa/mapa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comandos.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikitude/wikitude-cordova-plugin-5.1.1-3.2.1/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="66.875">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/ios/platform_www/plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <marker date="1456378948000" expanded="true" signature="110:138" placeholder="/** Release date: 12.01.16 ...*/" />
+            <marker date="1456378948000" expanded="true" signature="1106:1676" placeholder="/**  The Wikitude SDK can run in different modes. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="1776:1860" placeholder="/**  Start-up configuration: camera position (front or back). ...*/" />
+            <marker date="1456378948000" expanded="true" signature="2019:2117" placeholder="/**  Start-up configuration: camera focus range restriction (for iOS only). ...*/" />
+            <marker date="1456378948000" expanded="true" signature="2585:2931" placeholder="/**  Use this function to check if the current device is capable of running ARchitect Worlds. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="3225:4495" placeholder="/**&#9;Use this function to load an ARchitect World. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="5240:5329" placeholder="/**&#9;Use this function to stop the Wikitude SDK and to remove it from the screen. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="5673:5787" placeholder="/**&#9;Use this function to only hide the Wikitude SDK. All location and rendering updates are still active. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="5929:6015" placeholder="/**&#9;Use this function to show the Wikitude SDK again if it was hidden before. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="6199:6408" placeholder="/**&#9;Use this function to call JavaScript which will be executed in the context of the currently loaded ARchitect World. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="6572:6910" placeholder="/**&#9;Use this function to set a callback which will be invoked when the ARchitect World opens an architectsdk =// url. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="7098:7412" placeholder="/**  Use this function to inject a location into the Wikitude SDK. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="7644:8298" placeholder="/**  Use this function to generate a screenshot from the current Wikitude SDK view. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="8592:9111" placeholder="/** Use this function to set a callback that is called every time the Wikitude SDK encounters an internal error or warning. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="9277:9637" placeholder="/** Use this function to set a callback that is called every time the iOS SDK would display the compass calibration screen. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="10184:10268" placeholder="/**&#9;This function gets called every time the application did become active. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="10494:10578" placeholder="/**&#9;This function gets called every time the application did become active. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="10818:10912" placeholder="/**&#9;This function gets called every time the application is about to become inactive. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="11129:11194" placeholder="/**&#9;A generic success callback used inside this wrapper. ...*/" />
+            <marker date="1456378948000" expanded="true" signature="11253:11317" placeholder="/**  A generic error callback used inside this wrapper. ...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/ios/www/plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="121" selection-start-line="54" selection-start-column="121" selection-end-line="54" selection-end-column="121" />
+          <folding>
+            <marker date="1456380511000" expanded="true" signature="110:138" placeholder="/** Release date: 12.01.16 ...*/" />
+            <marker date="1456380511000" expanded="true" signature="1106:1676" placeholder="/**  The Wikitude SDK can run in different modes. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="1776:1860" placeholder="/**  Start-up configuration: camera position (front or back). ...*/" />
+            <marker date="1456380511000" expanded="true" signature="2019:2117" placeholder="/**  Start-up configuration: camera focus range restriction (for iOS only). ...*/" />
+            <marker date="1456380511000" expanded="true" signature="2585:2931" placeholder="/**  Use this function to check if the current device is capable of running ARchitect Worlds. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="3225:4495" placeholder="/**&#9;Use this function to load an ARchitect World. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="5240:5329" placeholder="/**&#9;Use this function to stop the Wikitude SDK and to remove it from the screen. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="5673:5787" placeholder="/**&#9;Use this function to only hide the Wikitude SDK. All location and rendering updates are still active. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="5929:6015" placeholder="/**&#9;Use this function to show the Wikitude SDK again if it was hidden before. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="6199:6408" placeholder="/**&#9;Use this function to call JavaScript which will be executed in the context of the currently loaded ARchitect World. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="6572:6910" placeholder="/**&#9;Use this function to set a callback which will be invoked when the ARchitect World opens an architectsdk =// url. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="7098:7412" placeholder="/**  Use this function to inject a location into the Wikitude SDK. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="7644:8298" placeholder="/**  Use this function to generate a screenshot from the current Wikitude SDK view. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="8592:9111" placeholder="/** Use this function to set a callback that is called every time the Wikitude SDK encounters an internal error or warning. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="9277:9637" placeholder="/** Use this function to set a callback that is called every time the iOS SDK would display the compass calibration screen. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="10184:10268" placeholder="/**&#9;This function gets called every time the application did become active. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="10494:10578" placeholder="/**&#9;This function gets called every time the application did become active. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="10818:10912" placeholder="/**&#9;This function gets called every time the application is about to become inactive. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="11129:11194" placeholder="/**&#9;A generic success callback used inside this wrapper. ...*/" />
+            <marker date="1456380511000" expanded="true" signature="11253:11317" placeholder="/**  A generic error callback used inside this wrapper. ...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikitude/wikitude-cordova-plugin-5.1.1-3.2.1/www/WikitudePlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.666667">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/AR/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/AR/js/world.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/cordova">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikitude/key_ID_Any_PLATFORM_Any.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/AR/js/marker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08946322">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
           <folding />
         </state>
       </provider>
