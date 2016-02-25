@@ -14,8 +14,6 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 .run(function($http, $cordovaPushV5, $timeout, $cordovaDevice, $window, $rootScope, SERVER, navigateService) {
 
-	console.log("RUN");
-
 	function enviar_token($token){
 
 		console.log('ENVIAR TOKEN: ' + $token);
@@ -185,10 +183,13 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 	}
 
 
-
-  }, false);
+}, false);
 
 geobarApp.controller("mainController",  function($document, $cordovaNetwork, $rootScope, favService, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
+
+
+
+
 
 	$scope.aceptoTerms = -1;
 	$scope.showRegistro = false;

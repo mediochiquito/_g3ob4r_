@@ -106,14 +106,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-wkwebview-engine": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-wkwebview-engine"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-inappbrowser": {
         "source": {
             "type": "registry",
@@ -125,7 +117,7 @@
     "com.wikitude.phonegap.WikitudePlugin": {
         "source": {
             "type": "local",
-            "path": "wikitude/wikitude-cordova-plugin-5.1.1-3.2.1"
+            "path": "/Applications/MAMP/htdocs/_g3ob4r_/wikitude/wikitude-cordova-plugin-5.1.1-3.2.1"
         },
         "is_top_level": true,
         "variables": {}

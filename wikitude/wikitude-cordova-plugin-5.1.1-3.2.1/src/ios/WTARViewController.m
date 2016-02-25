@@ -87,10 +87,10 @@ NSString * const WTArchitectDebugDelegateMessageKey = @"WTArchitectDebugDelegate
     [self.architectView setShouldRotate:YES toInterfaceOrientation:[[UIApplication sharedApplication] statusBarOrientation]];
 
 
-    UISwipeGestureRecognizer *swipeBackRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipeBack:)];
+   /* UISwipeGestureRecognizer *swipeBackRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipeBack:)];
     swipeBackRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
     
-    [self.view addGestureRecognizer:swipeBackRecognizer];
+    [self.view addGestureRecognizer:swipeBackRecognizer];*/
 }
 
 - (BOOL)prefersStatusBarHidden

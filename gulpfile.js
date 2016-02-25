@@ -28,7 +28,7 @@ gulp.task('tarea-js', ['templates', "cordova-prepare"],  function() {
 
   return gulp.src(['./www/libs/angular.min.js', './www/libs/**/*.js', './www/dist/templates/templates.js', './www/app/app.js',  './www/servicios/**/*.js', './www/directivas/**/*.js', './www/app/index.js'])
 
-     // .pipe(sourcemaps.init())
+      // .pipe(sourcemaps.init())
       .pipe(ngAnnotate())
       //.pipe(uglify())
       .pipe(concat('all.js'))
@@ -51,6 +51,7 @@ gulp.task("cordova-prepare",  function() {
 
     run('cordova prepare ios').exec()
         .pipe(gulp.dest('output'))
+
 });
 
 

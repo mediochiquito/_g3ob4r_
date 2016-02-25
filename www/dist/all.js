@@ -365,8 +365,6 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 .run(function($http, $cordovaPushV5, $timeout, $cordovaDevice, $window, $rootScope, SERVER, navigateService) {
 
-	console.log("RUN");
-
 	function enviar_token($token){
 
 		console.log('ENVIAR TOKEN: ' + $token);
@@ -536,10 +534,13 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 	}
 
 
-
-  }, false);
+}, false);
 
 geobarApp.controller("mainController",  ["$document", "$cordovaNetwork", "$rootScope", "favService", "ToastService", "cordovaGeolocationService", "$timeout", "$scope", "$http", "Loading", "SERVER", "regService", "$location", "$window", "navigateService", "lugaresService", "eventosService", "arService", function($document, $cordovaNetwork, $rootScope, favService, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
+
+
+
+
 
 	$scope.aceptoTerms = -1;
 	$scope.showRegistro = false;
@@ -1464,7 +1465,7 @@ geobarApp.factory('lugaresService', ["$window", "cordovaGeolocationService", "Di
             var bares = $window.localStorage.getItem('bares');
             var restaurantes = $window.localStorage.getItem('restaurantes');
             var cines = $window.localStorage.getItem('cines');
-            var teatro = $window.localStorage.getItem('cines');
+            var teatro = $window.localStorage.getItem('teatros');
 
             var array_entero =  JSON.parse( window.localStorage.getItem('json_lugares'));
             var cantidad_lugares = array_entero.length;
@@ -2534,76 +2535,6 @@ geobarApp.directive('detalle', ["navigateService", "ToastService", "Loading", "$
 
   };
 }]);
-geobarApp.directive('home', ["$window", "navigateService", "ToastService", "SERVER", "$http", "arService", function ($window, navigateService, ToastService, SERVER, $http, arService) {
-    return {
-        restrict: 'E',
-        templateUrl: 'directivas/secciones/home/home.html',
-        scope: {},
-
-
-        link: function (scope) {
-
-            var _callback;
-            var ya_cargo = false;
-            scope.navigateService = navigateService;
-            scope.arService = arService;
-            scope.server = SERVER;
-            scope.url_img_home = SERVER + 'img/home/';
-
-            scope.realidad = function () {
-                arService.mostrar()
-            };
-
-            scope._set = function ($obj, $callback) {
-                _callback = $callback;
-
-                if (ya_cargo) {
-                    _callback();
-                    return;
-                }
-
-                scope.goMapa = function () {
-
-                    if ($window.google && $window.google.maps) {
-                        scope.navigateService.go('mapa', {type: 'all'})
-                    } else {
-                        ToastService.show('Debes conectarte a internet para ver el mapa.', 'long', 'center');
-                    }
-
-                };
-
-                $http.get(SERVER + 'ws.php?method=getHomeImagesApp').
-
-                    success(function (data) {
-
-                        scope.fotos_home = data;
-
-                        ya_cargo = true;
-                        if (scope.fotos_home.length == 0)  sin_fotos();
-                        _callback()
-
-                    }).
-
-                    error(function () {
-                        sin_fotos();
-                        _callback();
-                    });
-
-            };
-
-
-            function sin_fotos() {
-
-                scope.url_img_home = 'img/default/';
-                scope.fotos_home = ['home.png'];
-            }
-
-            navigateService.setSecciones('home', scope._set)
-
-
-        }
-    };
-}]);
 geobarApp.directive('lista', ["$window", "$log", "favService", "navigateService", "SCREEN_SIZE", "$filter", "$timeout", "lugaresService", "eventosService", function ($window, $log, favService, navigateService, SCREEN_SIZE, $filter, $timeout, lugaresService, eventosService) {
 
     return {
@@ -2744,6 +2675,76 @@ geobarApp.directive('lista', ["$window", "$log", "favService", "navigateService"
 
     }]);
 
+geobarApp.directive('home', ["$window", "navigateService", "ToastService", "SERVER", "$http", "arService", function ($window, navigateService, ToastService, SERVER, $http, arService) {
+    return {
+        restrict: 'E',
+        templateUrl: 'directivas/secciones/home/home.html',
+        scope: {},
+
+
+        link: function (scope) {
+
+            var _callback;
+            var ya_cargo = false;
+            scope.navigateService = navigateService;
+            scope.arService = arService;
+            scope.server = SERVER;
+            scope.url_img_home = SERVER + 'img/home/';
+
+            scope.realidad = function () {
+                arService.mostrar()
+            };
+
+            scope._set = function ($obj, $callback) {
+                _callback = $callback;
+
+                if (ya_cargo) {
+                    _callback();
+                    return;
+                }
+
+                scope.goMapa = function () {
+
+                    if ($window.google && $window.google.maps) {
+                        scope.navigateService.go('mapa', {type: 'all'})
+                    } else {
+                        ToastService.show('Debes conectarte a internet para ver el mapa.', 'long', 'center');
+                    }
+
+                };
+
+                $http.get(SERVER + 'ws.php?method=getHomeImagesApp').
+
+                    success(function (data) {
+
+                        scope.fotos_home = data;
+
+                        ya_cargo = true;
+                        if (scope.fotos_home.length == 0)  sin_fotos();
+                        _callback()
+
+                    }).
+
+                    error(function () {
+                        sin_fotos();
+                        _callback();
+                    });
+
+            };
+
+
+            function sin_fotos() {
+
+                scope.url_img_home = 'img/default/';
+                scope.fotos_home = ['home.png'];
+            }
+
+            navigateService.setSecciones('home', scope._set)
+
+
+        }
+    };
+}]);
 
     geobarApp.directive('mapa', ["$cordovaNetwork", "$q", "favService", "$timeout", "$rootScope", "navigateService", "ToastService", "lugaresService", "eventosService", "DistancePostion", "cordovaGeolocationService", "$window", function($cordovaNetwork, $q, favService, $timeout,$rootScope, navigateService, ToastService, lugaresService, eventosService, DistancePostion, cordovaGeolocationService, $window) {
       
@@ -3444,7 +3445,7 @@ var app = {
         try{
 
             ///window.open = cordova.InAppBrowser.open;
-            StatusBar.hide();
+           // StatusBar.hide();
             angular.bootstrap(document, ["geobarApp"]);
 
           }catch(e){

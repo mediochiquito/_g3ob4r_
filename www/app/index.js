@@ -31,7 +31,7 @@ var app = {
         try{
 
             ///window.open = cordova.InAppBrowser.open;
-            StatusBar.hide();
+           // StatusBar.hide();
             angular.bootstrap(document, ["geobarApp"]);
 
           }catch(e){

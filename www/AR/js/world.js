@@ -142,10 +142,10 @@ function info(obj){
 $(document).ready(function(){
 
 	new BotonImg($('#btn-close'), function (){
-		
+
 		var func = encodeURIComponent("action=closeWikitudePlugin");
 		document.location = "architectsdk://" + func;
-		return false;
+
 	});
 	
 	new BotonImg($('#btn_tel'), function (){

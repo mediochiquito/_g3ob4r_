@@ -30,6 +30,9 @@
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
@@ -46,12 +49,6 @@
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "phonegap-plugin-push": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
-        "cordova-plugin-wkwebview-engine": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
-        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "com.wikitude.phonegap.WikitudePlugin": {

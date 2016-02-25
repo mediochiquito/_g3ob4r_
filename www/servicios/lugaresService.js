@@ -13,7 +13,7 @@ geobarApp.factory('lugaresService', function($window, cordovaGeolocationService,
             var bares = $window.localStorage.getItem('bares');
             var restaurantes = $window.localStorage.getItem('restaurantes');
             var cines = $window.localStorage.getItem('cines');
-            var teatro = $window.localStorage.getItem('cines');
+            var teatro = $window.localStorage.getItem('teatros');
 
             var array_entero =  JSON.parse( window.localStorage.getItem('json_lugares'));
             var cantidad_lugares = array_entero.length;
