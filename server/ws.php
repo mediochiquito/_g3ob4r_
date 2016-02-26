@@ -267,7 +267,7 @@ switch($_GET['method']){
 
   	case 'savePoi':
 
-	    $array_iniPub = explode('T', $params->siniPub);
+	    $array_iniPub = explode('T', $params->iniPub);
 	    $array_finPub = explode('T', $params->finPub);
 
 		if(isset($params->id)){

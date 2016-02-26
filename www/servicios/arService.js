@@ -42,15 +42,16 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
                 var method_parms_array = split_url[1].split(':');
                 var item;
 
-                if(method_parms_array[1] == 'lugar')  item = lugaresService.get()[method_parms_array[2]];
-                if(method_parms_array[1] == 'evento') item = eventosService.get()[method_parms_array[2]];
+
+                if(method_parms_array[1] == 'lugar')  item = lugaresService.getDistancia()[method_parms_array[2]];
+                if(method_parms_array[1] == 'evento') item = eventosService.getDistancia()[method_parms_array[2]];
 
                 switch(method_parms_array[0]){
 
                     case 'dir':   
                         wikitudePlugin.hide(); 
                         Loading.mostrar();
-                        
+
                         setTimeout(function (){
 
                            //  Loading.ocultar()

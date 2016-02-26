@@ -76,7 +76,6 @@ class Push{
 	
 }
 
-
-//$p = new Push();
-//$p->enviar_push_ios('2842f7860c6d8b8e1229c2a7a462e6a70cf1dc314c264887c40b5addd29df11c', 'Titulo',  'Desc desc', 0, 0, 2);
+$p = new Push();
+$p->enviar_push_ios('9629da56f08828078b3d1aaf7e4fb0862024c7b35de7ad2c64f7f5c7e49b228f', 'Titulo',  'Desc desc', 0, 0, 2);
 //$p->enviar_push_android('APA91bF42ase8jWX2U3JFkyociMh85CCAHpNOivlZM3MTPydulXEW42k0BXGhCfWmhRlhYtFWyYmWwmQe1zDoIVYbhPm0juzBtCgoRE8jxcRvJ6HMCP2QqH2Bwh77cpZ_A5CU8scQGR2', 'Titulo', 'Desc desc33', 3);

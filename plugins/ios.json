@@ -7,6 +7,9 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.wikitude.phonegap.WikitudePlugin": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
@@ -49,9 +52,6 @@
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "phonegap-plugin-push": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
-        "com.wikitude.phonegap.WikitudePlugin": {
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },

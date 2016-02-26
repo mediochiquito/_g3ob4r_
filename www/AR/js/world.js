@@ -54,7 +54,7 @@ var World = {
 		for (var u = 0; u < cantidad_eventos; u++) {
 		
 			var obj2 = World.array_eventos[u];
-				obj2.arrayNum = i;
+				obj2.arrayNum = u;
 				obj2.type = 'evento';
 				World.markerList.push(new Marker(obj2));
 		}

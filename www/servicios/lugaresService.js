@@ -28,7 +28,7 @@ geobarApp.factory('lugaresService', function($window, cordovaGeolocationService,
               
             }
 
-            all.sort(this.compare);
+                all.sort(this.compare);
 
 
         },
@@ -123,7 +123,6 @@ geobarApp.factory('eventosService', function(cordovaGeolocationService, Distance
                 var d = new Date();
                 var hoy = new Date(d.getFullYear(),d.getMonth(), d.getDate());
 
-                //2015-03-08 00:00:00
                 var array_pub_ini =  String(array_entero[i].pub_ini).split(' ');
                 var fecha_pub_ini =  array_pub_ini[0].split('-');
                 var pub_ini = new Date(Number(fecha_pub_ini[0]), Number(fecha_pub_ini[1])-1, Number(fecha_pub_ini[2]));
@@ -144,9 +143,9 @@ geobarApp.factory('eventosService', function(cordovaGeolocationService, Distance
                     }
                 }
             }
-
-            all.sort(this.compare);
-            
+            if(my_pos!=null) {
+                all.sort(this.compare);
+            }
 
         },
 

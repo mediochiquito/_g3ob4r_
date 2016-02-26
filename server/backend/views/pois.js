@@ -188,8 +188,8 @@ app.controller('PoisCtrl', function($scope, $http, $document, $routeParams, Uplo
         var fecha_pub_fin =  array_pub_fin[0].split('-')
         var pub_fin = new Date(Number(fecha_pub_fin[0]), Number(fecha_pub_fin[1])-1, Number(fecha_pub_fin[2]));
 
-        $scope.poi.iniPub = pub_ini
-	       $scope.poi.finPub = pub_fin;
+        $scope.poi.iniPub = pub_ini;
+	    $scope.poi.finPub = pub_fin;
 
 
         $scope.showForm($e)

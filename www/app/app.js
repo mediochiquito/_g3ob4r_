@@ -187,10 +187,6 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 
 geobarApp.controller("mainController",  function($document, $cordovaNetwork, $rootScope, favService, ToastService, cordovaGeolocationService, $timeout, $scope, $http, Loading, SERVER, regService, $location, $window, navigateService, lugaresService, eventosService, arService) {
 
-
-
-
-
 	$scope.aceptoTerms = -1;
 	$scope.showRegistro = false;
 	$scope.rootScope = $rootScope;
