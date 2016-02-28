@@ -54,12 +54,3 @@ keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -sto
 keytool -list -v -keystore "C:\wamp\www\g30b4r\certs/geobar-release-key.keystore" -alias motoneta -storepass vespa.1 -keypass vespa.1
 keytool -genkey -v -keystore my-release-key.keystore -alias motoneta -keyalg RSA -keysize 2048 -validity 10000
 
-
-martin.canabal@me.com
-Geobar,.-1app
-
-
-
-https://64.13.253.219:8443/
-metamorf.com.uy
-pass: g$4Gds94
