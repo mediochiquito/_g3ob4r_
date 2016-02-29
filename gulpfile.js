@@ -48,12 +48,19 @@ gulp.task('templates', function() {
 });
 
 gulp.task("cordova-prepare",  function() {
-
     run('cordova prepare ios').exec()
         .pipe(gulp.dest('output'))
-
 });
 
+gulp.task("cordova-platform-rm-ios",  function() {
+    run('cordova platform remove ios').exec()
+        .pipe(gulp.dest('output'))
+});
+
+gulp.task("cordova-platform-add-ios",  function() {
+    run('cordova platform add ios').exec()
+        .pipe(gulp.dest('output'))
+});
 
 
 gulp.task('watch', ['tarea-css', 'tarea-js'], function () {

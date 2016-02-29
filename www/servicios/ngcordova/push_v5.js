@@ -17,8 +17,16 @@ angular.module('ngCordova.plugins.push_v5', [])
       onNotification : function () {
         $timeout(function () {
           push.on('notification', function (notification) {
+
+
             $rootScope.$emit('$cordovaPushV5:notificationReceived', notification);
+
+
+
           });
+
+
+
         });
       },
       onError : function () {

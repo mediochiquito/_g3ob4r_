@@ -11,8 +11,7 @@ class Push{
 	var $apns_cert = 'CertificadosPush.pem';
 	var $apns_port = 2195;
 	var $stream_context;
-	
-	
+
 	
 	function __construct(){
 		
@@ -26,13 +25,14 @@ class Push{
 	public function enviar_push_ios($token, $titulo, $mensaje, $idPoi=0){
 		
 		$payload = array();
-		$payload['aps'] = array('idPoi' => $idPoi, 'alert' => $mensaje, 'badge' => intval(0), 'sound' => 'default');
+
+		$payload['aps'] = array("content-available" => 1,  'alert' => $mensaje, 'idPoi' => $idPoi,  'badge' => intval(0), 'sound' => 'www/noti.mp3');
+
 		$payload = json_encode($payload);
 
 		$apns_message = chr(0) . chr(0) . chr(32) . pack('H*', str_replace(' ', '', $token)) . chr(0) . chr(strlen($payload)) . $payload;
-		$result =fwrite($this->apns, $apns_message);
+		$result = fwrite($this->apns, $apns_message, strlen($apns_message));
 
-		$result = fwrite($fp, $msg, strlen($msg));
 
 		print_r($result);
 
@@ -63,8 +63,6 @@ class Push{
 			return $response;
 
 	}
-	
-	
 	 
 	public function _close(){
 		
@@ -77,5 +75,6 @@ class Push{
 }
 
 $p = new Push();
-$p->enviar_push_ios('9629da56f08828078b3d1aaf7e4fb0862024c7b35de7ad2c64f7f5c7e49b228f', 'Titulo',  'Desc desc', 0, 0, 2);
+
+//$p->enviar_push_ios('5ae6435d29d928a403c740f6c7efbc133061ec703d572a9961b670b890f04430', 'Titulo',  'Desc desc',  5);
 //$p->enviar_push_android('APA91bF42ase8jWX2U3JFkyociMh85CCAHpNOivlZM3MTPydulXEW42k0BXGhCfWmhRlhYtFWyYmWwmQe1zDoIVYbhPm0juzBtCgoRE8jxcRvJ6HMCP2QqH2Bwh77cpZ_A5CU8scQGR2', 'Titulo', 'Desc desc33', 3);

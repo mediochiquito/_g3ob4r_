@@ -69,101 +69,62 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 	$rootScope.pushIosDisabled = false;
 
 	try{
+			$cordovaPushV5.initialize({
 
-		if( $cordovaDevice.getPlatform() == 'Android'){
+				"android": {
+					senderID: "100997202768"
+				},
 
-			var androidConfig = {
-				"senderID": "100997202768"
-			};
-			$cordovaPushV5.initialize(androidConfig);
-			$cordovaPushV5.register().then(function(result) {
-
-			}, function(err) {
-
-			});
-
-			$rootScope.$on('$cordovaPushV5:notificationReceived', function(event, notification) {
-
-				switch(notification.event) {
-
-					case 'registered':
-
-						if (notification.regid.length > 0 ) {
-							enviar_token(notification.regid);
-						}
-
-						break;
-
-					case 'message':
-
-						if(notification.payload.idPoi!=0) {
-							$rootScope.navegarAPoi = notification.payload.idPoi;
-							try{
-								var item={ id: notification.payload.idPoi };
-								navigateService.go('detalle', item);
-							}catch(e){}
-
-						}
-						break;
-
-					case 'error':
-
-						break;
-
-					default:
-
-						break;
+				"ios": {
+					"sound": "true",
+					"vibration": "true",
+					"badge": "true",
+					"clearBadge": "true"
 				}
-			});
-		}
+			}).then(function(result){
 
-		if( $cordovaDevice.getPlatform() == 'iOS'){
+				$cordovaPushV5.onNotification();
+				$cordovaPushV5.onError();
+				$rootScope.pushIosDisabled = true;
+				$cordovaPushV5.register().then(function(deviceToken) {
 
-			var iosConfig = {
-				"badge": true,
-				"sound": true,
-				"alert": true
-			};
+					$rootScope.pushIosDisabled = false;
+					enviar_token(deviceToken);
 
-			$cordovaPushV5.initialize(iosConfig);
-			$rootScope.pushIosDisabled = true;
+				}, function(err) {
 
-			$cordovaPushV5.register().then(function(deviceToken) {
+					alert("Push registro error: " + err)
 
-				$rootScope.pushIosDisabled = false;
-				enviar_token(deviceToken);
+				});
 
-			}, function(err) {
-
-				alert("Push registro error: " + err)
 
 			});
+
+
 
 			$rootScope.$on('$cordovaPushV5:notificationReceived', function(event, notification) {
 
-				if (notification.alert) {
-
-					if(notification.idPoi!=0) {
-						$rootScope.navegarAPoi = notification.idPoi;
+				if (notification.additionalData) {
+					//alert('notification.idPoi: ' + notification.idPoi);
+					if(notification.additionalData.idPoi!=0) {
+						$rootScope.navegarAPoi = notification.additionalData.idPoi;
 						try{
-							var item={ id: notification.idPoi };
+							var item={ id: notification.additionalData.idPoi };
 							navigateService.go('detalle', item);
 						}catch(e){}
 					}
 				}
 
-				if (notification.sound) {
-					// var snd = new Media(event.sound);
-					// snd.play();
-				}
 
-				if (notification.badge) {
-					$cordovaPushV5.setBadgeNumber(notification.badge).then(function(result) {
-						// Success!
-					}, function(err) {
-						// An error occurred. Show a message to the user
-					});
-				}
+				/*$cordovaPushV5.finish().then(function (result) {
+				 // OK finished - works only with the dev-next version of pushV5.js in ngCordova as of February 8, 2016
+				 }, function (err) {
+				 // handle error
+				 });
+				 */
+
+
+
 
 			});
 
@@ -174,7 +135,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 				// Error
 			});
 
-		}
+
 
 	}catch(e){
 
