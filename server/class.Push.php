@@ -70,11 +70,11 @@ class Push{
 		@fclose($this->apns);
 		
 	}
-	
-	
+
 }
 
 $p = new Push();
 
-//$p->enviar_push_ios('5ae6435d29d928a403c740f6c7efbc133061ec703d572a9961b670b890f04430', 'Titulo',  'Desc desc',  5);
+
+//$p->enviar_push_ios('6f8669363b49e655704aeaf6bba90a3d618e7302669f9bae33de97ada9d4f844', '',  'test',  5);
 //$p->enviar_push_android('APA91bF42ase8jWX2U3JFkyociMh85CCAHpNOivlZM3MTPydulXEW42k0BXGhCfWmhRlhYtFWyYmWwmQe1zDoIVYbhPm0juzBtCgoRE8jxcRvJ6HMCP2QqH2Bwh77cpZ_A5CU8scQGR2', 'Titulo', 'Desc desc33', 3);

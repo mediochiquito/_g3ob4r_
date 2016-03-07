@@ -1,5 +1,5 @@
 .md-select-label{
-    width: 100%;
+	width: 100%;
 }
 .nav{
 	background-color: #DEDEDE;
@@ -19,20 +19,20 @@ md-progress-circular{
 	font-size: 12px;
 }
 .formAncho{
-    width: 40%;
-    margin-right: 10%;
+	width: 40%;
+	margin-right: 10%;
 }
 .desactivado{
 	opacity: .2;
 }
 .drop-box {
-  padding: 15px;
-  border: 3px #D3D1D1 dashed;
-  border-radius: 5px;
-  line-height: 34px;
-  color: grey;
-  margin-top: 5px;
-  font-weight: 400;
+	padding: 15px;
+	border: 3px #D3D1D1 dashed;
+	border-radius: 5px;
+	line-height: 34px;
+	color: grey;
+	margin-top: 5px;
+	font-weight: 400;
 }
 .headerImages{
 
@@ -56,7 +56,7 @@ md-progress-circular{
 
 }
 md-toolbar {
-  color: white; 
+	color: white;
 }
 .imagenHeader{
 	width: 100px;
@@ -72,18 +72,18 @@ md-toolbar {
 	left: 0;
 }
 .btnNav{
-    width: 100%;
+	width: 100%;
 
-    margin: 0;
-    padding: 5px;
-    box-sizing: border-box;
-    border-bottom: solid 1px #ccc;
+	margin: 0;
+	padding: 5px;
+	box-sizing: border-box;
+	border-bottom: solid 1px #ccc;
 }
 .docs-toolbar-tools {
-    max-width: 864px;
-    padding: 0;
-    margin: 0 24px;
-    width: auto;
+	max-width: 864px;
+	padding: 0;
+	margin: 0 24px;
+	width: auto;
 }
 .btnAdd{
 	position: fixed;
@@ -92,12 +92,12 @@ md-toolbar {
 }
 
 .una-imagen-home{
- 
-    position: relative;
-    float: left;
-    box-sizing: border-box;
-    padding: 0px 2px 0px 2px;
-    margin: 0px;
+
+	position: relative;
+	float: left;
+	box-sizing: border-box;
+	padding: 0px 2px 0px 2px;
+	margin: 0px;
 }
 .una-imagen-home .remove{
 	position: absolute;
@@ -107,22 +107,22 @@ md-toolbar {
 	width: 100%;
 }
 
- .dt{
-        width:100%;	
-        height: 100%;
- box-sizing: border-box;
- font-size:12px;
+.dt{
+	width:100%;
+	height: 100%;
+	box-sizing: border-box;
+	font-size:12px;
 
-      }
+}
 
 .una-imagen{
-    width: 50%;
-	
-    position: relative;
-    float: left;
-    box-sizing: border-box;
-    padding: 0px 2px 0px 2px;
-    margin: 0px;
+	width: 50%;
+
+	position: relative;
+	float: left;
+	box-sizing: border-box;
+	padding: 0px 2px 0px 2px;
+	margin: 0px;
 }
 .una-imagen .remove{
 	position: absolute;
@@ -137,16 +137,16 @@ a{
 }
 md-list-item{position: 	relative;}
 .label{
-    font-size: 11px;
-	
-    color: grey;
-    margin-bottom: 10px;
+	font-size: 11px;
+
+	color: grey;
+	margin-bottom: 10px;
 }
 .poisTabs{
 	width: 100%;
 	max-width: 600px;
 }
 .unacarta{
-	max-width: 300px;
+	/* max-width: 300px; */
 	float: left;
 }

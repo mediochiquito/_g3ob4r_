@@ -125,7 +125,7 @@ geobarApp.directive('lista', function ($window, $log, favService, navigateServic
             templateUrl: 'directivas/secciones/lista/itemLista.html',
             link: function ($scope) {
 
-                $scope.img_url = SERVER + 'pic/?file=pois/';
+                $scope.img_url = SERVER + 'pic/pois/';
 
                 $scope.getFav = function ($fav) {
                     if (angular.isUndefined($fav)) return 0;

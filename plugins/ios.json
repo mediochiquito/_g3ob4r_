@@ -39,9 +39,6 @@
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
@@ -52,6 +49,12 @@
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },

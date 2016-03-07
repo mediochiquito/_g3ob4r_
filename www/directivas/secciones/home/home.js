@@ -12,7 +12,7 @@ geobarApp.directive('home', function ($window, navigateService, ToastService, SE
             scope.navigateService = navigateService;
             scope.arService = arService;
             scope.server = SERVER;
-            scope.url_img_home = SERVER + 'img/home/';
+            scope.url_img_home = SERVER + 'pic/home/';
 
             scope.realidad = function () {
                 arService.mostrar()

@@ -1,8 +1,9 @@
+
 var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial',
 											 'ngCordova.plugins.device' , 'templates',
 	'ngCordova.plugins.facebook' , 'ngCordova.plugins.network' , 'ngCordova.plugins.push_v5' , 'Utils', 'cordovaGeolocationModule', 'plugins.toast'])
 
-//.constant('SERVER', 'http://192.168.0.2/_g3ob4r_/server/')
+//.constant('SERVER', 'http://localhost/_g3ob4r_/server/')
 //.constant('SERVER', 'http://mateomenestrina.no-ip.org/_g3ob4r_/server/')
 .constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
 .constant('SCREEN_SIZE', {ancho: window.innerWidth, alto: window.innerHeight})
@@ -36,6 +37,8 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 			pushtoken : $token,
 			u: $window.localStorage.getItem('userId')
 		};
+
+
 		var  req = {
 			method: 'POST',
 			url: SERVER + 'ws.php?method=init',

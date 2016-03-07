@@ -21,7 +21,7 @@
  -->
 
 					 <md-card  ng-repeat=" item in array_img | orderBy:'reverse'" ng-hide= 'item.home_eliminado == 1' class='unacarta'>
-					      <img  ng-class='{desactivado: item.home_activo==0}'  ng-src="../img/home/{{item.home_img}}" class="md-card-image" alt="Washed Out">
+					      <img  ng-class='{desactivado: item.home_activo==0}'  ng-src="../pic/home/{{item.home_img}}-320x225.jpg" class="md-card-image" alt="Washed Out">
 				
 					      <div class="md-actions" layout="row" layout-align="end center">
 					        <md-button ng-click='editar(item, $event)'>EDITAR</md-button>

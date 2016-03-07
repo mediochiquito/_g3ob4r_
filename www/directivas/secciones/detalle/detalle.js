@@ -118,13 +118,11 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
 			_callback = $callback;
 		
 			$scope.item = $obj;
-			//$scope.url_img = SERVER + 'img/pois/';
 			Loading.mostrar();
 
 			if(!angular.isUndefined($scope.item.tipo)){
                 
 				$scope.url_img = 'img/default/';
-                //$scope.fotos_detalle = [$scope.item.tipo + '.png'];
 				$scope.fotos_detalle = [];
 				
 			}else{
@@ -143,7 +141,7 @@ geobarApp.directive('detalle', function(navigateService, ToastService, Loading, 
 					$scope.long_desc = data.long_desc;
 					
 					$timeout(function (){
-						$scope.url_img = SERVER + 'img/pois/';
+						$scope.url_img = SERVER + 'pic/pois/';
 						$scope.fotos_detalle =  data.fotos;
 					}, 500);
 					//

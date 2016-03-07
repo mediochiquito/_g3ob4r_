@@ -14,18 +14,24 @@
 
 	   <md-dialog-content>
 
-	   			
-	        	<div layout='row'>
+		   <md-content class="md-padding">
 
-		           <md-select ng-model="poi.tipo" placeholder="Tipo" flex>
-		                <md-option ng-value="1" >Bar</md-option>
-		                <md-option ng-value="2" >Restaurante</md-option>
-		                <md-option ng-value="3" >Cine</md-option>
-		                <md-option ng-value="5" >Teatro</md-option>
-		                <md-option ng-value="4" >Evento</md-option>
+		   <div layout='row'>
 
-		               
-		            </md-select>
+
+				   <md-input-container flex >
+					   <label>Tipo</label>
+					   <md-select ng-model="poi.tipo" placeholder="Tipo" flex>
+						   <md-option ng-value="1" >Bar</md-option>
+						   <md-option ng-value="2" >Restaurante</md-option>
+						   <md-option ng-value="3" >Cine</md-option>
+						   <md-option ng-value="5" >Teatro</md-option>
+						   <md-option ng-value="4" >Evento</md-option>
+					   </md-select>
+				   </md-input-container>
+
+
+
 		            <md-input-container flex >
 			              <label for="label">Nombre</label>
 			              <input type="text" id="label" ng-model="poi.name">
@@ -92,15 +98,15 @@
 		              <label for="content">Website:</label>
 		              <input type="text" id="content" ng-model="poi.site">
 		            </md-input-container>
-	         	</div>	
-	            
+	         	</div>
+			   <div layout='row' >
 	            <md-input-container flex>
 	              <label for="content">Descripcion</label>
 	              <textarea  id="content" ng-model="poi.desc"></textarea>
 	            </md-input-container>
+			   </div>
 
-
-		    	<div class='label'  >Imagene Miniatura (JPG 205x136px)</div>
+		    	<div class='label'  >Imagene Miniatura (JPG 260x180px)</div>
 		    	
 
 		     	 <div ng-show=" poi.thumb != '' &&  poi.thumb != null" >
@@ -165,8 +171,9 @@
 
 				
 				<md-button class="add-tab md-primary md-raised" ng-click='submitForm()' style="margin-right: 0;">Guardar POI</md-button>
+		   </md-content>
 
-	</md-dialog-content>
+	   </md-dialog-content>
 
 
 </md-dialog>

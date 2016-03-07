@@ -7,8 +7,10 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
-    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
+      <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/material.css">
     <link rel="stylesheet" href="css/dataTable.css">
@@ -75,9 +77,10 @@
     <script src="libs/dataTable.helpers.min.js"></script>
 
     <!-- Angular Material Javascript now available via Google CDN; version 0.10 used here -->
-    <script src="//ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
 
-    <script src="app/app.js"></script>
+
+  <script src="app/app.js"></script>
      <script src="app/ng-file-upload.min.js"></script>
 
     <script src="views/pois.js"></script>

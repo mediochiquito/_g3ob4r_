@@ -63,7 +63,6 @@ geobarApp.directive('touchSlider', function ($document, Loading, SERVER, $log, n
 
             function doMove(e) {
                 scope.enx = Math.round(e.touches[0].clientX - offsetX + ultimo_x);
-
                 scope.$apply();
 
             }
@@ -92,9 +91,6 @@ geobarApp.directive('touchSlider', function ($document, Loading, SERVER, $log, n
 
                     }
 
-
-                    //alert(scope.fotos[scope.pagina].home_og_poi)
-
                     return;
                 }
 
@@ -118,7 +114,6 @@ geobarApp.directive('touchSlider', function ($document, Loading, SERVER, $log, n
             function addListener() {
 
                 $document.on('touchmove', doMove);
-
                 $document.on('touchend', doEnd);
             }
 

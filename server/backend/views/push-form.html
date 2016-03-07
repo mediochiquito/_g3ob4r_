@@ -12,27 +12,33 @@
 	    </div>
 	   </md-toolbar>
 
-	   <md-dialog-content>
+	   <md-dialog-content >
 
+		   <md-content class="md-padding">
 		   
-		         <md-input-container flex >
+		         <md-input-container   layout='row'>
 			              <label for="label">Titulo (solo aplica para Android)</label>
 			              <input type="text" id="label" ng-model="envio.envios_titulo">
 			     </md-input-container>
-		           
-			     <md-input-container flex>
+				<br />
+			     <md-input-container    layout='row'>
 		              <label for="content">Texto</label>
 		              <textarea  id="content" ng-model="envio.envios_desc"></textarea>
 	             </md-input-container>
-		     
+			   <br />
 
-		         <md-select ng-model="envio.envios_poi_id" placeholder="Mostrar POI al clickear en la notificación" flex>
+			    <md-input-container    layout='row'>
+				   <label>Mostrar POI al clickear en la notificación</label>
+		         <md-select ng-model="envio.envios_poi_id" >
 		             <md-option ng-value="0">--No hacer nada--</md-option>
 		             <md-option ng-repeat="item in array_pois"  ng-value="{{item.id}}" >#{{item.id}} {{item.name}}</md-option>
 		         </md-select>
+			   </md-input-container>
 
-
+			   <br />
 				<md-button class="add-tab md-primary md-raised" ng-click='submitForm()' style="margin-right: 0;">Preparar envio</md-button>
+
+			   </md-content>
 
 	</md-dialog-content>
 

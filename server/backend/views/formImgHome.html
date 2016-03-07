@@ -1,67 +1,77 @@
 <md-dialog aria-label="form img">
-	
-	<md-toolbar>
-	    <div class="md-toolbar-tools">
-	    
-	    <h2 ng-show='img.id == null '>CREAR NUEVA IMAGEN DEL HOME</h2>
-	      <h2 ng-show='img.id != null '>EDITANDO IMG #{{img.id}}</h2>
-	      <span flex></span>
-	      <md-button class="md-icon-button" ng-click="answer('not applicable')">
-	          <md-icon class='material-icons' aria-hidden="true">close</md-icon>
-	      </md-button>
-	    </div>
-	   </md-toolbar>
 
-	   <md-dialog-content>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
 
-		    	<div class='label' >Imagenes header (JPG 640x450px)</div>
-		    	
-		    	<div ng-show=" img.home_img != '' &&  img.home_img != null" >
-			    	<div  class='una-imagen-home offset-sm'>
-			    			
-			    			<md-button  ng-click=" img.home_img = '' " class="material-icons md-fab  md-mini md-default-theme remove" aria-label="QUITAR">
-			    				<md-icon class='material-icons' aria-hidden="true">remove</md-icon>
-						    </md-button>
-				     		<img class='headerImages' src='../img/home/{{img.home_img }}' />
-				     		
-				    </div>
-				    <br style='clear:both'>
-		 		 </div>
-				
-		     	<div ngf-drop  ng-model="filesImg" class="drop-box" 
-		         ngf-drag-over-class="dragover" 
-		         ngf-multiple="false" 
-		         ngf-allow-dir="false"
-		         ngf-accept="'image/jpeg'"   ng-show=" img.home_img == '' ||  img.home_img == null" >
+            <h2 ng-show='img.id == null '>CREAR NUEVA IMAGEN DEL HOME</h2>
+            <h2 ng-show='img.id != null '>EDITANDO IMG #{{img.id}}</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="answer('not applicable')">
+                <md-icon class='material-icons' aria-hidden="true">close</md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
 
-		         	Arrastra la imagen, o has click 
+    <md-dialog-content>
 
-			         <a  ngf-select ng-model="filesImg"
-			         	 ngf-multiple="false" 
-			         	 ngf-allow-dir="false"
-			          	 ngf-accept="'image/jpeg'">aquí</a>
-			          	
-		     	</div>
+        <md-content class="md-padding">
 
-					
+            <div class='label'>Imagenes header (JPG 640x450px)</div>
 
+            <div ng-show=" img.home_img != '' &&  img.home_img != null">
+                <div class='una-imagen-home offset-sm'>
 
+                    <md-button ng-click=" img.home_img = '' "
+                               class="material-icons md-fab  md-mini md-default-theme remove" aria-label="QUITAR">
+                        <md-icon class='material-icons' aria-hidden="true">remove</md-icon>
+                    </md-button>
+                    <img class='headerImages' src='../img/home/{{img.home_img }}'/>
 
-		         <md-select ng-model="img.home_og_poi" placeholder="Mostrar POI al seleccionarla" flex>
-		             <md-option ng-value="0">--No hacer nada--</md-option>
-		             <md-option ng-repeat="item in array_pois"  ng-value="{{item.id}}" >#{{item.id}} {{item.name}}</md-option>
-		         </md-select>
+                </div>
+                <br style='clear:both'>
+            </div>
+
+            <div ngf-drop ng-model="filesImg" class="drop-box"
+                 ngf-drag-over-class="dragover"
+                 ngf-multiple="false"
+                 ngf-allow-dir="false"
+                 ngf-accept="'image/jpeg'" ng-show=" img.home_img == '' ||  img.home_img == null">
+
+                Arrastra la imagen, o has click
+
+                <a ngf-select ng-model="filesImg"
+                   ngf-multiple="false"
+                   ngf-allow-dir="false"
+                   ngf-accept="'image/jpeg'">aquí</a>
+
+            </div>
+
+             <br />
 
 
+            <md-input-container    layout='row'>
+                <label>Mostrar POI al seleccionarla</label>
+                <md-select ng-model="img.home_og_poi" placeholder="" flex>
+                    <md-option ng-value="0">--No hacer nada--</md-option>
+                    <md-option ng-repeat="item in array_pois" ng-value="{{item.id}}">#{{item.id}} {{item.name}}</md-option>
+                </md-select>
 
-		           
+            </md-input-container>
 
 
-		     	<div layout='row'><div ><br />Activo: </div><md-switch ng-model="img.home_activo" aria-label="Switch"></md-switch> </div>
 
-				<md-button class="add-tab md-primary md-raised" ng-click='submitForm()' style="margin-right: 0;">Guardar imagen</md-button>
+            <div layout='row'>
+                <div><br/>Activo:</div>
+                <md-switch ng-model="img.home_activo" aria-label="Switch"></md-switch>
+            </div>
 
-	</md-dialog-content>
+            <md-button class="add-tab md-primary md-raised" ng-click='submitForm()' style="margin-right: 0;">Guardar
+                imagen
+            </md-button>
+
+        </md-content>
+
+    </md-dialog-content>
 
 
 </md-dialog>

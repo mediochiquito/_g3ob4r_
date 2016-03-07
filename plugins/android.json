@@ -1,0 +1,62 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.wikitude.phonegap.WikitudePlugin": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "398706416993551",
+            "APP_NAME": "GeoBar",
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        }
+    },
+    "dependent_plugins": {}
+}

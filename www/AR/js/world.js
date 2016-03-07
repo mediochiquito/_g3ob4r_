@@ -126,7 +126,9 @@ function info(obj){
     $('#pic').append($(img));
 
     setTimeout(function(){
-    	$('#pic img').attr('src', 'http://dev.metamorf.com.uy/geobar/img/pois/' + obj_selected.thumb);
+
+		$('#pic img').attr('src', 'http://dev.metamorf.com.uy/geobar/pic/pois/' + obj_selected.thumb + '-260x180.jpg');
+    //	$('#pic img').attr('src', 'http://dev.metamorf.com.uy/geobar/img/pois/' );
     }, 0);
 	
 	if(obj_selected.tipo == 1)	$('#info-data').css( 'background-color','#ff99ff');

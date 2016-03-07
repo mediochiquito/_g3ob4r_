@@ -19,6 +19,9 @@ geobarApp.directive('imgLoader', function() {
         
         scope.$watch('hashfile', function(){
            scope.imagen = scope.imgurl + scope.hashfile
+
+
+
         });
 
         elem.children('img')[0].onerror = function () {
