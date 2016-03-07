@@ -23,14 +23,8 @@ cordova plugin add cordova-plugin-wkwebview-engine
 
 
 
-
-
-
-
 cordova -d plugin add git_fork/phonegap-facebook-plugin --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
 cordova -d plugin add https://github.com/Wizcorp/phonegap-facebook-plugin.git --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
-
-
 
 
 adb install -r /Applications/MAMP/htdocs/_g3ob4r_/platforms/android/build/outputs/apk/android-armv7-debug.apk

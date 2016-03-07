@@ -27,7 +27,7 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
 
         hide: function (){
          
-            if(ya_iniciado)  wikitudePlugin.hide();
+            if(ya_iniciado)  wikitudePlugin.close();
            
         },    
 
@@ -35,7 +35,7 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
           
           var _url = decodeURIComponent(url);
 
-          if(_url == 'architectsdk://action=closeWikitudePlugin') wikitudePlugin.hide();
+          if(_url == 'architectsdk://action=closeWikitudePlugin') wikitudePlugin.close();
           else {
 
                 var split_url = _url.split('architectsdk://action=');
@@ -49,7 +49,7 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
                 switch(method_parms_array[0]){
 
                     case 'dir':   
-                        wikitudePlugin.hide(); 
+                        wikitudePlugin.close();
                         Loading.mostrar();
 
                         setTimeout(function (){
@@ -62,7 +62,7 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
 
                     case 'fav':   alert('FPO add favoritos'); break;
                     case 'info': 
-                        wikitudePlugin.hide();      
+                        wikitudePlugin.close();
                         $rootScope.$apply(); 
                         Loading.mostrar();
                          setTimeout(function (){
@@ -94,7 +94,7 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
 
                 setTimeout(function (){        
                     
-                    if(!ya_iniciado){
+                    //if(!ya_iniciado){
 
                         wikitudePlugin.loadARchitectWorld(
                                                     self.onARExperienceLoadedSuccessful, 
@@ -106,7 +106,7 @@ geobarApp.factory('arService', function($window, $rootScope, navigateService, To
                         ya_iniciado = true;
                         //document.addEventListener("backbutton", self.backKeyDown);
 
-                  }  else wikitudePlugin.show();
+                 // }  else wikitudePlugin.show();
 
                   var ultim_pos = cordovaGeolocationService.getUltimaPosicion();
 

@@ -354,7 +354,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 											 'ngCordova.plugins.device' , 'templates',
 	'ngCordova.plugins.facebook' , 'ngCordova.plugins.network' , 'ngCordova.plugins.push_v5' , 'Utils', 'cordovaGeolocationModule', 'plugins.toast'])
 
-	//.constant('SERVER', 'http://localhost/_g3ob4r_/server/')
+//.constant('SERVER', 'http://localhost/_g3ob4r_/server/')
 //.constant('SERVER', 'http://mateomenestrina.no-ip.org/_g3ob4r_/server/')
 .constant('SERVER', 'http://dev.metamorf.com.uy/geobar/')
 .constant('SCREEN_SIZE', {ancho: window.innerWidth, alto: window.innerHeight})
@@ -1062,7 +1062,7 @@ geobarApp.factory('arService', ["$window", "$rootScope", "navigateService", "Toa
 
         hide: function (){
          
-            if(ya_iniciado)  wikitudePlugin.hide();
+            if(ya_iniciado)  wikitudePlugin.close();
            
         },    
 
@@ -1070,7 +1070,7 @@ geobarApp.factory('arService', ["$window", "$rootScope", "navigateService", "Toa
           
           var _url = decodeURIComponent(url);
 
-          if(_url == 'architectsdk://action=closeWikitudePlugin') wikitudePlugin.hide();
+          if(_url == 'architectsdk://action=closeWikitudePlugin') wikitudePlugin.close();
           else {
 
                 var split_url = _url.split('architectsdk://action=');
@@ -1084,7 +1084,7 @@ geobarApp.factory('arService', ["$window", "$rootScope", "navigateService", "Toa
                 switch(method_parms_array[0]){
 
                     case 'dir':   
-                        wikitudePlugin.hide(); 
+                        wikitudePlugin.close();
                         Loading.mostrar();
 
                         setTimeout(function (){
@@ -1097,7 +1097,7 @@ geobarApp.factory('arService', ["$window", "$rootScope", "navigateService", "Toa
 
                     case 'fav':   alert('FPO add favoritos'); break;
                     case 'info': 
-                        wikitudePlugin.hide();      
+                        wikitudePlugin.close();
                         $rootScope.$apply(); 
                         Loading.mostrar();
                          setTimeout(function (){
@@ -1129,7 +1129,7 @@ geobarApp.factory('arService', ["$window", "$rootScope", "navigateService", "Toa
 
                 setTimeout(function (){        
                     
-                    if(!ya_iniciado){
+                    //if(!ya_iniciado){
 
                         wikitudePlugin.loadARchitectWorld(
                                                     self.onARExperienceLoadedSuccessful, 
@@ -1141,7 +1141,7 @@ geobarApp.factory('arService', ["$window", "$rootScope", "navigateService", "Toa
                         ya_iniciado = true;
                         //document.addEventListener("backbutton", self.backKeyDown);
 
-                  }  else wikitudePlugin.show();
+                 // }  else wikitudePlugin.show();
 
                   var ultim_pos = cordovaGeolocationService.getUltimaPosicion();
 
@@ -1973,34 +1973,6 @@ geobarApp.directive('botonLista', function() {
     }
   };
 });
-geobarApp.directive('checkBox', function() {
-  return {
-    
-    restrict: 'E', 
-    scope: {
-    	checked: '=',
-        accion: '&'
-	},
-    template:'<div class="checkBox-bg"><div class="checkBox-selected" ng-show=" checked==1"></div></div>',
-
-    link: function(scope, elem){
-
-        elem.addClass('checkBox');
-
-
-    	elem.on('touchend', function(){
-         
-    		 if(scope.checked == 1) scope.checked = 0;
-             else scope.checked = 1;
-             scope.$apply();
-             scope.accion()
-             
-    	})
-
-        
-    }
-  };
-});
 geobarApp.directive('botonSistema', function() {
   return {
     
@@ -2038,6 +2010,34 @@ geobarApp.directive('botonSistema', function() {
     	})
 
 
+    }
+  };
+});
+geobarApp.directive('checkBox', function() {
+  return {
+    
+    restrict: 'E', 
+    scope: {
+    	checked: '=',
+        accion: '&'
+	},
+    template:'<div class="checkBox-bg"><div class="checkBox-selected" ng-show=" checked==1"></div></div>',
+
+    link: function(scope, elem){
+
+        elem.addClass('checkBox');
+
+
+    	elem.on('touchend', function(){
+         
+    		 if(scope.checked == 1) scope.checked = 0;
+             else scope.checked = 1;
+             scope.$apply();
+             scope.accion()
+             
+    	})
+
+        
     }
   };
 });
