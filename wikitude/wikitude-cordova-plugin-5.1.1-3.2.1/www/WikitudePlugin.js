@@ -217,8 +217,8 @@
 
 		// Call the Wikitude SDK that it should resume.
 		//cordova.exec(this.onWikitudeOK, this.onWikitudeError, "WikitudePlugin", "close", [""]);
-		//WikitudePlugin.prototype.close();
-		WikitudePlugin.prototype.hide();
+		WikitudePlugin.prototype.close();
+		//WikitudePlugin.prototype.hide();
 	};
 
 	/**

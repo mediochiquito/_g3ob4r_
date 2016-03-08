@@ -13,7 +13,10 @@
 
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/material.css">
-    <link rel="stylesheet" href="css/dataTable.css">
+    <!--<link rel="stylesheet" href="css/dataTable.css">-->
+      <link rel="stylesheet" href="bower_components/mdDataTable/dist/md-data-table-style.css">
+      <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css">
+
 
   </head>
 
@@ -74,10 +77,18 @@
     <script src="//code.angularjs.org/1.4.3/angular-animate.min.js"></script>
     <script src="//code.angularjs.org/1.4.3/angular-aria.min.js"></script>
     <script src="//code.angularjs.org/1.4.3/angular-route.min.js"></script>
-    <script src="libs/dataTable.helpers.min.js"></script>
+
+
+  <!--  <script src="libs/dataTable.helpers.min.js"></script>-->
 
     <!-- Angular Material Javascript now available via Google CDN; version 0.10 used here -->
   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+  <script src="bower_components/mdDataTable/dist/md-data-table-templates.js"></script>
+  <script src="bower_components/mdDataTable/dist/md-data-table.js"></script>
+
+  <script src="bower_components/lodash/lodash.min.js"></script>
+  <script src="bower_components/angular-material-icons/angular-material-icons.js"></script>
 
 
   <script src="app/app.js"></script>

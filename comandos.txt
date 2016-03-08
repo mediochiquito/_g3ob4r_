@@ -15,36 +15,23 @@ cordova plugin add cordova-plugin-statusbar
 cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
 cordova plugin add ./wikitude/wikitude-cordova-plugin-5.1.1-3.2.1
 cordova plugin add cordova-plugin-crosswalk-webview
+cordova plugin add cordova-plugin-x-toast
 
 
 
 
-cordova plugin add cordova-plugin-wkwebview-engine
 
 
-
-cordova -d plugin add git_fork/phonegap-facebook-plugin --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
-cordova -d plugin add https://github.com/Wizcorp/phonegap-facebook-plugin.git --variable APP_ID="398706416993551" --variable APP_NAME="GeoBar"
-
-
-adb install -r /Applications/MAMP/htdocs/_g3ob4r_/platforms/android/build/outputs/apk/android-armv7-debug.apk
-
-
-
-cordova plugin add cordova-plugin-crosswalk-webview
-cordova plugin add C:\developer\plugins-cordova\wikitude-cordova-plugin
-
-
-
-keytool -exportcert -alias motoneta -keystore C:\wamp\www\_g3ob4r_\certs\geobar-release-key.keystore | openssl sha1 -binary | openssl base64
-//---------
-
-
-!!!! remover javascritp wikitude backbutton
-!!!! remover del wikitude WARViewController la liena de swipe para cerrar
 
 
 cordova platform update ios@4.1.0
+
+adb install -r /Applications/MAMP/htdocs/_g3ob4r_/platforms/android/build/outputs/apk/android-armv7-debug.apk
+
+keytool -exportcert -alias motoneta -keystore C:\wamp\www\_g3ob4r_\certs\geobar-release-key.keystore | openssl sha1 -binary | openssl base64
+//---------
+!!!! remover javascritp wikitude backbutton
+!!!! remover del wikitude WARViewController la liena de swipe para cerrar
 
 
 keytool -list -v -keystore C:\wamp\www\g30b4r\certs\geobar-release-key.keystore

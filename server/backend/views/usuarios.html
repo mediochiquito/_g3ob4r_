@@ -1,18 +1,42 @@
+<!--
 <div style='height:100%; position: absolute; padding:5px; padding-right:30px; absolute; width: 100%;  box-sizing: border-box;'>
 
-		 <dtable options="options" rows="data" class="material dt">
+		 <mdt-header-row options="options" rows="data" class="material dt">
 			  
-			  <column name="ID" width='30'>{{$row.usuarios_id}}</column>
-			  <column name="ID FACEBOOK"  width='150'>{{$row.usuarios_uid}}</column>
-			  <column name="NOMBRE">{{$row.usuarios_nombre}}</column>
-			  <column name="APELLIDO">{{$row.usuarios_apellido}}</column>
-			  <column name="EMAIL">{{$row.usuarios_email}}</column>
-			  <column name="CI"  width='150'>{{$row.usuarios_ci}}</column>
-			  <column name="FECHA NAC.">{{$row.usuarios_fecha_nac}}</column>
-			  <column name="SEXO">{{$row.usuarios_sexo}}</column>
-			  <column name="FEHCA HORA REGISTRO">{{$row.usuarios_fecha_hora}}</column>
+			  <mdt-column name="ID" width='30'>{{$row.usuarios_id}}</mdt-column>
+			  <mdt-column name="ID FACEBOOK"  width='150'>{{$row.usuarios_uid}}</mdt-column>
+			  <mdt-column name="NOMBRE">{{$row.usuarios_nombre}}</mdt-column>
+			  <mdt-column name="APELLIDO">{{$row.usuarios_apellido}}</mdt-column>
+			  <mdt-column name="EMAIL">{{$row.usuarios_email}}</mdt-column>
+			  <mdt-column name="CI"  width='150'>{{$row.usuarios_ci}}</mdt-column>
+			  <mdt-column name="FECHA NAC.">{{$row.usuarios_fecha_nac}}</mdt-column>
+			  <mdt-column name="SEXO">{{$row.usuarios_sexo}}</mdt-column>
+			  <mdt-column name="FEHCA HORA REGISTRO">{{$row.usuarios_fecha_hora}}</mdt-column>
 
-		 </dtable>
+		 </mdt-header-row>
 
 
-</div>
+</div>-->
+
+<mdt-table>
+	<mdt-header-row>
+		<mdt-column align-rule="left">Dessert (100g serving)</mdt-column>
+		<mdt-column align-rule="right">Calories</mdt-column>
+		<mdt-column align-rule="right">Fat (g)</mdt-column>
+		<mdt-column align-rule="right">Carbs (g)</mdt-column>
+		<mdt-column align-rule="right">Protein (g)</mdt-column>
+		<mdt-column align-rule="right">Sodium (mg)</mdt-column>
+		<mdt-column align-rule="right">Calcium (%)</mdt-column>
+		<mdt-column align-rule="right">Iron (%)</mdt-column>
+	</mdt-header-row>
+	<mdt-row >
+		<mdt-cell>asd</mdt-cell>
+		<mdt-cell>asd</mdt-cell>
+		<mdt-cell>asd</mdt-cell>
+		<mdt-cell>asd</mdt-cell>
+		<mdt-cell>asd</mdt-cell>
+		<mdt-cell>asd</mdt-cell>
+		<mdt-cell>asd</mdt-cell>
+		<mdt-cell>asd</mdt-cell>
+	</mdt-row>
+</mdt-table>

@@ -43,7 +43,7 @@ class Push{
 	
 			$headers = array("Content-Type:" . "application/json", "Authorization:" . "key=" . $this->apiKey);
 			$data = array(
-				'data' => array('idPoi' => $idPoi, 'message' => $mensaje, 'title' => $titulo),
+				'data' => array('idPoi' => $idPoi, 'message' => $mensaje , 'title' => $titulo, 'sound' => 'noti'),
 				'registration_ids' => array($token)
 			);
 		 
@@ -74,7 +74,5 @@ class Push{
 }
 
 $p = new Push();
-
-
-//$p->enviar_push_ios('6f8669363b49e655704aeaf6bba90a3d618e7302669f9bae33de97ada9d4f844', '',  'test',  5);
-//$p->enviar_push_android('APA91bF42ase8jWX2U3JFkyociMh85CCAHpNOivlZM3MTPydulXEW42k0BXGhCfWmhRlhYtFWyYmWwmQe1zDoIVYbhPm0juzBtCgoRE8jxcRvJ6HMCP2QqH2Bwh77cpZ_A5CU8scQGR2', 'Titulo', 'Desc desc33', 3);
+/*$p->enviar_push_ios('a30b290552adcc576608cec41eee4a7efa7714b33dad2afc3ae38d435df36f6e', '',  'test',  5);
+$p->enviar_push_android('d_WAWBREJ-A:APA91bG11oFoH8eidcIBBZ4OS8ZAg0U806UeIBlF73XVjm077RSGNKXHdHldzKQUi2zxE8yBZKJc_olyp0VgdCmaOPkTc1f5AHt80w3xUYE65GECbHdetAJkIkHic7zTzyhYzUyLw-qI', 'Titulo', 'Desc desc33', 3);*/

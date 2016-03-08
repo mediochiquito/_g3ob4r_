@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "com.wikitude.phonegap.WikitudePlugin": {
-            "PACKAGE_NAME": "com.diageo.geobar"
-        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.diageo.geobar"
         },
@@ -55,6 +52,12 @@
             "PACKAGE_NAME": "com.diageo.geobar"
         },
         "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "com.wikitude.phonegap.WikitudePlugin": {
+            "PACKAGE_NAME": "com.diageo.geobar"
+        },
+        "cordova-plugin-x-toast": {
             "PACKAGE_NAME": "com.diageo.geobar"
         }
     },

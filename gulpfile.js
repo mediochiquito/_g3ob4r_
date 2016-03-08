@@ -47,10 +47,27 @@ gulp.task('templates', function() {
 
 });
 
-gulp.task("cordova-prepare",  function() {
+
+gulp.task('copiar-audio-noti', function() {
+
+    return gulp.src('./www/noti.mp3').pipe(gulp.dest('./platforms/android/res/raw/'));
+
+});
+
+
+
+
+gulp.task("cordova-prepare", ['copiar-audio-noti'],  function() {
     run('cordova prepare ios').exec()
         .pipe(gulp.dest('output'))
+
+    run('cordova prepare android').exec()
+        .pipe(gulp.dest('output'))
+
+
+
 });
+
 
 gulp.task("cordova-platform-rm-ios",  function() {
     run('cordova platform remove ios').exec()

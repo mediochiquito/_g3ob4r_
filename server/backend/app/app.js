@@ -1,5 +1,5 @@
 
-var app = angular.module('adminApp', ['ngAnimate', 'ngMaterial', 'ngRoute', 'ngFileUpload', 'data-table'])
+var app = angular.module('adminApp', ['ngAnimate', 'ngMaterial', 'ngRoute', 'ngFileUpload', 'mdDataTable'])
 
 .config(['$routeProvider', '$mdThemingProvider',
  

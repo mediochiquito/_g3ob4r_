@@ -75,7 +75,9 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 			$cordovaPushV5.initialize({
 
 				"android": {
-					senderID: "100997202768"
+					senderID: "100997202768",
+					"sound": "true",
+					"vibration": "true"
 				},
 
 				"ios": {
@@ -108,7 +110,7 @@ var geobarApp = angular.module('geobarApp', ['ngTouch', 'ngAnimate','ngMaterial'
 			$rootScope.$on('$cordovaPushV5:notificationReceived', function(event, notification) {
 
 				if (notification.additionalData) {
-					//alert('notification.idPoi: ' + notification.idPoi);
+
 					if(notification.additionalData.idPoi!=0) {
 						$rootScope.navegarAPoi = notification.additionalData.idPoi;
 						try{
